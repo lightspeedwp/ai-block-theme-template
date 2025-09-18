@@ -1,0 +1,61 @@
+{
+  "name": "ai-block-theme-template",
+  "version": "1.0.0",
+  "description": "Starter repository for WordPress block theme projects with AI support",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "build:production": "wp-scripts build --mode=production",
+    "start": "wp-scripts start",
+    "dev": "wp-scripts start",
+    "lint:js": "wp-scripts lint-js",
+    "lint:css": "wp-scripts lint-style",
+    "lint:php": "composer run-script phpcs",
+    "lint": "npm run lint:js && npm run lint:css",
+    "format:js": "wp-scripts format",
+    "format:css": "wp-scripts lint-style --fix",
+    "format": "npm run format:js && npm run format:css",
+    "test:js": "wp-scripts test-unit-js",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:debug": "playwright test --debug",
+    "test": "npm run test:js && npm run test:e2e",
+    "packages-update": "wp-scripts packages-update",
+    "plugin-zip": "wp-scripts plugin-zip"
+  },
+  "keywords": [
+    "wordpress",
+    "block-theme",
+    "gutenberg",
+    "ai",
+    "template"
+  ],
+  "author": "LightspeedWP",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lightspeedwp/ai-block-theme-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lightspeedwp/ai-block-theme-template/issues"
+  },
+  "homepage": "https://github.com/lightspeedwp/ai-block-theme-template#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@wordpress/eslint-plugin": "^17.0.0",
+    "@wordpress/prettier-config": "^3.0.0",
+    "@wordpress/scripts": "^26.0.0",
+    "@wordpress/stylelint-config": "^21.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "stylelint": "^14.16.0"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ]
+}
