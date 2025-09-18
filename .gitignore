@@ -18,7 +18,8 @@ wp-content/uploads/
 
 # Development tools
 .DS_Store
-.vscode/
+.vscode/*
+!.vscode/settings.json
 .idea/
 *.swp
 *.swo

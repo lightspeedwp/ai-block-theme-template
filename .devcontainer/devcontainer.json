@@ -1,0 +1,41 @@
+{
+  "name": "AI Block Theme Template",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    },
+    "ghcr.io/devcontainers/features/php:1": {
+      "version": "8.2"
+    },
+    "ghcr.io/devcontainers/features/composer:2": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-json",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode",
+        "ms-playwright.playwright",
+        "bmewburn.vscode-intelephense-client"
+      ],
+      "settings": {
+        "mcp.enable": true,
+        "mcp.startOnStartup": true
+      }
+    }
+  },
+
+  "forwardPorts": [3000, 8080],
+  "postCreateCommand": "npm install && composer install",
+  "mounts": [
+    "source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached"
+  ],
+  "remoteUser": "vscode"
+}
