@@ -1,0 +1,57 @@
+# Development files
+.git
+.github
+.gitignore
+.gitattributes
+.editorconfig
+.distignore
+
+# Node.js
+node_modules
+package-lock.json
+yarn.lock
+
+# Build tools
+webpack.config.js
+postcss.config.js
+.eslintrc.js
+.prettierrc.js
+.stylelintrc.js
+
+# Testing
+tests
+playwright.config.ts
+playwright.config.js
+test-results
+coverage
+playwright-report
+
+# Documentation
+DEVELOPMENT.md
+changelog.md
+
+# Composer
+composer.json
+composer.lock
+vendor
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Source files (if using build process)
+src
+assets/scss
+assets/ts
+assets/js/src

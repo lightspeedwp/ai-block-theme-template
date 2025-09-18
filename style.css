@@ -1,0 +1,166 @@
+/*
+Theme Name: AI Block Theme Template
+Description: Starter repository for WordPress block theme projects with AI support. Includes GitHub templates, issue/PR forms, Copilot path guidance, reusable prompts, custom chat modes, and reference schemas—plus theme.json, functions.php, patterns, and Playwright tests for scalable workflows.
+Author: LightspeedWP
+Author URI: https://github.com/lightspeedwp
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GPL v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: ai-block-theme-template
+Tags: block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, full-site-editing, one-column, rtl-language-support, threaded-comments, translation-ready, wide-blocks
+*/
+
+/*
+ * Font fallbacks
+ * These are used if the preferred fonts are not available.
+ */
+body {
+	font-family: var(--wp--preset--font-family--system-font);
+}
+
+/*
+ * Link styles
+ * These apply to all links by default.
+ */
+a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.15em;
+}
+
+a:hover,
+a:focus {
+	text-decoration-style: dashed;
+}
+
+/*
+ * Alignment styles
+ * These utility classes help align content.
+ */
+.alignleft {
+	float: left;
+	margin-inline-end: 2em;
+	margin-block-end: 1em;
+}
+
+.alignright {
+	float: right;
+	margin-inline-start: 2em;
+	margin-block-end: 1em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+/*
+ * Caption styles
+ * Styles for image and gallery captions.
+ */
+.wp-caption {
+	max-width: 100%;
+}
+
+.wp-caption-text {
+	font-size: var(--wp--preset--font-size--small);
+	margin-top: 0.5em;
+	margin-bottom: 0;
+}
+
+/*
+ * Gallery styles
+ * Basic styles for WordPress galleries.
+ */
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+
+.gallery-item {
+	flex-grow: 1;
+}
+
+.gallery-icon {
+	line-height: 0;
+}
+
+.gallery-caption {
+	font-size: var(--wp--preset--font-size--small);
+	margin-top: 0.5em;
+}
+
+/*
+ * Navigation styles
+ * Additional styles for navigation menus.
+ */
+.wp-block-navigation__submenu-container {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	border: 1px solid var(--wp--preset--color--light-gray);
+}
+
+/*
+ * Comment styles
+ * Basic styles for comment sections.
+ */
+.comment-list {
+	list-style: none;
+	padding: 0;
+}
+
+.comment-list .comment {
+	margin-bottom: 2em;
+	padding: 1em;
+	border: 1px solid var(--wp--preset--color--light-gray);
+	border-radius: 4px;
+}
+
+.comment-meta {
+	font-size: var(--wp--preset--font-size--small);
+	margin-bottom: 0.5em;
+}
+
+.comment-content {
+	margin-bottom: 1em;
+}
+
+.reply {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+/*
+ * Accessibility styles
+ * Styles to improve accessibility.
+ */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: var(--wp--preset--color--white);
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: var(--wp--preset--color--black);
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 700;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
