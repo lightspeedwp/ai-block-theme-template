@@ -16,18 +16,21 @@ Starter repository for WordPress block theme projects with AI support. Includes 
 ## Quick Start
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/lightspeedwp/ai-block-theme-template.git
    cd ai-block-theme-template
    ```
 
 2. **Install dependencies:**
+
    ```bash
    npm install
    composer install
    ```
 
 3. **Start development:**
+
    ```bash
    npm run start
    ```
@@ -67,13 +70,17 @@ npm run build         # Build for development
 npm run build:production  # Build for production
 
 # Code Quality
-npm run lint          # Lint JavaScript and CSS
+npm run lint          # Lint JavaScript, CSS, and PHP
 npm run lint:js       # Lint JavaScript only
 npm run lint:css      # Lint CSS only
-npm run lint:php      # Lint PHP code
+npm run lint:php      # Lint PHP code (uses 10up PHPCS)
 npm run format        # Format all code
 npm run format:js     # Format JavaScript
 npm run format:css    # Format CSS
+
+# PHP-specific commands
+composer run lint     # Run PHPCS on all PHP files
+composer run format   # Auto-fix PHPCS violations
 
 # Testing
 npm run test          # Run all tests
@@ -124,12 +131,15 @@ This template includes AI-powered development tools:
 
 ## Testing
 
-The theme includes comprehensive testing:
+The theme includes comprehensive testing and code quality tools:
 
-- **End-to-end tests** with Playwright
+- **PHP Code Standards** with 10up PHPCS Composer package
+- **End-to-end tests** with Playwright for PHP integration testing
+- **WordPress-specific testing** including admin functionality
 - **Responsive testing** across device sizes
-- **Accessibility testing** (coming soon)
-- **Performance testing** (coming soon)
+- **PHP error detection** and compatibility testing
+
+For detailed testing documentation, see [PHP Testing Guide](docs/PHP_TESTING.md).
 
 ## Contributing
 

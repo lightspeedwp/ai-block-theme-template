@@ -1,0 +1,11 @@
+{
+  "extends": "@wordpress/npm-package-json-lint-config",
+  "rules": {
+    "require-peerDependencies": "off",
+    "valid-values-engines": "off",
+    "valid-values-name-scope": "off",
+    "require-homepage": "error",
+    "require-repository": "error",
+    "require-bugs": "error"
+  }
+}

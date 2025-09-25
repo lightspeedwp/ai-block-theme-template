@@ -1,17 +1,17 @@
+/**
+ * WordPress PostCSS configuration using WordPress packages
+ */
 module.exports = {
 	plugins: [
-		require('autoprefixer')({
-			grid: 'autoplace',
-		}),
-		require('cssnano')({
-			preset: [
-				'default',
-				{
-					discardComments: {
-						removeAll: true,
-					},
+		require('@wordpress/postcss-plugins-preset'),
+		require('@wordpress/postcss-themes')({
+			// Define theme configurations if needed
+			themes: {
+				default: {},
+				dark: {
+					selector: '.is-dark-theme',
 				},
-			],
+			},
 		}),
 	],
 };

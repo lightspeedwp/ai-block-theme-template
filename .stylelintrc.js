@@ -1,3 +1,7 @@
+/**
+ * WordPress Stylelint configuration
+ * Extends the WordPress stylelint config for CSS compliance
+ */
 module.exports = {
 	extends: ['@wordpress/stylelint-config'],
 	rules: {
@@ -27,6 +31,22 @@ module.exports = {
 				ignore: ['blockless-at-rules', 'pseudo-classes'],
 			},
 		],
+
+		// WordPress CSS Coding Standards compliance
+		'rule-empty-line-before': [
+			'always-multi-line',
+			{
+				except: ['first-nested'],
+				ignore: ['after-comment'],
+			},
+		],
+		'at-rule-empty-line-before': [
+			'always',
+			{
+				except: ['blockless-after-same-name-blockless', 'first-nested'],
+				ignore: ['after-comment'],
+			},
+		],
 	},
 	ignoreFiles: [
 		'node_modules/**/*',
@@ -34,5 +54,6 @@ module.exports = {
 		'assets/css/*.css',
 		'dist/**/*',
 		'build/**/*',
+		'languages/**/*',
 	],
 };

@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.php": "php",
+			"*.html": "html"
+		},
+		"emmet.includeLanguages": {
+			"javascript": "javascriptreact"
+		},
+		"playwright.reuseBrowser": true,
+		"playwright.showTrace": true
+	}
+}

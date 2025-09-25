@@ -1,14 +1,13 @@
+/**
+ * WordPress Prettier configuration
+ * Extends the WordPress default configuration
+ */
+const wpPrettierConfig = require('@wordpress/prettier-config');
+
 module.exports = {
-	useTabs: true,
-	tabWidth: 4,
+	...wpPrettierConfig,
+	// Override specific settings if needed
 	printWidth: 80,
-	singleQuote: true,
-	trailingComma: 'es5',
-	bracketSpacing: true,
-	jsxBracketSameLine: false,
-	semi: true,
-	arrowParens: 'always',
-	endOfLine: 'lf',
 	overrides: [
 		{
 			files: ['*.json', '*.yml', '*.yaml'],
@@ -23,6 +22,13 @@ module.exports = {
 				printWidth: 120,
 				useTabs: false,
 				tabWidth: 2,
+			},
+		},
+		{
+			files: ['*.php'],
+			options: {
+				parser: 'php',
+				phpVersion: '7.4',
 			},
 		},
 	],

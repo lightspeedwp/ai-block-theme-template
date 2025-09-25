@@ -18,16 +18,15 @@
     "php": ">=7.4"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^3.7",
-    "wp-coding-standards/wpcs": "^3.0",
-    "phpcompatibility/phpcompatibility-wp": "^2.1",
-    "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+    "10up/phpcs-composer": "^3.0"
   },
   "scripts": {
-    "phpcs": "phpcs --standard=WordPress *.php inc/ parts/ patterns/",
-    "phpcbf": "phpcbf --standard=WordPress *.php inc/ parts/ patterns/",
-    "lint": "composer run-script phpcs",
-    "format": "composer run-script phpcbf"
+    "lint": [
+      "phpcs ."
+    ],
+    "format": [
+      "phpcbf ."
+    ]
   },
   "config": {
     "allow-plugins": {
