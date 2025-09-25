@@ -4,6 +4,8 @@
  * Slug: ai-block-theme-template/features-grid
  * Categories: ai-block-theme-template
  * Keywords: features, grid, columns, services
+ *
+ * @package AI_Block_Theme_Template
  */
 ?>
 

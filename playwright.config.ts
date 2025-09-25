@@ -14,7 +14,7 @@ export default defineConfig({
 	/* Opt out of parallel tests on CI. */
 	workers: process.env.CI ? 1 : undefined,
 	/* Reporter to use. See https://playwright.dev/docs/test-reporters */
-	reporter: 'html',
+	reporter: process.env.CI ? 'github' : 'html',
 	/* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
 	use: {
 		/* Base URL to use in actions like `await page.goto('/')`. */
@@ -24,6 +24,18 @@ export default defineConfig({
 		trace: 'on-first-retry',
 		screenshot: 'only-on-failure',
 		video: 'retain-on-failure',
+
+		/* WordPress-specific settings */
+		ignoreHTTPSErrors: true,
+		acceptDownloads: true,
+	},
+
+	/* Global test timeout */
+	timeout: 30000,
+
+	/* Expect timeout for assertions */
+	expect: {
+		timeout: 10000,
 	},
 
 	/* Configure projects for major browsers */
@@ -64,10 +76,16 @@ export default defineConfig({
 		// },
 	],
 
-	/* Run your local dev server before starting the tests */
-	// webServer: {
-	//   command: 'npm run start',
-	//   url: 'http://127.0.0.1:3000',
-	//   reuseExistingServer: !process.env.CI,
-	// },
+	/* WordPress environment setup for testing */
+	webServer: process.env.CI
+		? undefined
+		: {
+				command: 'wp server --host=localhost --port=8888',
+				port: 8888,
+				reuseExistingServer: true,
+				timeout: 120000,
+				env: {
+					WP_ENVIRONMENT_TYPE: 'test',
+				},
+			},
 });

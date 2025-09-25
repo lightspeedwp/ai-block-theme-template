@@ -1,0 +1,50 @@
+{
+	"projectName": "ai-block-theme-template",
+	"projectOwner": "lightspeedwp",
+	"repoType": "github",
+	"repoHost": "https://github.com",
+	"projectDescription": "Starter repository for WordPress block theme projects with AI support", // Brief description of the project
+	"projectWebsite": "https://lightspeedwp.agency", // Official project website
+	"license": "GPL-3.0-or-later", // Project license identifier
+	"files": [
+		"README.md" // Files where contributor information will be displayed
+	],
+	"imageSize": 100, // Size of contributor avatar images in pixels
+	"commit": false, // Whether to automatically commit changes (false for manual control)
+	"commitConvention": "conventional", // Commit message convention to follow
+	"contributors": [
+		// Array of project contributors
+		{
+			"login": "lightspeedwp", // GitHub username/organization handle
+			"name": "LightSpeedWP", // Display name for the contributor
+			"avatar_url": "https://avatars.githubusercontent.com/u/lightspeedwp?v=4", // GitHub avatar image URL
+			"profile": "https://github.com/lightspeedwp", // Link to contributor's profile
+			"contributions": [
+				// Types of contributions made to the project
+				"ideas", // Contributed ideas and concepts
+				"fundingFinding", // Helped find funding for the project
+				"projectManagement", // Managed project tasks and coordination
+				"business" // Handled business aspects and strategy
+			]
+		},
+		{
+			"login": "ashleyshaw", // GitHub username
+			"name": "Ashley Shaw", // Full name of the contributor
+			"avatar_url": "https://avatars.githubusercontent.com/u/ashleyshaw?v=4", // GitHub profile avatar
+			"profile": "https://github.com/ashleyshaw", // Link to GitHub profile
+			"contributions": [
+				// Comprehensive list of contribution types
+				"code", // Wrote code for the project
+				"design", // Created design elements and UI/UX
+				"doc", // Wrote or improved documentation
+				"ideas", // Contributed ideas and feedback
+				"infra", // Set up and maintained infrastructure
+				"maintenance", // Ongoing project maintenance
+				"projectManagement", // Managed project activities
+				"test" // Wrote tests and performed testing
+			]
+		}
+	],
+	"contributorsPerLine": 7, // Number of contributors to display per line in the README
+	"linkToUsage": true // Whether to include a link to all-contributors usage information
+}

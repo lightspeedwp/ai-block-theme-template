@@ -59,6 +59,6 @@ add_action( 'customize_register', 'ai_block_theme_customize_register' );
  * @param mixed  $default Default value.
  * @return mixed Setting value or default.
  */
-function ai_block_theme_get_option( $setting, $default = '' ) {
-	return get_theme_mod( $setting, $default );
+function ai_block_theme_get_option( $setting, $default_value = '' ) {
+	return get_theme_mod( $setting, $default_value );
 }

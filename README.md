@@ -16,18 +16,21 @@ Starter repository for WordPress block theme projects with AI support. Includes 
 ## Quick Start
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/lightspeedwp/ai-block-theme-template.git
    cd ai-block-theme-template
    ```
 
 2. **Install dependencies:**
+
    ```bash
    npm install
    composer install
    ```
 
 3. **Start development:**
+
    ```bash
    npm run start
    ```
@@ -40,6 +43,14 @@ Starter repository for WordPress block theme projects with AI support. Includes 
 ## Project Structure
 
 ```
+├── .github/          # AI/Copilot assets and GitHub configuration
+│   ├── agents/       # Specialized AI agents for WordPress tasks
+│   ├── chatmodes/    # Persistent conversational workflows
+│   ├── instructions/ # Contextual behavioral guidance (auto-applied)
+│   ├── prompts/      # Single-shot reusable tasks and templates
+│   ├── workflows/    # GitHub Actions CI/CD
+│   └── custom-instructions.md  # GitHub Copilot custom instructions
+├── .vscode/          # VS Code workspace configuration
 ├── assets/           # Asset files (images, fonts, etc.)
 ├── inc/             # PHP includes and functionality
 ├── parts/           # Template parts (header, footer, etc.)
@@ -67,13 +78,17 @@ npm run build         # Build for development
 npm run build:production  # Build for production
 
 # Code Quality
-npm run lint          # Lint JavaScript and CSS
+npm run lint          # Lint JavaScript, CSS, and PHP
 npm run lint:js       # Lint JavaScript only
 npm run lint:css      # Lint CSS only
-npm run lint:php      # Lint PHP code
+npm run lint:php      # Lint PHP code (uses 10up PHPCS)
 npm run format        # Format all code
 npm run format:js     # Format JavaScript
 npm run format:css    # Format CSS
+
+# PHP-specific commands
+composer run lint     # Run PHPCS on all PHP files
+composer run format   # Auto-fix PHPCS violations
 
 # Testing
 npm run test          # Run all tests
@@ -115,29 +130,71 @@ Add custom PHP functionality in the `inc/` directory and include it in `function
 
 ## AI Features
 
-This template includes AI-powered development tools:
+This template includes comprehensive AI-powered development tools and assets:
 
-- **GitHub Copilot integration** with custom prompts
-- **AI-assisted pattern creation**
-- **Intelligent code suggestions**
-- **Automated development workflows**
+### Copilot Asset Library
+
+- **150+ specialized prompts** for WordPress development tasks (`.github/prompts/`)
+- **Comprehensive instructions** covering security, accessibility, performance (`.github/instructions/`)
+- **Expert chat modes** for sustained development workflows (`.github/chatmodes/`)
+- **Specialized agents** for complex WordPress scenarios (`.github/agents/`)
+- **Custom instructions** for GitHub Copilot (`.github/custom-instructions.md`)
+
+### AI-Enhanced Development
+
+- **GitHub Copilot integration** with WordPress-specific context
+- **AI-assisted block pattern creation** and optimization
+- **Intelligent code suggestions** following WordPress standards
+- **Automated accessibility and performance auditing**
+- **Smart theme.json configuration** assistance
+- **WordPress package integration** for modern development workflow
 
 ## Testing
 
-The theme includes comprehensive testing:
+The theme includes comprehensive testing and code quality tools:
 
-- **End-to-end tests** with Playwright
+- **PHP Code Standards** with 10up PHPCS Composer package
+- **End-to-end tests** with Playwright for PHP integration testing
+- **WordPress-specific testing** including admin functionality
 - **Responsive testing** across device sizes
-- **Accessibility testing** (coming soon)
-- **Performance testing** (coming soon)
+- **PHP error detection** and compatibility testing
+
+For detailed testing documentation, see [PHP Testing Guide](docs/PHP_TESTING.md).
+
+## Documentation & Resources
+
+- 📖 **[Development Guide](DEVELOPMENT.md)** - Complete setup and development instructions
+- 🤝 **[Contributing Guidelines](CONTRIBUTING.md)** - How to contribute to this project
+- 📋 **[Code of Conduct](CODE_OF_CONDUCT.md)** - Community standards and guidelines
+- 🔒 **[Security Policy](SECURITY.md)** - Security reporting and best practices
+- 📝 **[Changelog](changelog.md)** - Version history and release notes
+- 🆘 **[Support Information](SUPPORT.md)** - Getting help and support options
 
 ## Contributing
 
+We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting pull requests.
+
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
+3. Follow our [Development Guide](DEVELOPMENT.md) for setup
+4. Ensure your code follows our [Code of Conduct](CODE_OF_CONDUCT.md)
+5. Submit a Pull Request
+
+## Funding & Support
+
+This project is maintained by [LightSpeedWP](https://lightspeedwp.agency). You can support our work:
+
+- 💖 **[GitHub Sponsors](https://github.com/sponsors/lightspeedwp)** - Support ongoing development
+- 🏢 **[Professional Services](https://lightspeedwp.agency/services/)** - Custom WordPress development
+- 📞 **[Contact Us](https://lightspeedwp.agency/contact/)** - Get in touch for projects
+
+## Contributors
+
+Thanks to all the contributors who have helped make this project better:
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- This section is automatically generated by All Contributors -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## License
 
@@ -145,6 +202,8 @@ This project is licensed under the GPL v3 or later - see the [LICENSE](LICENSE) 
 
 ## Support
 
-- [Documentation](DEVELOPMENT.md)
-- [Issues](https://github.com/lightspeedwp/ai-block-theme-template/issues)
-- [Discussions](https://github.com/lightspeedwp/ai-block-theme-template/discussions)
+- 📖 **[Development Guide](DEVELOPMENT.md)** - Setup and development instructions
+- 🐛 **[Issues](https://github.com/lightspeedwp/ai-block-theme-template/issues)** - Bug reports and feature requests
+- 💬 **[Discussions](https://github.com/lightspeedwp/ai-block-theme-template/discussions)** - Community discussions
+- 🔒 **[Security Reports](SECURITY.md)** - Report security vulnerabilities
+- 🆘 **[Paid Support](SUPPORT.md)** - Professional support options

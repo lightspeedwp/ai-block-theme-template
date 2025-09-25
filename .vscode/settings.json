@@ -1,11 +1,14 @@
 {
   "mcp.enable": true,
   "mcp.startOnStartup": true,
+  "mcp.servers.github.autoStart": true,
+  "mcp.servers.playwright.autoStart": false,
+  "mcp.authentication.github.type": "oauth",
   "eslint.workingDirectories": ["./"],
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    "editor.defaultFormatter": "vscode.php-language-features"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

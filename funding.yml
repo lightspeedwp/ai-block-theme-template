@@ -1,0 +1,25 @@
+# GitHub Sponsors and funding configuration for the AI Block Theme Template
+# This file configures various sponsorship and funding options displayed on GitHub
+
+# GitHub Sponsors - LightSpeedWP organization and key contributors
+github: ['lightspeedwp', 'ashleyshaw']
+
+# Single username sponsorship platforms
+# patreon: # Patreon creator username (not configured)
+# open_collective: # Open Collective project name (not configured)
+# ko_fi: # Ko-fi username (not configured)
+# tidelift: # Tidelift platform/package name (not configured)
+# liberapay: # Liberapay username (not configured)
+# issuehunt: # IssueHunt username (not configured)
+# otechie: # Otechie username (not configured)
+
+# Project-specific funding platforms
+# community_bridge: # Linux Foundation Community Bridge project (not configured)
+# lfx_crowdfunding: # LFX Crowdfunding project name (not configured)
+
+# Custom funding links - Professional support and services
+custom:
+  [
+    'https://lightspeedwp.agency/contact/',
+    'https://lightspeedwp.agency/services/',
+  ]

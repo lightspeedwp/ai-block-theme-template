@@ -2,7 +2,57 @@
   "name": "ai-block-theme-template",
   "version": "1.0.0",
   "description": "Starter repository for WordPress block theme projects with AI support",
+  "author": "LightspeedWP",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "wordpress",
+    "block-theme",
+    "gutenberg",
+    "ai",
+    "template"
+  ],
+  "homepage": "https://github.com/lightspeedwp/ai-block-theme-template#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lightspeedwp/ai-block-theme-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lightspeedwp/ai-block-theme-template/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
   "main": "index.js",
+  "dependencies": {
+    "@wordpress/a11y": "^3.0.0",
+    "@wordpress/i18n": "^4.0.0",
+    "@wordpress/style-engine": "^1.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@wordpress/babel-plugin-makepot": "^5.0.0",
+    "@wordpress/babel-preset-default": "^7.0.0",
+    "@wordpress/browserslist-config": "^5.0.0",
+    "@wordpress/dependency-extraction-webpack-plugin": "^4.0.0",
+    "@wordpress/e2e-test-utils-playwright": "^0.15.0",
+    "@wordpress/eslint-plugin": "^17.0.0",
+    "@wordpress/npm-package-json-lint-config": "^4.0.0",
+    "@wordpress/postcss-plugins-preset": "^4.0.0",
+    "@wordpress/postcss-themes": "^5.0.0",
+    "@wordpress/prettier-config": "^3.0.0",
+    "@wordpress/project-management-automation": "^1.0.0",
+    "@wordpress/scripts": "^26.0.0",
+    "@wordpress/stylelint-config": "^21.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "npm-package-json-lint": "^7.0.0",
+    "prettier": "^3.0.0",
+    "stylelint": "^14.16.0",
+    "typescript": "^5.0.0"
+  },
   "scripts": {
     "build": "wp-scripts build",
     "build:production": "wp-scripts build --mode=production",
@@ -10,8 +60,10 @@
     "dev": "wp-scripts start",
     "lint:js": "wp-scripts lint-js",
     "lint:css": "wp-scripts lint-style",
-    "lint:php": "composer run-script phpcs",
-    "lint": "npm run lint:js && npm run lint:css",
+    "lint:php": "composer run lint",
+    "lint:pkg-json": "npmPkgJsonLint .",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:php && npm run lint:pkg-json",
+    "lint:all": "npm run lint",
     "format:js": "wp-scripts format",
     "format:css": "wp-scripts lint-style --fix",
     "format": "npm run format:js && npm run format:css",
@@ -21,41 +73,7 @@
     "test:e2e:debug": "playwright test --debug",
     "test": "npm run test:js && npm run test:e2e",
     "packages-update": "wp-scripts packages-update",
-    "plugin-zip": "wp-scripts plugin-zip"
-  },
-  "keywords": [
-    "wordpress",
-    "block-theme",
-    "gutenberg",
-    "ai",
-    "template"
-  ],
-  "author": "LightspeedWP",
-  "license": "GPL-3.0-or-later",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lightspeedwp/ai-block-theme-template.git"
-  },
-  "bugs": {
-    "url": "https://github.com/lightspeedwp/ai-block-theme-template/issues"
-  },
-  "homepage": "https://github.com/lightspeedwp/ai-block-theme-template#readme",
-  "devDependencies": {
-    "@playwright/test": "^1.40.0",
-    "@wordpress/eslint-plugin": "^17.0.0",
-    "@wordpress/prettier-config": "^3.0.0",
-    "@wordpress/scripts": "^26.0.0",
-    "@wordpress/stylelint-config": "^21.0.0",
-    "eslint": "^8.0.0",
-    "prettier": "^3.0.0",
-    "stylelint": "^14.16.0"
-  },
-  "dependencies": {},
-  "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=9.0.0"
-  },
-  "browserslist": [
-    "extends @wordpress/browserslist-config"
-  ]
+    "plugin-zip": "wp-scripts plugin-zip",
+    "makepot": "wp i18n make-pot . languages/ai-block-theme-template.pot --exclude=node_modules,vendor,tests"
+  }
 }

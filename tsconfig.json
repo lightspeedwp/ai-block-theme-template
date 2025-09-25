@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Target ECMAScript version
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Library files to include
+    "module": "commonjs", // Module system to use
+    "allowJs": true, // Allow JavaScript files
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "esModuleInterop": true, // Enable ES module interop
+    "allowSyntheticDefaultImports": true, // Allow synthetic default imports
+    "strict": true, // Enable strict type checking
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file name casing
+    "moduleResolution": "node", // Module resolution strategy
+    "resolveJsonModule": true, // Allow importing JSON files
+    "isolatedModules": true, // Ensure each file can be transpiled independently
+    "noEmit": false, // Emit compiled JavaScript files
+    "jsx": "react-jsx", // JSX compilation mode
+    "declaration": true, // Generate TypeScript declaration files
+    "declarationMap": true, // Generate sourcemaps for declarations
+    "outDir": "./build", // Output directory for compiled files
+    "rootDir": "./src", // Root directory of source files
+    "baseUrl": "./", // Base directory for module resolution
+    "downlevelIteration": true, // Enable iteration for older targets
+    "emitDeclarationOnly": false, // Emit both JS and declaration files
+    "paths": {
+      "@wordpress/*": ["./node_modules/@wordpress/*/build-types"] // WordPress package type mappings
+    }
+  },
+  "include": ["src/**/*", "tests/**/*", "*.js", "*.ts"], // Files to include in compilation
+  "exclude": ["node_modules", "vendor", "build", "dist"] // Files/directories to exclude
+}
