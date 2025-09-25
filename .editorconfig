@@ -1,16 +1,20 @@
+# EditorConfig helps maintain consistent coding styles between different editors and IDEs
 root = true
 
+# Default settings for all files
 [*]
-indent_style = tab
-indent_size = 4
-end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
+indent_style = tab          # Use tabs for indentation (WordPress standard)
+indent_size = 4             # Tab width of 4 spaces
+end_of_line = lf            # Use Unix-style line endings
+charset = utf-8             # Use UTF-8 encoding
+trim_trailing_whitespace = true  # Remove trailing whitespace
+insert_final_newline = true      # Ensure files end with a newline
 
+# Settings for JSON, YAML files (use spaces instead of tabs)
 [*.{json,yml,yaml}]
-indent_style = space
-indent_size = 2
+indent_style = space        # Use spaces for JSON/YAML
+indent_size = 2             # 2 spaces for indentation
 
+# Settings for Markdown and text files
 [*.{md,txt}]
-trim_trailing_whitespace = false
+trim_trailing_whitespace = false  # Preserve trailing spaces in Markdown (needed for line breaks)

@@ -1,0 +1,23 @@
+blank_pull_requests_enabled: false
+contact_links:
+  - name: AI Block Theme Template Repository
+    url: https://github.com/lightspeedwp/ai-block-theme-template
+    about: Main repository for issues, discussions, and contributions
+  - name: WordPress Block Theme Documentation
+    url: https://developer.wordpress.org/themes/block-themes/
+    about: Official WordPress documentation for block theme development
+  - name: Full Site Editing Guide
+    url: https://wordpress.org/documentation/article/site-editor/
+    about: Learn about WordPress Full Site Editing features
+  - name: Theme.json Reference
+    url: https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/
+    about: Complete reference for theme.json configuration
+  - name: WordPress Scripts Package
+    url: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/
+    about: Documentation for @wordpress/scripts build tools
+  - name: Playwright Testing
+    url: https://playwright.dev/
+    about: End-to-end testing framework documentation
+  - name: GitHub Copilot for WordPress
+    url: https://docs.github.com/en/copilot
+    about: AI-powered development assistance and best practices

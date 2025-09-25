@@ -1,40 +1,31 @@
 
 /**
- * External dependencies
+ * WordPress webpack configuration for AI Block Theme Template
+ * Extends WordPress Scripts default configuration with theme-specific entries
  */
-const RemoveEmptyScriptsPlugin = require( 'webpack-remove-empty-scripts' );
-const DependencyExtractionWebpackPlugin = require( '@wordpress/dependency-extraction-webpack-plugin' );
-const path = require( 'path' );
-const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
+const RemoveEmptyScriptsPlugin = require( 'webpack-remove-empty-scripts' );         // Removes empty JS files from CSS-only entries
+const DependencyExtractionWebpackPlugin = require( '@wordpress/dependency-extraction-webpack-plugin' );  // Extracts WordPress dependencies
+const path = require( 'path' );                                                      // Node.js path utilities
+const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );        // WordPress Scripts default config
 
 module.exports = {
-	...defaultConfig,
+	...defaultConfig,  // Inherit all WordPress Scripts defaults
 	entry: {
-		...defaultConfig.entry(),
-		'metaboxes': path.resolve( process.cwd(), 'src/css/metaboxes.scss' ),
-		'style': path.resolve( process.cwd(), 'src/css/index.scss' ),
-		'admin': path.resolve( process.cwd(), 'src/css/admin.scss' ),
-
-		'admin-script': path.resolve( process.cwd(), 'src/js/admin.js' ),
-		'custom': path.resolve( process.cwd(), 'src/js/custom.js' ),
-		'maps': path.resolve( process.cwd(), 'src/js/maps.js' ),
-		'modals': path.resolve( process.cwd(), 'src/js/modals.js' ),
-		'scporder': path.resolve( process.cwd(), 'src/js/scporder.js' ),
-		'metabox-structure': path.resolve( process.cwd(), 'src/js/metabox-structure.js' ),
-
-		// blocks
-		'general': path.resolve( process.cwd(), 'src/js/blocks/general.js' ),
-		'linked-cover': path.resolve( process.cwd(), 'src/js/blocks/linked-cover.js' ),
-		'slider-query': path.resolve( process.cwd(), 'src/js/blocks/slider-query.js' ),
-		'slotfills': path.resolve( process.cwd(), 'src/js/blocks/slotfills.js' ),
+		...defaultConfig.entry(),  // Include any default entries
+		// Theme-specific TypeScript/JavaScript entry points
+		'theme': path.resolve( process.cwd(), 'src/js/theme.ts' ),           // Main theme JavaScript
+		'accessibility': path.resolve( process.cwd(), 'src/js/accessibility.ts' ),  // Accessibility enhancements
+		'style-engine': path.resolve( process.cwd(), 'src/js/style-engine.ts' ),    // Dynamic CSS generation
 	},
 
 	plugins: [
-		...defaultConfig.plugins,
+		...defaultConfig.plugins,  // Include all default WordPress Scripts plugins
+		// Remove empty JavaScript files that are created from CSS-only entries
 		new RemoveEmptyScriptsPlugin(),
+		// Extract WordPress dependencies and create asset files for proper enqueueing
 		new DependencyExtractionWebpackPlugin({
-			injectPolyfill: true,
-			combineAssets: true,
+			injectPolyfill: true,  // Include necessary polyfills
+			combineAssets: true,   // Combine asset information into fewer files
 		}),
-	]
+	],
 };

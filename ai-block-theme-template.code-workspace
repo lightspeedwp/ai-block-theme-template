@@ -1,18 +1,32 @@
 {
 	"folders": [
 		{
-			"path": "."
-		}
+			"path": ".", // Current directory as workspace root
+		},
 	],
 	"settings": {
+		// File type associations for better syntax highlighting
 		"files.associations": {
 			"*.php": "php",
-			"*.html": "html"
+			"*.html": "html",
+			"*.theme": "json",
+			"theme.json": "jsonc",
 		},
+		// Emmet abbreviation support
 		"emmet.includeLanguages": {
-			"javascript": "javascriptreact"
+			"javascript": "javascriptreact",
+			"html": "html",
 		},
-		"playwright.reuseBrowser": true,
-		"playwright.showTrace": true
-	}
+		// WordPress development settings
+		"intelephense.files.associations": ["*.php", "*.phtml"],
+		"php.validate.executablePath": null,
+		"php.suggest.basic": false,
+		// Playwright testing configuration
+		"playwright.reuseBrowser": false,
+		"playwright.showTrace": false,
+		// Editor settings
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4,
+		"editor.detectIndentation": true,
+	},
 }

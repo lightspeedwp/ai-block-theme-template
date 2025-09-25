@@ -1,33 +1,34 @@
-# Set default behavior to automatically normalize line endings.
+# Git attributes configuration for consistent file handling across platforms
+# Set default behavior to automatically normalize line endings
 * text=auto
 
 # Force batch scripts to always use CRLF line endings so that if a repo is accessed
-# in Windows via a file share from Linux, the scripts will work.
-*.{cmd,[cC][mM][dD]} text eol=crlf
-*.{bat,[bB][aA][tT]} text eol=crlf
+# in Windows via a file share from Linux, the scripts will work
+*.{cmd,[cC][mM][dD]} text eol=crlf  # Windows command files
+*.{bat,[bB][aA][tT]} text eol=crlf  # Windows batch files
 
 # Force bash scripts to always use LF line endings so that if a repo is accessed
-# in Unix via a file share from Windows, the scripts will work.
-*.sh text eol=lf
+# in Unix via a file share from Windows, the scripts will work
+*.sh text eol=lf  # Unix shell scripts
 
-# Archive files
-*.7z binary
-*.gz binary
-*.tar binary
-*.zip binary
+# Archive files - treat as binary to prevent corruption
+*.7z binary      # 7-Zip archives
+*.gz binary      # Gzip compressed files
+*.tar binary     # Tar archives
+*.zip binary     # ZIP archives
 
-# Image files
-*.jpg binary
-*.jpeg binary
-*.png binary
-*.gif binary
-*.ico binary
-*.svg text
-*.webp binary
+# Image files - most are binary, SVG is text-based
+*.jpg binary     # JPEG images
+*.jpeg binary    # JPEG images (alternative extension)
+*.png binary     # PNG images
+*.gif binary     # GIF images
+*.ico binary     # Icon files
+*.svg text       # SVG files are XML-based text
+*.webp binary    # WebP images
 
-# Font files
-*.woff binary
-*.woff2 binary
-*.eot binary
-*.ttf binary
-*.otf binary
+# Font files - all treated as binary
+*.woff binary    # Web Open Font Format
+*.woff2 binary   # Web Open Font Format 2.0
+*.eot binary     # Embedded OpenType fonts
+*.ttf binary     # TrueType fonts
+*.otf binary     # OpenType fonts

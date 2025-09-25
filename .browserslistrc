@@ -1,1 +1,3 @@
+# Extend WordPress browserslist configuration for consistent browser support
+# This ensures CSS/JS compatibility with the same browsers WordPress supports
 extends @wordpress/browserslist-config

@@ -1,38 +1,108 @@
-# Node.js dependencies
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# AI Block Theme Template - Git Ignore Configuration
+# WordPress Block Theme Development - Exclude build artifacts, dependencies, and system files
+# Optimized for macOS/Windows/Linux development environments
 
-# Build artifacts
-dist/
-build/
-assets/css/*.css
-assets/js/*.js
-assets/js/*.js.map
+# =============================================================================
+# OPERATING SYSTEM FILES
+# =============================================================================
 
-# WordPress specific
-wp-config.php
-wp-content/uploads/
-*.log
+# macOS system files - Exclude Finder and system metadata
+.DS_Store                    # Finder folder settings
+.AppleDouble                 # Resource fork files
+.LSOverride                  # Launch Services override
+Thumbs.db                    # Windows thumbnail cache
+Icon?                        # Custom folder icons
 
-# Development tools
-.DS_Store
-.vscode/*
-!.vscode/settings.json
-.idea/
-*.swp
-*.swo
-*~
+# macOS thumbnails and caches
+._*                          # AppleDouble files
 
-# Composer
-vendor/
+# macOS system directories
+.Spotlight-V100              # Spotlight search index
+.Trashes                     # Trash folder contents
+*.swp                        # Vi/Vim swap files
+*.swo                        # Vi/Vim swap files
 
-# Environment variables
-.env
-.env.local
+# =============================================================================
+# WORDPRESS CORE AND CONTENT
+# =============================================================================
 
-# Testing
-test-results/
-coverage/
-playwright-report/
+# WordPress core directories - Exclude if theme is in standalone repository
+/wp-admin/                   # WordPress admin interface
+/wp-includes/                # WordPress core functions
+wordpress/                   # WordPress installation directory
+
+# WordPress content directories - Exclude user uploads and cache
+wp-content/uploads/          # Media library uploads
+wp-content/cache/            # WordPress caching directories
+
+# =============================================================================
+# NODE.JS AND BUILD SYSTEM
+# =============================================================================
+
+# Node.js dependencies and build artifacts - WordPress development tooling
+node_modules/                # npm/yarn package dependencies
+npm-debug.log*               # npm error logs
+yarn-debug.log*              # Yarn error logs
+yarn-error.log*              # Yarn error logs
+dist/                        # Distribution build output
+build/                       # Webpack/build tool output
+.env                         # Environment variables (sensitive)
+.env.example                 # Environment template file
+
+# =============================================================================
+# PHP DEPENDENCIES AND BUILD ARTIFACTS
+# =============================================================================
+
+# Composer PHP dependencies - WordPress coding standards tools
+/vendor/
+/vendor.lock
+
+# CSS/Sass build artifacts - Generated files from source
+*.css.map                    # Sass source maps for debugging
+*.scssc                      # Sass cache files
+
+# =============================================================================
+# DEVELOPMENT TOOLS AND EDITORS
+# =============================================================================
+
+# IDE and editor configurations - Personal development environment settings
+.vscode/                     # VS Code workspace settings (exclude personal configs)
+.idea/                       # JetBrains IDE settings
+*.code-workspace             # VS Code workspace files
+.devcontainer/.env           # Development container environment
+
+# =============================================================================
+# LOCAL DEVELOPMENT ENVIRONMENTS
+# =============================================================================
+
+# WordPress local development tools
+.local/                      # Local by Flywheel sites
+.localwp-site/               # LocalWP site configurations
+
+# =============================================================================
+# TEMPORARY AND LOG FILES
+# =============================================================================
+
+# General temporary files
+*.log                        # All log files
+*.tmp                        # Temporary files
+*.bak                        # Backup files
+
+# =============================================================================
+# THEME-SPECIFIC BUILD ARTIFACTS
+# =============================================================================
+
+# WordPress theme build outputs
+style.css.map                # Main theme CSS source map
+theme.zip                    # Theme distribution package
+
+# =============================================================================
+# TESTING FRAMEWORKS
+# =============================================================================
+
+# Playwright end-to-end testing artifacts
+/test-results/               # Test execution results
+/playwright-report/          # HTML test reports
+/blob-report/                # Binary test artifacts
+/playwright/.cache/          # Playwright browser cache
+node_modules
