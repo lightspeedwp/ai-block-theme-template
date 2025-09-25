@@ -92,9 +92,18 @@ function announceToScreenReader(
 	}, 1000);
 }
 
-// Initialize when DOM is ready
-if (document.readyState === 'loading') {
-	document.addEventListener('DOMContentLoaded', initAccessibility);
-} else {
-	initAccessibility();
+/**
+ * Run a function when DOM is ready
+ *
+ * @param {() => void} fn - The function to run
+ */
+function runOnDomReady(fn: () => void): void {
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', fn);
+	} else {
+		fn();
+	}
 }
+
+// Initialize accessibility features when DOM is ready
+runOnDomReady(initAccessibility);
