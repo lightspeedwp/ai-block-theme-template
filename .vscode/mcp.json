@@ -1,4 +1,5 @@
 {
+  // MCP configuration for Playwright integration
   "mcp": {
     "mcpServers": {
       "playwright": {
@@ -15,4 +16,5 @@
       }
     }
   }
+  // For Playwright test orchestration, see playwright.config.ts for project/test settings.
 }
