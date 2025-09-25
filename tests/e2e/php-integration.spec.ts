@@ -60,6 +60,7 @@ test.describe('PHP Theme Integration Tests', () => {
 			try {
 				await wp.testTemplate(template);
 			} catch (error) {
+				// eslint-disable-next-line no-console
 				console.warn(`Template ${template} may have issues:`, error);
 				// Don't fail the test for missing templates, just log
 			}

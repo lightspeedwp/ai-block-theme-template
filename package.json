@@ -53,9 +53,6 @@
     "stylelint": "^14.16.0",
     "typescript": "^5.0.0"
   },
-  "browserslist": [
-    "extends @wordpress/browserslist-config"
-  ],
   "scripts": {
     "build": "wp-scripts build",
     "build:production": "wp-scripts build --mode=production",

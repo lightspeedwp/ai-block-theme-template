@@ -15,6 +15,9 @@ export class WordPressHelpers {
 
 	/**
 	 * Login to WordPress admin
+	 *
+	 * @param {string} username - The username to login with
+	 * @param {string} password - The password to login with
 	 */
 	async loginAsAdmin(username = 'admin', password = 'password') {
 		await this.page.goto('/wp-admin/');
@@ -51,6 +54,8 @@ export class WordPressHelpers {
 
 	/**
 	 * Test theme activation
+	 *
+	 * @param {string} themeName - The name of the theme to activate
 	 */
 	async activateTheme(themeName: string) {
 		await this.loginAsAdmin();
@@ -95,7 +100,7 @@ export class WordPressHelpers {
 		await this.page.waitForSelector('.block-editor-page');
 
 		// Check for JavaScript errors that might indicate PHP issues
-		const logs = [];
+		const logs: any[] = [];
 		this.page.on('console', (msg) => {
 			if (msg.type() === 'error') {
 				logs.push(msg.text());
@@ -108,12 +113,15 @@ export class WordPressHelpers {
 
 		// Check for errors
 		if (logs.length > 0) {
+			// eslint-disable-next-line no-console
 			console.warn('JavaScript errors detected:', logs);
 		}
 	}
 
 	/**
 	 * Test theme templates
+	 *
+	 * @param {string} template - The template name to test
 	 */
 	async testTemplate(template: string) {
 		await this.page.goto(`/?template=${template}`);

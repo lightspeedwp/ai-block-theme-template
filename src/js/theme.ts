@@ -15,7 +15,7 @@ function initTheme() {
 
 	// Apply theme styles
 	const themeStyles = generateThemeStyles();
-	console.log('Theme styles generated:', themeStyles);
+	// Theme initialized - console statement removed for production
 
 	// Setup responsive behavior
 	setupResponsiveFeatures();

@@ -19,19 +19,23 @@ export function initAccessibility() {
 }
 
 /**
- * Handle keyboard navigation
+ * Handle keyboard navigation for accessibility
+ *
+ * @param {KeyboardEvent} event - The keyboard event
  */
-function handleKeyboardNavigation(event: KeyboardEvent) {
+function handleKeyboardNavigation(event: KeyboardEvent): void {
 	// Skip links functionality
 	if (event.key === 'Tab' && !event.shiftKey) {
-		const activeElement = document.activeElement as HTMLElement;
+		const target = event.target as HTMLElement;
+		const activeElement = target?.ownerDocument
+			?.activeElement as HTMLElement;
 
 		if (activeElement && activeElement.classList.contains('skip-link')) {
 			const targetId = activeElement.getAttribute('href')?.substring(1);
 			if (targetId) {
-				const target = document.getElementById(targetId);
-				if (target) {
-					target.focus();
+				const skipTarget = document.getElementById(targetId);
+				if (skipTarget) {
+					skipTarget.focus();
 					speak(
 						__('Skipped to main content', 'ai-block-theme-template')
 					);
@@ -62,13 +66,30 @@ function initFocusManagement() {
 }
 
 /**
- * Announce dynamic content changes
+ * Announce message to screen readers
+ *
+ * @param {string} message  - The message to announce
+ * @param {string} priority - The priority level (polite or assertive)
  */
-export function announceContentChange(
+function announceToScreenReader(
 	message: string,
-	priority: 'polite' | 'assertive' = 'polite'
-) {
-	speak(message, priority);
+	priority: string = 'polite'
+): void {
+	const announcer = document.createElement('div');
+	announcer.setAttribute('aria-live', priority);
+	announcer.setAttribute('aria-atomic', 'true');
+	announcer.style.position = 'absolute';
+	announcer.style.left = '-10000px';
+	announcer.style.width = '1px';
+	announcer.style.height = '1px';
+	announcer.style.overflow = 'hidden';
+
+	document.body.appendChild(announcer);
+	announcer.textContent = message;
+
+	setTimeout(() => {
+		document.body.removeChild(announcer);
+	}, 1000);
 }
 
 // Initialize when DOM is ready

@@ -1,13 +1,13 @@
 /**
  * WordPress Style Engine utilities for dynamic styling
  */
-import { generateStyles } from '@wordpress/style-engine';
+import * as styleEngine from '@wordpress/style-engine';
 
 /**
  * Generate theme styles using WordPress Style Engine
  */
 export function generateThemeStyles() {
-	const styles = generateStyles({
+	const styles = styleEngine.generateStyles({
 		spacing: {
 			padding: '1rem',
 			margin: '0.5rem',
@@ -27,42 +27,89 @@ export function generateThemeStyles() {
 }
 
 /**
- * Apply responsive styles using Style Engine
+ * WordPress Style Engine integration for dynamic styling
  */
-export function applyResponsiveStyles(element: HTMLElement, styleConfig: any) {
-	const breakpoints = {
-		mobile: '480px',
-		tablet: '768px',
-		desktop: '1024px',
-	};
 
-	Object.entries(breakpoints).forEach(([device, width]) => {
+/**
+ * Apply dynamic styles to an element using WordPress Style Engine
+ *
+ * @param {HTMLElement} element     - The element to apply styles to
+ * @param {any}         styleConfig - The style configuration object
+ */
+function applyDynamicStyles(element: HTMLElement, styleConfig: any): void {
+	// Apply basic styles
+	if (styleConfig.backgroundColor) {
+		element.style.backgroundColor = styleConfig.backgroundColor;
+	}
+	if (styleConfig.textColor) {
+		element.style.color = styleConfig.textColor;
+	}
+	if (styleConfig.fontSize) {
+		element.style.fontSize = styleConfig.fontSize;
+	}
+	if (styleConfig.padding) {
+		element.style.padding = styleConfig.padding;
+	}
+	if (styleConfig.margin) {
+		element.style.margin = styleConfig.margin;
+	}
+}
+
+/**
+ * Apply responsive styles to an element
+ *
+ * @param {HTMLElement} element     - The element to apply styles to
+ * @param {any}         styleConfig - The style configuration object
+ */
+function applyResponsiveStyles(element: HTMLElement, styleConfig: any): void {
+	const breakpoints = ['mobile', 'tablet', 'desktop'];
+
+	breakpoints.forEach((device) => {
 		if (styleConfig[device]) {
-			const mediaQuery = window.matchMedia(`(min-width: ${width})`);
-
-			const applyStyles = () => {
-				if (mediaQuery.matches) {
-					const styles = generateStyles(styleConfig[device]);
-					Object.assign(element.style, styles.css);
-				}
-			};
-
-			mediaQuery.addEventListener('change', applyStyles);
-			applyStyles(); // Apply initial styles
+			const mediaQuery = getMediaQuery(device);
+			if (window.matchMedia(mediaQuery).matches) {
+				applyDynamicStyles(element, styleConfig[device]);
+			}
 		}
 	});
 }
 
 /**
- * Generate block support styles
+ * Get media query for device breakpoint
+ *
+ * @param {string} device - The device type
+ * @return {string} The media query string
  */
-export function generateBlockSupportStyles(blockAttributes: any) {
-	const supportStyles = {
-		spacing: blockAttributes.spacing || {},
-		typography: blockAttributes.typography || {},
-		color: blockAttributes.color || {},
-		border: blockAttributes.border || {},
+function getMediaQuery(device: string): string {
+	const queries = {
+		mobile: '(max-width: 767px)',
+		tablet: '(min-width: 768px) and (max-width: 1023px)',
+		desktop: '(min-width: 1024px)',
 	};
-
-	return generateStyles(supportStyles);
+	return queries[device as keyof typeof queries] || queries.desktop;
 }
+
+/**
+ * Generate block styles from attributes
+ *
+ * @param {any} blockAttributes - The block attributes object
+ * @return {any} The generated styles object
+ */
+function generateBlockStyles(blockAttributes: any): any {
+	return {
+		backgroundColor: blockAttributes?.backgroundColor,
+		textColor: blockAttributes?.textColor,
+		fontSize: blockAttributes?.style?.typography?.fontSize,
+		fontFamily: blockAttributes?.style?.typography?.fontFamily,
+		padding: blockAttributes?.style?.spacing?.padding,
+		margin: blockAttributes?.style?.spacing?.margin,
+	};
+}
+
+// Export functions for use in other modules
+export {
+	applyDynamicStyles,
+	applyResponsiveStyles,
+	generateBlockStyles,
+	getMediaQuery,
+};
