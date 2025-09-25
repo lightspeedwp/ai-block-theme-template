@@ -11,7 +11,7 @@ const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );    
 module.exports = {
 	...defaultConfig,  // Inherit all WordPress Scripts defaults
 	entry: {
-		...defaultConfig.entry(),  // Include any default entries
+		...defaultConfig.entry,  // Include any default entries
 		// Theme-specific TypeScript/JavaScript entry points
 		'theme': path.resolve( process.cwd(), 'src/js/theme.ts' ),           // Main theme JavaScript
 		'accessibility': path.resolve( process.cwd(), 'src/js/accessibility.ts' ),  // Accessibility enhancements
