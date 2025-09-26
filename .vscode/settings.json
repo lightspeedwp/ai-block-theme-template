@@ -32,6 +32,6 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "playwright.reuseBrowser": true,
-  "playwright.showTrace": true
+  "playwright.reuseBrowser": false,
+  "playwright.showTrace": false
 }
