@@ -1,0 +1,32 @@
+<!--
+  Template: Category — Term Archive
+  Title: Category — Term Archive
+  Slug: category
+  Description: Category term archive template. Shows term title and description via hero-archives pattern, a Query Loop scoped to the category, pagination and footer. Use category-{slug}.html or category-{id}.html for term-specific overrides.
+  Template Types: category, archive
+  Block Types: core/query, core/template-part
+  Post Types:
+  Inserter: false
+  Viewport Width: 1200
+  Template Parts: skip-links, header, menu, breadcrumbs, hero, loop-default, footer
+  Suggested Patterns: lsx-design/hero-archives, lsx-design/post-card, lsx-design/breadcrumbs
+  Keywords: category, term, archive
+  Author: LSX Design Team
+  Version: 1.0.0
+  License: GPL-2.0-or-later
+-->
+<!-- wp:template-part {"slug":"skip-links"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:template-part {"slug":"menu"} /-->
+<!-- wp:template-part {"slug":"breadcrumbs"} /-->
+
+<!-- wp:template-part {"slug":"hero"} /-->
+
+<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide">
+  <!-- wp:pattern {"slug":"lsx-design/query-grid-2col"} /-->
+  <!-- wp:query-pagination /-->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

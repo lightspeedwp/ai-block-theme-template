@@ -1,0 +1,47 @@
+<!--
+  Template: 404 — Not Found
+  Title: 404 — Not Found
+  Slug: 404
+  Description: Not Found (404) template. Provides a helpful message, search panel, suggested posts via a small Query Loop, breadcrumbs and a home link. Includes header/menu and footer.
+  Template Types: 404
+  Block Types: core/search, core/query, core/template-part
+  Post Types:
+  Inserter: false
+  Viewport Width: 1000
+  Template Parts: skip-links, header, menu, breadcrumbs, search-panel, loop-default, footer
+  Suggested Patterns: lsx-design/cta-banner, lsx-design/loop-default, lsx-design/breadcrumbs
+  Keywords: 404, not found, error
+  Author: LSX Design Team
+  Version: 1.0.0
+  License: GPL-2.0-or-later
+-->
+<!-- wp:template-part {"slug":"skip-links"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:template-part {"slug":"menu"} /-->
+<!-- wp:template-part {"slug":"breadcrumbs"} /-->
+
+<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide">
+  <!-- wp:heading {"level":1} -->
+  <h1>Page not found</h1>
+  <!-- /wp:heading -->
+
+  <!-- wp:paragraph -->
+  <p>Sorry, we couldn't find that page. Try searching or explore recent posts below.</p>
+  <!-- /wp:paragraph -->
+
+  <!-- wp:heading {"level":2} -->
+  <h2>Suggested posts</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:pattern {"slug":"lsx-design/loop-default"} /-->
+
+  <!-- wp:heading {"level":3} -->
+  <h3>Try searching again</h3>
+  <!-- /wp:heading -->
+
+  <!-- wp:template-part {"slug":"search-panel"} /-->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

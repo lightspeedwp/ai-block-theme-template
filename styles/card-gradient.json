@@ -1,0 +1,16 @@
+{
+  "name": "Card Gradient Section",
+  "description": "A visually appealing card section with a gradient background and accessible contrast.",
+  "styles": {
+    "background": "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
+    "borderRadius": "1rem",
+    "boxShadow": "0 2px 8px rgba(0,0,0,0.08)",
+    "padding": "2rem",
+    "color": "#222"
+  },
+  "a11y": {
+    "contrast": "WCAG 2.2 AA compliant",
+    "keyboard": "All interactive elements are keyboard accessible.",
+    "screenReader": "Section is announced as a region with heading."
+  }
+}

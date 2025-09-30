@@ -1,0 +1,105 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- Accessible Single Blog Post Template for WordPress Block Theme -->
+<article id="post-{{ post.id }}" class="single-post" aria-labelledby="post-title" aria-describedby="post-meta post-content">
+  <header>
+    <a href="#maincontent" class="sr-only">Skip to main</a>
+    <h1 id="post-title">{{ post.title }}</h1>
+    <div id="post-meta" class="post-meta">
+      <span class="author">By <span aria-label="Author">{{ post.author }}</span></span>
+      <span class="date" aria-label="Published on">{{ post.date }}</span>
+      <span class="categories" aria-label="Categories">{{ post.categories }}</span>
+    </div>
+  </header>
+  <main id="maincontent" tabindex="-1">
+    <div id="post-content">
+      {{ post.content }}
+    </div>
+  </main>
+  <section aria-labelledby="comments-title" class="comments">
+    <h2 id="comments-title">Comments</h2>
+    <ol>
+      {% for comment in post.comments %}
+      <li id="comment-{{ comment.id }}" class="comment" aria-label="Comment by {{ comment.author }}">
+        <div class="comment-meta">
+          <span class="comment-author">{{ comment.author }}</span>
+          <span class="comment-date">{{ comment.date }}</span>
+        </div>
+        <div class="comment-content">
+          {{ comment.content }}
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+    <form aria-labelledby="add-comment-title" class="comment-form">
+      <h3 id="add-comment-title">Add a Comment</h3>
+      <label for="comment-author">Name <span aria-hidden="true">*</span></label>
+      <input type="text" id="comment-author" name="author" required aria-required="true" />
+      <label for="comment-content">Comment <span aria-hidden="true">*</span></label>
+      <textarea id="comment-content" name="content" required aria-required="true"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</article>
+
+<!-- Accessible styles for skip link and focus -->
+<style>
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+:focus {
+  outline: 2px solid #005fcc;
+  outline-offset: 2px;
+}
+.single-post {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  color: #222;
+}
+.post-meta {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+.comments {
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+  padding-top: 2rem;
+}
+.comment-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.comment-form button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #005fcc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.comment-form button:focus {
+  outline: 2px solid #222;
+}
+</style>
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

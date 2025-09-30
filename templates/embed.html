@@ -1,0 +1,28 @@
+<!--
+  Template: Embed — oEmbed Wrapper
+  Title: Embed — oEmbed Wrapper
+  Slug: embed
+  Description: Lightweight wrapper for oEmbed/embed requests. Keep minimal for performance; include embed block and optional minimal header/footer and breadcrumbs if useful.
+  Template Types: embed
+  Block Types: core/embed, core/template-part
+  Post Types:
+  Inserter: false
+  Viewport Width: 640
+  Template Parts: header (optional), menu (optional), breadcrumbs (optional), footer (optional)
+  Suggested Patterns: lsx-design/breadcrumbs
+  Keywords: embed, oembed, lightweight
+  Author: LSX Design Team
+  Version: 1.0.0
+  License: GPL-2.0-or-later
+  Notes: Keep this template minimal to accommodate external embedding contexts.
+-->
+<!-- wp:template-part {"slug":"skip-links"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:template-part {"slug":"menu"} /-->
+<!-- wp:template-part {"slug":"breadcrumbs"} /-->
+
+<!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull">
+  <!-- wp:embed {"url":""} /-->
+</div>
+<!-- /wp:group -->

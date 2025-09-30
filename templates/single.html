@@ -1,0 +1,45 @@
+<!--
+  Template: Single — Generic Post
+  Title: Single — Generic Post
+  Slug: single
+  Description: Generic single post template for posts and fallback for custom post types. Includes skip-links, header + menu, breadcrumbs, optional hero-post, Post Title (H1), post meta, post content, share-actions, author-card, comments and footer.
+  Template Types: singular, single
+  Block Types: core/post-title, core/post-content, core/post-template, core/template-part
+  Post Types: post
+  Inserter: false
+  Viewport Width: 1100
+  Template Parts: skip-links, header, menu, breadcrumbs, hero, post-meta, share-actions, author-card, comments, footer
+  Suggested Patterns: lsx-design/hero-post, lsx-design/share-actions, lsx-design/breadcrumbs
+  Keywords: single post, article
+  Author: LSX Design Team
+  Version: 1.0.0
+  License: GPL-2.0-or-later
+-->
+<!-- wp:template-part {"slug":"skip-links"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:template-part {"slug":"menu"} /-->
+<!-- wp:template-part {"slug":"breadcrumbs"} /-->
+
+<!-- wp:template-part {"slug":"hero"} /-->
+
+<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide">
+  <!-- wp:heading {"level":2} -->
+  <h2>Article</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:post-title /-->
+  <!-- wp:template-part {"slug":"post-meta"} /-->
+  <!-- wp:post-content /-->
+
+  <!-- wp:heading {"level":3} -->
+  <h3>Share and engage</h3>
+  <!-- /wp:heading -->
+
+  <!-- wp:template-part {"slug":"share-actions"} /-->
+  <!-- wp:template-part {"slug":"author-card"} /-->
+  <!-- wp:template-part {"slug":"comments"} /-->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

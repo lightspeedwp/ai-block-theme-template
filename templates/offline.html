@@ -1,0 +1,44 @@
+<!--
+  Template: Offline / Maintenance
+  Title: Offline / Maintenance
+  Slug: offline
+  Description: Lightweight maintenance/offline template to display during maintenance windows. Includes a short message, ETA and minimal footer. Typically served by a maintenance plugin or server config.
+  Template Types: offline
+  Block Types: core/heading, core/paragraph, core/template-part
+  Post Types:
+  Inserter: true
+  Viewport Width: 800
+  Template Parts: header (optional), menu (optional), breadcrumbs (optional), footer (optional)
+  Suggested Patterns: lsx-design/breadcrumbs
+  Keywords: maintenance, offline
+  Author: LSX Design Team
+  Version: 1.0.0
+  License: GPL-2.0-or-later
+  Notes: Keep very lightweight; used by maintenance plugins or server setups.
+-->
+<!-- wp:template-part {"slug":"skip-links"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:template-part {"slug":"menu"} /-->
+<!-- wp:template-part {"slug":"breadcrumbs"} /-->
+
+<!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull">
+  <!-- wp:heading {"level":1} -->
+  <h1>We'll be back soon</h1>
+  <!-- /wp:heading -->
+
+  <!-- wp:heading {"level":2} -->
+  <h2>Scheduled maintenance</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:paragraph -->
+  <p>We're performing scheduled maintenance. Please check back shortly.</p>
+  <!-- /wp:paragraph -->
+
+  <!-- wp:heading {"level":3} -->
+  <h3>Estimated time to return</h3>
+  <!-- /wp:heading -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

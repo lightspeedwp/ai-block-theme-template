@@ -1,0 +1,38 @@
+<!--
+  Template: Search — Results Page
+  Title: Search — Results Page
+  Slug: search
+  Description: Search results template with a visible Search block and heading "Search results for: {query}", breadcrumbs, Query Loop using the search query, refinements and footer.
+  Template Types: search, index
+  Block Types: core/search, core/query, core/template-part
+  Post Types:
+  Inserter: false
+  Viewport Width: 1100
+  Template Parts: skip-links, header, menu, breadcrumbs, loop-default, footer
+  Suggested Patterns: lsx-design/post-card, lsx-design/query-list-1col, lsx-design/breadcrumbs
+  Keywords: search, results
+  Author: LSX Design Team
+  Version: 1.0.0
+  License: GPL-2.0-or-later
+-->
+<!-- wp:template-part {"slug":"skip-links"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:template-part {"slug":"menu"} /-->
+<!-- wp:template-part {"slug":"breadcrumbs"} /-->
+
+<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide">
+  <!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search the site..."} /-->
+  <!-- wp:heading {"level":1} -->
+  <h1>Search results for: <!-- wp:search-query /--></h1>
+  <!-- /wp:heading -->
+
+  <!-- wp:heading {"level":2} -->
+  <h2>Refine your search</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:pattern {"slug":"lsx-design/query-list-1col"} /-->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

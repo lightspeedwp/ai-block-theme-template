@@ -1,0 +1,32 @@
+<!--
+  Template: Date — Time-Based Archive
+  Title: Date — Time-Based Archive
+  Slug: date
+  Description: Date-based archive template for year/month/day listings. Includes archive title, breadcrumbs, Query Loop filtered by date, pagination and footer.
+  Template Types: date, archive
+  Block Types: core/query, core/template-part
+  Post Types:
+  Inserter: false
+  Viewport Width: 1100
+  Template Parts: skip-links, header, menu, breadcrumbs, hero, loop-default, footer
+  Suggested Patterns: lsx-design/hero-archives, lsx-design/query-list-1col, lsx-design/breadcrumbs
+  Keywords: date, archive, time
+  Author: LSX Design Team
+  Version: 1.0.0
+  License: GPL-2.0-or-later
+-->
+<!-- wp:template-part {"slug":"skip-links"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:template-part {"slug":"menu"} /-->
+<!-- wp:template-part {"slug":"breadcrumbs"} /-->
+
+<!-- wp:template-part {"slug":"hero"} /-->
+
+<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide">
+  <!-- wp:pattern {"slug":"lsx-design/query-list-1col"} /-->
+  <!-- wp:query-pagination /-->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

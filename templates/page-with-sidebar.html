@@ -1,0 +1,45 @@
+<!--
+  Template: Page — With Sidebar
+  Title: Page — With Sidebar
+  Slug: page-with-sidebar
+  Description: Page template with a right-hand sidebar. Displays Page Title (H1), main content, and a persistent sidebar for widgets or related content. Includes skip-links, header/menu, breadcrumbs and footer.
+  Template Types: page
+  Block Types: core/post-title, core/post-content, core/columns, core/template-part
+  Post Types: page
+  Inserter: true
+  Viewport Width: 1200
+  Template Parts: skip-links, header, menu, breadcrumbs, sidebar, footer
+  Suggested Patterns: lsx-design/post-card, lsx-design/breadcrumbs
+  Keywords: page, sidebar, two-column
+  Author: LSX Design Team
+  Version: 1.0.0
+  License: GPL-2.0-or-later
+-->
+<!-- wp:template-part {"slug":"skip-links"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:template-part {"slug":"menu"} /-->
+<!-- wp:template-part {"slug":"breadcrumbs"} /-->
+
+<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide">
+  <!-- wp:heading {"level":2} -->
+  <h2>Page layout</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:columns {"align":"wide"} -->
+  <div class="wp-block-columns alignwide">
+    <div class="wp-block-column" style="flex-basis:66.66%">
+      <!-- wp:post-title /-->
+      <!-- wp:post-content /-->
+    </div>
+    <div class="wp-block-column" style="flex-basis:33.33%">
+      <!-- wp:heading {"level":3} -->
+      <h3>Sidebar</h3>
+      <!-- /wp:heading -->
+      <!-- wp:template-part {"slug":"sidebar"} /-->
+    </div>
+  </div>
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

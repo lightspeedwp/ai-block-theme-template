@@ -1,0 +1,33 @@
+<!--
+  Template: Taxonomy — Specific Taxonomy Fallback
+  Title: Taxonomy — Specific Taxonomy Fallback
+  Slug: taxonomy-{taxonomy}
+  Description: Fallback template for a specific custom taxonomy. Replace {taxonomy} with the taxonomy slug (e.g., taxonomy-project_type.html). Includes header/menu, breadcrumbs, hero, Query Loop for the taxonomy, pagination and footer.
+  Template Types: taxonomy, archive
+  Block Types: core/query, core/template-part
+  Post Types:
+  Inserter: false
+  Viewport Width: 1200
+  Template Parts: skip-links, header, menu, breadcrumbs, hero, loop-default, footer
+  Suggested Patterns: lsx-design/hero-archives, lsx-design/query-grid-2col, lsx-design/breadcrumbs
+  Keywords: taxonomy, archive
+  Author: LSX Design Team
+  Version: 1.0.0
+  License: GPL-2.0-or-later
+  Notes: Duplicate and rename for the taxonomy slug.
+-->
+<!-- wp:template-part {"slug":"skip-links"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:template-part {"slug":"menu"} /-->
+<!-- wp:template-part {"slug":"breadcrumbs"} /-->
+
+<!-- wp:template-part {"slug":"hero"} /-->
+
+<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide">
+  <!-- wp:pattern {"slug":"lsx-design/query-grid-2col"} /-->
+  <!-- wp:query-pagination /-->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

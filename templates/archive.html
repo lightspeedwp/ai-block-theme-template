@@ -1,0 +1,42 @@
+<!--
+  Template: Archive — Generic Listing
+  Title: Archive — Generic Listing
+  Slug: archive
+  Description: Generic archive template for post type archives and other lists. Includes skip-links, header/menu, breadcrumbs, archive hero (title + optional description), Query Loop, pagination, optional sidebar and footer.
+  Template Types: archive
+  Block Types: core/query, core/template-part
+  Post Types:
+  Inserter: false
+  Viewport Width: 1200
+  Template Parts: skip-links, header, menu, breadcrumbs, hero, loop-default, sidebar, footer
+  Suggested Patterns: lsx-design/hero-archives, lsx-design/post-card, lsx-design/breadcrumbs
+  Keywords: archive, listing, term
+  Author: LSX Design Team
+  Version: 1.0.0
+  License: GPL-2.0-or-later
+-->
+<!-- wp:template-part {"slug":"skip-links"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:template-part {"slug":"menu"} /-->
+<!-- wp:template-part {"slug":"breadcrumbs"} /-->
+
+<!-- wp:template-part {"slug":"hero"} /-->
+
+<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide">
+  <!-- wp:heading {"level":2} -->
+  <h2>Archive</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:pattern {"slug":"lsx-design/query-grid-2col"} /-->
+  <!-- wp:query-pagination /-->
+
+  <!-- wp:heading {"level":3} -->
+  <h3>Explore categories</h3>
+  <!-- /wp:heading -->
+
+  <!-- wp:template-part {"slug":"sidebar"} /-->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

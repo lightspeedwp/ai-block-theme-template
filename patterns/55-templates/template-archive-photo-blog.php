@@ -1,0 +1,34 @@
+<?php
+/**
+ * Title: Archive: Photo Blog
+ * Slug: lsx-design/template-archive-photo-blog
+ * Description: Archive template for image-first photo blog listings. Uses a dedicated query-loop/photo-grid pattern optimized for visual archives.
+ * Categories: lsx-design/templates, lsx-design/posts
+ * Keywords: archive, photo, gallery, posts, blog, hero
+ * Viewport Width: 1200
+ * Block Types:
+ * Post Types:
+ * Template Types: archive
+ * Inserter: no
+ * Inserter Priority: 0
+ * Author: LSX Design Team
+ * Version: 1.0.0
+ * License: GPL-2.0-or-later
+ *
+ * Notes:
+ * - Replace any legacy pattern slugs (ollie, twentytwentyfive) with lsx-design/* when migrating.
+ * - This template is a block-theme scaffold and should reference the canonical lsx-design patterns.
+ */
+?>
+
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--60)">
+	<!-- wp:query-title {"type":"archive","textAlign":"center"} /-->
+	<!-- wp:term-description {"textAlign":"center"} /-->
+	<!-- wp:pattern {"slug":"lsx-design/template-query-loop-photo-blog"} /-->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

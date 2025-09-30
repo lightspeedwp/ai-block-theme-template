@@ -1,0 +1,42 @@
+<!--
+  Template: Privacy Policy — Static Page
+  Title: Privacy Policy — Static Page
+  Slug: privacy-policy
+  Description: Template used for the site's Privacy Policy page. Renders Post Title and Post Content where policy text is maintained. Includes header, menu, breadcrumbs and footer.
+  Template Types: page, privacy-policy
+  Block Types: core/post-title, core/post-content, core/template-part
+  Post Types: page
+  Inserter: false
+  Viewport Width: 900
+  Template Parts: skip-links, header, menu, breadcrumbs, footer
+  Suggested Patterns: none (policy content is static/editor-maintained), lsx-design/breadcrumbs
+  Keywords: privacy, policy, legal
+  Author: LSX Design Team
+  Version: 1.0.0
+  License: GPL-2.0-or-later
+  Notes: Consider adding Table of Contents anchors for long policy pages.
+-->
+<!-- wp:template-part {"slug":"skip-links"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:template-part {"slug":"menu"} /-->
+<!-- wp:template-part {"slug":"breadcrumbs"} /-->
+
+<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide">
+  <!-- wp:heading {"level":1} -->
+  <h1>Privacy Policy</h1>
+  <!-- /wp:heading -->
+
+  <!-- wp:heading {"level":2} -->
+  <h2>Overview</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:post-content /-->
+
+  <!-- wp:heading {"level":3} -->
+  <h3>Data handling & access</h3>
+  <!-- /wp:heading -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
