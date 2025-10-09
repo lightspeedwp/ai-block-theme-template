@@ -25,7 +25,7 @@
 <p class="has-text-align-center has-main-accent-color has-text-color has-small-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'WordPress Reimagined', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"textAlign":"center","level":1,"className":"has-secondary-font-family","style":{"typography":{"fontSize":"4rem"}}} -->
+<!-- wp:heading {"textAlign":"center","level":1,"className":"has-secondary-font-family","fontSize":"800"} -->
 <h1 class="wp-block-heading has-text-align-center has-secondary-font-family" style="font-size:4rem"><?php esc_html_e( 'Build your site with clicks, not code.', 'lsx-design' ); ?></h1>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->

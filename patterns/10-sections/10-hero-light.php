@@ -13,16 +13,16 @@
  * Inserter: true
  */
 ?>
-<!-- wp:cover {"dimRatio":90,"overlayColor":"base","isUserOverlayColor":true,"isDark":false,"metadata":{"name":"Hero Light"},"align":"full","className":"is-style-blur-image-less","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
+<!-- wp:cover {"dimRatio":90,"overlayColor":"base","isUserOverlayColor":true,"isDark":false,"metadata":{"name":"Hero Light"},"align":"full","className":"is-style-hero-light is-style-blur-image-less","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <div class="wp-block-cover alignfull is-light is-style-blur-image-less" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><span aria-hidden="true" class="wp-block-cover__background has-base-background-color has-background-dim-90 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"metadata":{"name":"Hero Light Wrap"},"align":"full","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"padding":{"top":"var:preset|spacing|90","bottom":"0px","right":"var:preset|spacing|50","left":"var:preset|spacing|50"},"blockGap":"0"}},"textColor":"main","layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-main-color has-text-color" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--90);padding-right:var(--wp--preset--spacing--50);padding-bottom:0px;padding-left:var(--wp--preset--spacing--50)"><!-- wp:group {"metadata":{"name":"Text and Buttons"},"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|90"}}}} -->
+<div class="wp-block-group alignfull has-contrast-color has-text-color" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--90);padding-right:var(--wp--preset--spacing--50);padding-bottom:0px;padding-left:var(--wp--preset--spacing--50)"><!-- wp:group {"metadata":{"name":"Text and Buttons"},"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|90"}}}} -->
 <div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--90)"><!-- wp:group {"metadata":{"name":"Titles"},"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"primary","fontSize":"200"} -->
 <p class="has-text-align-center has-primary-color has-text-color has-small-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'WordPress Reimagined', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"textAlign":"center","level":1,"className":"has-secondary-font-family","style":{"typography":{"fontSize":"4rem"}}} -->
-<h1 class="wp-block-heading has-text-align-center has-secondary-font-family" style="font-size:4rem"><?php esc_html_e( 'Build your site with clicks, not code.', 'lsx-design' ); ?></h1>
+<!-- wp:heading {"textAlign":"center","level":1,"className":"has-secondary-font-family","fontSize":"800"} -->
+<h1 class="wp-block-heading has-text-align-center has-secondary-font-family has-large-font-size"><?php esc_html_e( 'Build your site with clicks, not code.', 'lsx-design' ); ?></h1>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
