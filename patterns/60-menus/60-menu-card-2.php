@@ -5,6 +5,8 @@
  * Description: Compact menu card pattern with multiple feature rows (LSX).
  * Categories: lsx-design/menu
  * Keywords: menu, card, features
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Viewport Width: 800
  * Block Types: core/template-part/menu
  * Inserter: true

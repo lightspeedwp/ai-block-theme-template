@@ -18,11 +18,11 @@
 		<!-- wp:column {"verticalAlignment":"top","width":""} -->
 		<div class="wp-block-column is-vertically-aligned-top">
 			<!-- wp:group {"style":{"dimensions":{"minHeight":"100%"},"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","verticalAlignment":"space-between"}} -->
-			<div class="wp-block-group" style="min-height:100%"><!-- wp:paragraph {"className":"is-style-text-display","fontSize":"xx-large"} -->
+			<div class="wp-block-group" style="min-height:100%"><!-- wp:paragraph {"className":"is-style-text-display","fontSize":"800"} -->
 				<p class="is-style-text-display has-xx-large-font-size"><?php esc_html_e( 'Visit us at 123 Example St. Manhattan, NY 10300, United States', 'twentytwentyfive' ); ?></p>
 				<!-- /wp:paragraph -->
 
-				<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase"}},"fontSize":"medium"} -->
+				<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase"}},"fontSize":"300"} -->
 				<p class="has-medium-font-size" style="text-transform:uppercase"><a href="#"><?php esc_html_e( 'Get directions', 'twentytwentyfive' ); ?></a></p>
 				<!-- /wp:paragraph -->
 			</div>

@@ -3,6 +3,8 @@
  * Title: 2 columns with avatar
  * Slug: twentytwentyfive/testimonials-2-col
  * Keywords: testimonial
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Categories: testimonials
  * Description: Two columns with testimonials and avatars.
  *
@@ -30,7 +32,7 @@
 
 				<!-- wp:column -->
 				<div class="wp-block-column">
-					<!-- wp:quote {"className":"is-style-plain","style":{"typography":{"fontStyle":"normal","fontWeight":"400"},"spacing":{"blockGap":"var:preset|spacing|40"}},"fontSize":"x-large"} -->
+					<!-- wp:quote {"className":"is-style-plain","style":{"typography":{"fontStyle":"normal","fontWeight":"400"},"spacing":{"blockGap":"var:preset|spacing|40"}},"fontSize":"600"} -->
 					<blockquote class="wp-block-quote is-style-plain has-x-large-font-size" style="font-style:normal;font-weight:400">
 						<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.1"}}} -->
 						<p style="line-height:1.1"><?php echo esc_html_x( '“Superb product and customer service!”', 'Sample testimonial.', 'twentytwentyfive' ); ?></p>
@@ -59,7 +61,7 @@
 
 				<!-- wp:column -->
 				<div class="wp-block-column">
-					<!-- wp:quote {"className":"is-style-plain","style":{"typography":{"fontStyle":"normal","fontWeight":"400"},"spacing":{"blockGap":"var:preset|spacing|40"}},"fontSize":"x-large"} -->
+					<!-- wp:quote {"className":"is-style-plain","style":{"typography":{"fontStyle":"normal","fontWeight":"400"},"spacing":{"blockGap":"var:preset|spacing|40"}},"fontSize":"600"} -->
 					<blockquote class="wp-block-quote is-style-plain has-x-large-font-size" style="font-style:normal;font-weight:400">
 						<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.1"}}} -->
 						<p style="line-height:1.1"><?php echo esc_html_x( '“Amazing quality and care. I love all your products.”', 'Sample testimonial.', 'twentytwentyfive' ); ?></p>

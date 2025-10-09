@@ -24,11 +24,11 @@
 
   <!-- wp:group {"style":{"spacing":{"blockGap":"8px","margin":{"top":"12px"}}}} -->
   <div class="wp-block-group" style="margin-top:12px">
-    <!-- wp:post-title {"isLink":true,"fontSize":"medium"} /-->
+    <!-- wp:post-title {"isLink":true,"fontSize":"300"} /-->
 
     <!-- wp:post-excerpt {"moreText":"<?php echo esc_html__( 'Read more', 'lsx-design' ); ?>"} /-->
 
-    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"},"fontSize":"small"} -->
+    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"},"fontSize":"200"} -->
     <div class="wp-block-group has-small-font-size">
       <!-- wp:post-date /-->
       <!-- wp:post-terms {"term":"category","fontSize":"x-small"} /-->

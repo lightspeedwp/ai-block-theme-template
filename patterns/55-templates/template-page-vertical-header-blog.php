@@ -30,7 +30,7 @@
 				<!-- /wp:spacer -->
 				<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
 				<div class="wp-block-group">
-					<!-- wp:post-title {"level":1,"style":{"layout":{"selfStretch":"fixed","flexSize":"70vw"}},"fontSize":"xx-large"} /-->
+					<!-- wp:post-title {"level":1,"style":{"layout":{"selfStretch":"fixed","flexSize":"70vw"}},"fontSize":"800"} /-->
 				</div>
 				<!-- /wp:group -->
 				<!-- wp:spacer {"height":"var:preset|spacing|30"} -->

@@ -3,6 +3,8 @@
  * Title: Centered link and social links
  * Slug: twentytwentyfive/contact-centered-social-link
  * Keywords: contact, faq, questions
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Categories: contact
  * Description: Centered contact section with a prominent message and social media links.
  *

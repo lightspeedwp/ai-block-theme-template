@@ -1,0 +1,90 @@
+name: Assign default Issue Type when missing
+
+on:
+  issues:
+    types: [opened, reopened]
+
+jobs:
+  default-type:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install GitHub CLI
+        uses: cli/cli-action@v2
+      - name: Obtain app token
+        id: app
+        uses: tibdex/github-app-token@v1
+        with:
+          app_id: ${{ secrets.LS_APP_ID || vars.LS_APP_ID }}
+          private_key: ${{ secrets.LS_APP_PRIVATE_KEY || vars.LS_APP_PRIVATE_KEY }}
+      - name: Set default Issue Type
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+          LS_PROJECT_URL: ${{ secrets.LS_PROJECT_URL || vars.LS_PROJECT_URL }}
+        run: |
+          NUMBER=${{ github.event.issue.number }}
+          NODE_ID=${{ github.event.issue.node_id }}
+          # Determine if the Project item has Issue Type set (requires GraphQL)
+          # Replace ISSUE_TYPE_FIELD_ID and DEFAULT_TYPE_OPTION_ID with your project field IDs.
+          # Set these to your actual field and option IDs
+          ISSUE_TYPE_FIELD_ID="YOUR_ISSUE_TYPE_FIELD_ID"
+          DEFAULT_TYPE_OPTION_ID="YOUR_DEFAULT_TYPE_OPTION_ID"
+          # Find the project item ID for this issue
+          PROJECT_ITEM_ID=$(gh api graphql -f query='
+            query($projectUrl: URI!, $issueId: ID!) {
+              projectV2(url: $projectUrl) {
+                items(first: 100) {
+                  nodes {
+                    id
+                    content {
+                      ... on Issue {
+                        id
+                        number
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ' -f projectUrl="$LS_PROJECT_URL" -f issueId="$NODE_ID" --jq ".data.projectV2.items.nodes[] | select(.content.number==$NUMBER) | .id")
+          if [ -z "$PROJECT_ITEM_ID" ]; then
+            echo "Project item not found for issue #$NUMBER"
+            exit 1
+          fi
+          # Check if Issue Type field is set
+          ISSUE_TYPE_VALUE=$(gh api graphql -f query='
+            query($itemId: ID!) {
+              node(id: $itemId) {
+                ... on ProjectV2Item {
+                  fieldValues(first: 20) {
+                    nodes {
+                      ... on ProjectV2ItemFieldSingleSelectValue {
+                        field {
+                          id
+                        }
+                        optionId
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ' -f itemId="$PROJECT_ITEM_ID" --jq ".data.node.fieldValues.nodes[] | select(.field.id==\"$ISSUE_TYPE_FIELD_ID\") | .optionId")
+          if [ -z "$ISSUE_TYPE_VALUE" ]; then
+            # Set Issue Type field to default
+            gh api graphql -f query='
+              mutation($itemId: ID!, $fieldId: ID!, $optionId: String!) {
+                updateProjectV2ItemFieldValue(input: {
+                  projectV2ItemId: $itemId,
+                  fieldId: $fieldId,
+                  value: { singleSelectOptionId: $optionId }
+                }) {
+                  projectV2Item {
+                    id
+                  }
+                }
+              }
+            ' -f itemId="$PROJECT_ITEM_ID" -f fieldId="$ISSUE_TYPE_FIELD_ID" -f optionId="$DEFAULT_TYPE_OPTION_ID"
+            echo "Set Issue Type to default for issue #$NUMBER"
+          else
+            echo "Issue Type already set for issue #$NUMBER"
+          fi

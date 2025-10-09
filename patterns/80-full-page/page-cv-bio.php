@@ -4,6 +4,8 @@
  * Slug: twentytwentyfive/page-cv-bio
  * Categories: twentytwentyfive_page, about, featured
  * Keywords: starter
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Block Types: core/post-content
  * Viewport width: 1400
  * Description: A pattern for a CV/Bio landing page.
@@ -43,7 +45,7 @@
 					<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/woman-splashing-water.webp" alt="<?php esc_attr_e( 'Woman on beach, splashing water.', 'twentytwentyfive' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
 					<!-- /wp:image -->
 
-					<!-- wp:paragraph {"align":"right","style":{"typography":{"lineHeight":"1.2"}},"fontSize":"x-large"} -->
+					<!-- wp:paragraph {"align":"right","style":{"typography":{"lineHeight":"1.2"}},"fontSize":"600"} -->
 					<p class="has-text-align-right has-x-large-font-size" style="line-height:1.2"><a href="#"><?php esc_html_e( 'Instagram', 'twentytwentyfive' ); ?></a><br><a href="#"><?php esc_html_e( 'LinkedIn', 'twentytwentyfive' ); ?></a><br><a href="#"><?php echo esc_html_x( 'Now', 'Link to a page with information about what the person is working on right now.', 'twentytwentyfive' ); ?></a></p>
 					<!-- /wp:paragraph -->
 				</div>

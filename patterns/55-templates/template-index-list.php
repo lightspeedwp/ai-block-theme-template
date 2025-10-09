@@ -1,11 +1,13 @@
 <?php
 /**
  * Title: Post Loop List
- * Slug: ollie/template-index-list
+ * Slug: lsx-design/template-index-list
  * Template Types: front-page, home, index
  * Description: A single column list layout for blog posts and archive pages.
- * Categories: ollie/posts
+ * Categories: lsx-design/sections
  * Keywords: blog, posts, query, loop
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Viewport Width: 1500
  * Inserter: false
  */

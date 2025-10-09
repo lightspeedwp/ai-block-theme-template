@@ -4,6 +4,8 @@
  * Slug: twentytwentyfive/page-portfolio-home
  * Categories: twentytwentyfive_page, posts
  * Keywords: starter
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Block Types: core/post-content
  * Post Types: page, wp_template
  * Viewport width: 1400
@@ -23,7 +25,7 @@
 		<div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--50)">
 			<!-- wp:column {"width":"50%"} -->
 			<div class="wp-block-column" style="flex-basis:50%">
-				<!-- wp:heading {"align":"wide","fontSize":"x-large"} -->
+				<!-- wp:heading {"align":"wide","fontSize":"600"} -->
 				<h2 class="wp-block-heading alignwide has-x-large-font-size"><?php esc_html_e( 'My name is Anna Möller and these are some of my photo projects.', 'twentytwentyfive' ); ?></h2>
 				<!-- /wp:heading -->
 			</div>
@@ -222,10 +224,10 @@
 	<div class="wp-block-group alignwide">
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
-			<!-- wp:paragraph {"fontSize":"small"} -->
+			<!-- wp:paragraph {"fontSize":"200"} -->
 			<p class="has-small-font-size"><?php esc_html_e( 'Twenty Twenty-Five', 'twentytwentyfive' ); ?></p>
 			<!-- /wp:paragraph -->
-			<!-- wp:paragraph {"fontSize":"small"} -->
+			<!-- wp:paragraph {"fontSize":"200"} -->
 			<p class="has-small-font-size"><?php esc_html_e( 'email@example.com', 'twentytwentyfive' ); ?><br><?php echo esc_html_x( '+1 555 349 1806', 'Phone number.', 'twentytwentyfive' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>

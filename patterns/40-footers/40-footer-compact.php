@@ -38,11 +38,11 @@
 
 	<!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
 	<div class="wp-block-group alignwide">
-		<!-- wp:paragraph {"fontSize":"small"} -->
+		<!-- wp:paragraph {"fontSize":"200"} -->
 		<p class="has-small-font-size"><?php echo esc_html__( '© ', 'lsx-design' ) . date_i18n( 'Y' ) . ' · ' . esc_html__( 'Your Site', 'lsx-design' ); ?></p>
 		<!-- /wp:paragraph -->
 
-		<!-- wp:paragraph {"fontSize":"small"} -->
+		<!-- wp:paragraph {"fontSize":"200"} -->
 		<p class="has-small-font-size"><a href="/privacy"><?php echo esc_html__( 'Privacy', 'lsx-design' ); ?></a> · <a href="/terms"><?php echo esc_html__( 'Terms', 'lsx-design' ); ?></a></p>
 		<!-- /wp:paragraph -->
 	</div>

@@ -28,10 +28,10 @@
 			<!-- wp:image {"width":48,"linkDestination":"none"} -->
 			<figure class="wp-block-image is-resized"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/icons/icon-speed.svg' ) ); ?>" alt="<?php echo esc_attr__( 'Speed icon', 'lsx-design' ); ?>" width="48"/></figure>
 			<!-- /wp:image -->
-			<!-- wp:heading {"level":3,"fontSize":"large"} -->
+			<!-- wp:heading {"level":3,"fontSize":"500"} -->
 			<h3 class="wp-block-heading has-large-font-size"><?php echo esc_html__( 'Built for Speed', 'lsx-design' ); ?></h3>
 			<!-- /wp:heading -->
-			<!-- wp:paragraph {"fontSize":"small"} -->
+			<!-- wp:paragraph {"fontSize":"200"} -->
 			<p class="has-small-font-size"><?php echo esc_html__( 'Optimised patterns to reduce build time and improve load performance.', 'lsx-design' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
@@ -42,10 +42,10 @@
 			<!-- wp:image {"width":48,"linkDestination":"none"} -->
 			<figure class="wp-block-image is-resized"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/icons/icon-accessibility.svg' ) ); ?>" alt="<?php echo esc_attr__( 'Accessibility icon', 'lsx-design' ); ?>" width="48"/></figure>
 			<!-- /wp:image -->
-			<!-- wp:heading {"level":3,"fontSize":"large"} -->
+			<!-- wp:heading {"level":3,"fontSize":"500"} -->
 			<h3 class="wp-block-heading has-large-font-size"><?php echo esc_html__( 'Accessible', 'lsx-design' ); ?></h3>
 			<!-- /wp:heading -->
-			<!-- wp:paragraph {"fontSize":"small"} -->
+			<!-- wp:paragraph {"fontSize":"200"} -->
 			<p class="has-small-font-size"><?php echo esc_html__( 'Patterns follow accessibility best practices for headings, contrast and keyboard navigation.', 'lsx-design' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
@@ -56,10 +56,10 @@
 			<!-- wp:image {"width":48,"linkDestination":"none"} -->
 			<figure class="wp-block-image is-resized"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/icons/icon-components.svg' ) ); ?>" alt="<?php echo esc_attr__( 'Components icon', 'lsx-design' ); ?>" width="48"/></figure>
 			<!-- /wp:image -->
-			<!-- wp:heading {"level":3,"fontSize":"large"} -->
+			<!-- wp:heading {"level":3,"fontSize":"500"} -->
 			<h3 class="wp-block-heading has-large-font-size"><?php echo esc_html__( 'Composable', 'lsx-design' ); ?></h3>
 			<!-- /wp:heading -->
-			<!-- wp:paragraph {"fontSize":"small"} -->
+			<!-- wp:paragraph {"fontSize":"200"} -->
 			<p class="has-small-font-size"><?php echo esc_html__( 'Mix and match sections, query loops and template parts for rapid assembly.', 'lsx-design' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
@@ -70,10 +70,10 @@
 			<!-- wp:image {"width":48,"linkDestination":"none"} -->
 			<figure class="wp-block-image is-resized"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/icons/icon-support.svg' ) ); ?>" alt="<?php echo esc_attr__( 'Support icon', 'lsx-design' ); ?>" width="48"/></figure>
 			<!-- /wp:image -->
-			<!-- wp:heading {"level":3,"fontSize":"large"} -->
+			<!-- wp:heading {"level":3,"fontSize":"500"} -->
 			<h3 class="wp-block-heading has-large-font-size"><?php echo esc_html__( 'Supported', 'lsx-design' ); ?></h3>
 			<!-- /wp:heading -->
-			<!-- wp:paragraph {"fontSize":"small"} -->
+			<!-- wp:paragraph {"fontSize":"200"} -->
 			<p class="has-small-font-size"><?php echo esc_html__( 'Well-documented patterns and example usage for all components.', 'lsx-design' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>

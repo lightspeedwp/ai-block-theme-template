@@ -1,10 +1,12 @@
 <?php
 /**
  * Title: Download Page
- * Slug: ollie/page-download
+ * Slug: lsx-design/page-download
  * Description: A full page design for a Download page
- * Categories: ollie/pages
+ * Categories: lsx-design/sections
  * Keywords: page, layout, design, template, download
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Viewport Width: 1500
  * Block Types:
  * Post Types:

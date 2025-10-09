@@ -5,6 +5,8 @@
  * Description: Mobile menu with profile and CTA (LSX).
  * Categories: lsx-design/menu
  * Keywords: mobile, menu, profile
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Viewport Width: 600
  * Block Types: core/template-part/menu
  * Inserter: true
