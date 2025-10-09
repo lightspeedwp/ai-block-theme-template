@@ -27,7 +27,8 @@
   "dependencies": {
     "@wordpress/a11y": "^3.0.0",
     "@wordpress/i18n": "^4.0.0",
-    "@wordpress/style-engine": "^1.0.0"
+    "@wordpress/style-engine": "^1.0.0",
+    "ts-jest": "29.4.4"
   },
   "devDependencies": {
     "@playwright/test": "^1.40.0",

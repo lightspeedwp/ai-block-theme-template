@@ -68,17 +68,17 @@ describe('Color Palette Naming Conventions', () => {
 });
 
 describe('Typography Naming Conventions', () => {
-  test('should have font sizes with font-size- prefix', () => {
+  test('should have font sizes with numeric slugs', () => {
     const fontSizes = themeJson.settings.typography.fontSizes;
     
     fontSizes.forEach(fontSize => {
-      expect(fontSize.slug).toMatch(/^font-size-\d+$/);
+      expect(fontSize.slug).toMatch(/^\d+$/);
     });
   });
 
   test('should have complete font size scale from 100 to 900', () => {
     const fontSizes = themeJson.settings.typography.fontSizes;
-    const expectedSlugs = ['font-size-100', 'font-size-200', 'font-size-300', 'font-size-400', 'font-size-500', 'font-size-600', 'font-size-700', 'font-size-800', 'font-size-900'];
+    const expectedSlugs = ['100', '200', '300', '400', '500', '600', '700', '800', '900'];
     
     const actualSlugs = fontSizes.map(fs => fs.slug);
     expectedSlugs.forEach(slug => {
@@ -102,17 +102,17 @@ describe('Typography Naming Conventions', () => {
 });
 
 describe('Spacing Naming Conventions', () => {
-  test('should have spacing sizes with spacing- prefix', () => {
+  test('should have spacing sizes with numeric slugs', () => {
     const spacingSizes = themeJson.settings.spacing.spacingSizes;
     
     spacingSizes.forEach(spacing => {
-      expect(spacing.slug).toMatch(/^spacing-\d+$/);
+      expect(spacing.slug).toMatch(/^\d+$/);
     });
   });
 
   test('should have complete spacing scale from 10 to 100', () => {
     const spacingSizes = themeJson.settings.spacing.spacingSizes;
-    const expectedSlugs = ['spacing-10', 'spacing-20', 'spacing-30', 'spacing-40', 'spacing-50', 'spacing-60', 'spacing-70', 'spacing-80', 'spacing-90', 'spacing-100'];
+    const expectedSlugs = ['10', '20', '30', '40', '50', '60', '70', '80', '90', '100'];
     
     const actualSlugs = spacingSizes.map(ss => ss.slug);
     expectedSlugs.forEach(slug => {
@@ -137,7 +137,7 @@ describe('Style Variations', () => {
 
   test('should have expected style variations', () => {
     const styleNames = themeJson.styles.map(style => style.name);
-    const expectedStyles = ['default', 'hero', 'cta', 'contrast', 'cards', 'feature', 'testimonial', 'gallery', 'pricing', 'stats', 'footer-cta'];
+    const expectedStyles = ['default', 'hero-light', 'hero-dark', 'cta', 'contrast', 'cards', 'feature', 'testimonial', 'gallery', 'pricing', 'stats', 'footer-cta'];
     
     expectedStyles.forEach(styleName => {
       expect(styleNames).toContain(styleName);
@@ -151,38 +151,38 @@ describe('Style Variations', () => {
     
     stylesWithSpacing.forEach(style => {
       const spacingRefs = JSON.stringify(style.styles.spacing);
-      // Should use spacing- prefix
+      // Should use numeric slugs only
       if (spacingRefs.includes('--wp--preset--spacing--')) {
-        expect(spacingRefs).toMatch(/--wp--preset--spacing--spacing-\d+/);
+        expect(spacingRefs).toMatch(/--wp--preset--spacing--\d+/);
       }
     });
   });
 });
 
 describe('Token References', () => {
-  test('should use new font-size tokens in styles', () => {
+  test('should use numeric font-size tokens in styles', () => {
     const stylesSection = themeJson.styles;
     const stylesString = JSON.stringify(stylesSection);
     
-    // Check that old font-size references (without prefix) are not used
-    expect(stylesString).not.toMatch(/--wp--preset--font-size--[1-9]00(?!-)(?![0-9])/);
+    // Check that prefixed font-size references are not used
+    expect(stylesString).not.toMatch(/--wp--preset--font-size--font-size-\d+/);
     
-    // Check that new font-size references (with prefix) are used if font-size references exist
+    // Check that numeric font-size references are used if font-size references exist
     if (stylesString.includes('--wp--preset--font-size--')) {
-      expect(stylesString).toMatch(/--wp--preset--font-size--font-size-\d+/);
+      expect(stylesString).toMatch(/--wp--preset--font-size--\d+/);
     }
   });
 
-  test('should use new spacing tokens in styles', () => {
+  test('should use numeric spacing tokens in styles', () => {
     const stylesSection = themeJson.styles;
     const stylesString = JSON.stringify(stylesSection);
     
-    // Check that old spacing references (without prefix) are not used
-    expect(stylesString).not.toMatch(/--wp--preset--spacing--[1-9][0-9]?0?(?!-)(?![0-9])/);
+    // Check that prefixed spacing references are not used
+    expect(stylesString).not.toMatch(/--wp--preset--spacing--spacing-\d+/);
     
-    // Check that new spacing references (with prefix) are used if spacing references exist
+    // Check that numeric spacing references are used if spacing references exist
     if (stylesString.includes('--wp--preset--spacing--')) {
-      expect(stylesString).toMatch(/--wp--preset--spacing--spacing-\d+/);
+      expect(stylesString).toMatch(/--wp--preset--spacing--\d+/);
     }
   });
 });

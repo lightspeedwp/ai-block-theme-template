@@ -37,42 +37,42 @@ function migrate_pattern_file($file_path, &$migration_log) {
     // 3. Update text domain from 'ollie' to 'lsx-design'
     $content = str_replace("'ollie'", "'lsx-design'", $content);
     
-    // 4. Update old spacing tokens to new numeric system with spacing- prefix
+    // 4. Update old spacing tokens to new numeric system
     $spacing_map = [
-        'var:preset|spacing|small' => 'var:preset|spacing|spacing-30',
-        'var:preset|spacing|medium' => 'var:preset|spacing|spacing-50',
-        'var:preset|spacing|large' => 'var:preset|spacing|spacing-70',
-        'var:preset|spacing|x-large' => 'var:preset|spacing|spacing-80',
-        'var:preset|spacing|xx-large' => 'var:preset|spacing|spacing-90',
-        'var(--wp--preset--spacing--small)' => 'var(--wp--preset--spacing--spacing-30)',
-        'var(--wp--preset--spacing--medium)' => 'var(--wp--preset--spacing--spacing-50)',
-        'var(--wp--preset--spacing--large)' => 'var(--wp--preset--spacing--spacing-70)',
-        'var(--wp--preset--spacing--x-large)' => 'var(--wp--preset--spacing--spacing-80)',
-        'var(--wp--preset--spacing--xx-large)' => 'var(--wp--preset--spacing--spacing-90)',
-        // Update existing numeric tokens to include spacing- prefix
-        'var:preset|spacing|10' => 'var:preset|spacing|spacing-10',
-        'var:preset|spacing|20' => 'var:preset|spacing|spacing-20',
-        'var:preset|spacing|30' => 'var:preset|spacing|spacing-30',
-        'var:preset|spacing|40' => 'var:preset|spacing|spacing-40',
-        'var:preset|spacing|50' => 'var:preset|spacing|spacing-50',
-        'var:preset|spacing|60' => 'var:preset|spacing|spacing-60',
-        'var:preset|spacing|70' => 'var:preset|spacing|spacing-70',
-        'var:preset|spacing|80' => 'var:preset|spacing|spacing-80',
-        'var:preset|spacing|90' => 'var:preset|spacing|spacing-90',
-        'var:preset|spacing|100' => 'var:preset|spacing|spacing-100',
-        'var(--wp--preset--spacing--10)' => 'var(--wp--preset--spacing--spacing-10)',
-        'var(--wp--preset--spacing--20)' => 'var(--wp--preset--spacing--spacing-20)',
-        'var(--wp--preset--spacing--30)' => 'var(--wp--preset--spacing--spacing-30)',
-        'var(--wp--preset--spacing--40)' => 'var(--wp--preset--spacing--spacing-40)',
-        'var(--wp--preset--spacing--50)' => 'var(--wp--preset--spacing--spacing-50)',
-        'var(--wp--preset--spacing--60)' => 'var(--wp--preset--spacing--spacing-60)',
-        'var(--wp--preset--spacing--70)' => 'var(--wp--preset--spacing--spacing-70)',
-        'var(--wp--preset--spacing--80)' => 'var(--wp--preset--spacing--spacing-80)',
-        'var(--wp--preset--spacing--90)' => 'var(--wp--preset--spacing--spacing-90)',
-        'var(--wp--preset--spacing--100)' => 'var(--wp--preset--spacing--spacing-100)',
-        'spacing|l' => 'spacing|spacing-70',
-        'spacing|m' => 'spacing|spacing-50',
-        'spacing|s' => 'spacing|spacing-30',
+        'var:preset|spacing|small' => 'var:preset|spacing|30',
+        'var:preset|spacing|medium' => 'var:preset|spacing|50',
+        'var:preset|spacing|large' => 'var:preset|spacing|70',
+        'var:preset|spacing|x-large' => 'var:preset|spacing|80',
+        'var:preset|spacing|xx-large' => 'var:preset|spacing|90',
+        'var(--wp--preset--spacing--small)' => 'var(--wp--preset--spacing--30)',
+        'var(--wp--preset--spacing--medium)' => 'var(--wp--preset--spacing--50)',
+        'var(--wp--preset--spacing--large)' => 'var(--wp--preset--spacing--70)',
+        'var(--wp--preset--spacing--x-large)' => 'var(--wp--preset--spacing--80)',
+        'var(--wp--preset--spacing--xx-large)' => 'var(--wp--preset--spacing--90)',
+        // Update existing prefixed tokens to remove prefix
+        'var:preset|spacing|spacing-10' => 'var:preset|spacing|10',
+        'var:preset|spacing|spacing-20' => 'var:preset|spacing|20',
+        'var:preset|spacing|spacing-30' => 'var:preset|spacing|30',
+        'var:preset|spacing|spacing-40' => 'var:preset|spacing|40',
+        'var:preset|spacing|spacing-50' => 'var:preset|spacing|50',
+        'var:preset|spacing|spacing-60' => 'var:preset|spacing|60',
+        'var:preset|spacing|spacing-70' => 'var:preset|spacing|70',
+        'var:preset|spacing|spacing-80' => 'var:preset|spacing|80',
+        'var:preset|spacing|spacing-90' => 'var:preset|spacing|90',
+        'var:preset|spacing|spacing-100' => 'var:preset|spacing|100',
+        'var(--wp--preset--spacing--spacing-10)' => 'var(--wp--preset--spacing--10)',
+        'var(--wp--preset--spacing--spacing-20)' => 'var(--wp--preset--spacing--20)',
+        'var(--wp--preset--spacing--spacing-30)' => 'var(--wp--preset--spacing--30)',
+        'var(--wp--preset--spacing--spacing-40)' => 'var(--wp--preset--spacing--40)',
+        'var(--wp--preset--spacing--spacing-50)' => 'var(--wp--preset--spacing--50)',
+        'var(--wp--preset--spacing--spacing-60)' => 'var(--wp--preset--spacing--60)',
+        'var(--wp--preset--spacing--spacing-70)' => 'var(--wp--preset--spacing--70)',
+        'var(--wp--preset--spacing--spacing-80)' => 'var(--wp--preset--spacing--80)',
+        'var(--wp--preset--spacing--spacing-90)' => 'var(--wp--preset--spacing--90)',
+        'var(--wp--preset--spacing--spacing-100)' => 'var(--wp--preset--spacing--100)',
+        'spacing|l' => 'spacing|70',
+        'spacing|m' => 'spacing|50',
+        'spacing|s' => 'spacing|30',
     ];
     
     foreach ($spacing_map as $old => $new) {
@@ -86,11 +86,21 @@ function migrate_pattern_file($file_path, &$migration_log) {
         'var(--wp--preset--font-size--large)' => 'var(--wp--preset--font-size--500)',
         'var(--wp--preset--font-size--x-large)' => 'var(--wp--preset--font-size--600)',
         'var(--wp--preset--font-size--xx-large)' => 'var(--wp--preset--font-size--800)',
+        // Update existing prefixed tokens to remove prefix
+        'var(--wp--preset--font-size--font-size-100)' => 'var(--wp--preset--font-size--100)',
+        'var(--wp--preset--font-size--font-size-200)' => 'var(--wp--preset--font-size--200)',
+        'var(--wp--preset--font-size--font-size-300)' => 'var(--wp--preset--font-size--300)',
+        'var(--wp--preset--font-size--font-size-400)' => 'var(--wp--preset--font-size--400)',
+        'var(--wp--preset--font-size--font-size-500)' => 'var(--wp--preset--font-size--500)',
+        'var(--wp--preset--font-size--font-size-600)' => 'var(--wp--preset--font-size--600)',
+        'var(--wp--preset--font-size--font-size-700)' => 'var(--wp--preset--font-size--700)',
+        'var(--wp--preset--font-size--font-size-800)' => 'var(--wp--preset--font-size--800)',
+        'var(--wp--preset--font-size--font-size-900)' => 'var(--wp--preset--font-size--900)',
         '"fontSize":"small"' => '"fontSize":"200"',
         '"fontSize":"medium"' => '"fontSize":"300"',
         '"fontSize":"large"' => '"fontSize":"500"',
         '"fontSize":"x-large"' => '"fontSize":"600"',
-        '"fontSize":"xx-large"' => '"fontSize":"800"',
+        '"fontSize":"800"' => '"fontSize":"800"',
         'font-size|xxl' => 'font-size|800',
         'font-size|xl' => 'font-size|700',
         'font-size|l' => 'font-size|600',
@@ -115,7 +125,8 @@ function migrate_pattern_file($file_path, &$migration_log) {
     // Save the file if there were changes
     if ($content !== $original_content) {
         file_put_contents($file_path, $content);
-        $relative_path = str_replace($pattern_directory . '/', '', $file_path);
+        $base_dir = dirname(__DIR__) . '/patterns/';
+        $relative_path = str_replace($base_dir, '', $file_path);
         $migration_log[] = "Updated: " . basename($file_path);
         return true;
     }

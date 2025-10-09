@@ -13,8 +13,8 @@
  * Inserter: true
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Frequently Asked"},"align":"full","className":"feature-boxes","style":{"spacing":{"margin":{"top":"0px"},"padding":{"top":"var:preset|spacing|spacing-90","bottom":"var:preset|spacing|spacing-90","right":"var:preset|spacing|spacing-50","left":"var:preset|spacing|spacing-50"},"blockGap":"var:preset|spacing|spacing-80"}},"layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group alignfull feature-boxes" style="margin-top:0px;padding-top:var(--wp--preset--spacing--spacing-90);padding-right:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-90);padding-left:var(--wp--preset--spacing--spacing-50)"><!-- wp:group {"metadata":{"name":"Titles"},"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30"}}} -->
+<!-- wp:group {"metadata":{"name":"Frequently Asked"},"align":"full","className":"feature-boxes","style":{"spacing":{"margin":{"top":"0px"},"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","right":"var:preset|spacing|50","left":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|80"}},"layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group alignfull feature-boxes" style="margin-top:0px;padding-top:var(--wp--preset--spacing--90);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--50)"><!-- wp:group {"metadata":{"name":"Titles"},"style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"primary","fontSize":"200"} -->
 <p class="has-text-align-center has-primary-color has-text-color has-small-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Frequently Asked', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph -->
@@ -28,11 +28,11 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"FAQ"},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|spacing-70"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group alignwide"><!-- wp:columns {"align":"wide","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"blockGap":{"top":"var:preset|spacing|spacing-70","left":"var:preset|spacing|spacing-70"}}}} -->
-<div class="wp-block-columns alignwide" style="margin-top:0px;margin-bottom:0px"><!-- wp:column {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|spacing-50"}}} -->
-<div class="wp-block-column is-style-default"><!-- wp:group {"metadata":{"name":"Entry"},"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-50"},"border":{"radius":"5px"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="border-radius:5px"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30"}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"FAQ"},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|70"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group alignwide"><!-- wp:columns {"align":"wide","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"blockGap":{"top":"var:preset|spacing|70","left":"var:preset|spacing|70"}}}} -->
+<div class="wp-block-columns alignwide" style="margin-top:0px;margin-bottom:0px"><!-- wp:column {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|50"}}} -->
+<div class="wp-block-column is-style-default"><!-- wp:group {"metadata":{"name":"Entry"},"style":{"spacing":{"blockGap":"var:preset|spacing|50"},"border":{"radius":"5px"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="border-radius:5px"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"300"} -->
 <h3 class="wp-block-heading has-medium-font-size"><?php echo esc_html_x( 'What exactly is Ollie?', 'FAQ question', 'lsx-design' ); ?></h3>
 <!-- /wp:heading -->
@@ -43,8 +43,8 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Entry"},"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-50"},"border":{"radius":"5px"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="border-radius:5px"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30"}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"Entry"},"style":{"spacing":{"blockGap":"var:preset|spacing|50"},"border":{"radius":"5px"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="border-radius:5px"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"300"} -->
 <h3 class="wp-block-heading has-medium-font-size"><?php echo esc_html_x( 'Do I need any other plugins?', 'FAQ question', 'lsx-design' ); ?></h3>
 <!-- /wp:heading -->
@@ -56,9 +56,9 @@
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|spacing-50"}}} -->
-<div class="wp-block-column is-style-default"><!-- wp:group {"metadata":{"name":"Entry"},"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-50"},"border":{"radius":"5px"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="border-radius:5px"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30"}},"layout":{"type":"constrained"}} -->
+<!-- wp:column {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|50"}}} -->
+<div class="wp-block-column is-style-default"><!-- wp:group {"metadata":{"name":"Entry"},"style":{"spacing":{"blockGap":"var:preset|spacing|50"},"border":{"radius":"5px"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="border-radius:5px"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"300"} -->
 <h3 class="wp-block-heading has-medium-font-size"><?php echo esc_html_x( 'What if I\'ve never used the Site Editor?', 'FAQ question', 'lsx-design' ); ?></h3>
 <!-- /wp:heading -->
@@ -69,8 +69,8 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Entry"},"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-50"},"border":{"radius":"5px"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="border-radius:5px"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30"}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"Entry"},"style":{"spacing":{"blockGap":"var:preset|spacing|50"},"border":{"radius":"5px"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="border-radius:5px"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"300"} -->
 <h3 class="wp-block-heading has-medium-font-size"><?php echo esc_html_x( 'What are patterns?', 'FAQ question', 'lsx-design' ); ?></h3>
 <!-- /wp:heading -->
@@ -84,8 +84,8 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"CTA Bar"},"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-50","right":"var:preset|spacing|spacing-50","bottom":"var:preset|spacing|spacing-50","left":"var:preset|spacing|spacing-50"}},"border":{"radius":"5px"}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide has-tertiary-background-color has-background" style="border-radius:5px;padding-top:var(--wp--preset--spacing--spacing-50);padding-right:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-50);padding-left:var(--wp--preset--spacing--spacing-50)"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<!-- wp:group {"metadata":{"name":"CTA Bar"},"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}},"border":{"radius":"5px"}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide has-tertiary-background-color has-background" style="border-radius:5px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"metadata":{"name":"Text"},"layout":{"type":"constrained","wideSize":"700px"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":58,"width":"76px","sizeSlug":"full","linkDestination":"none","className":"is-style-rounded-full"} -->

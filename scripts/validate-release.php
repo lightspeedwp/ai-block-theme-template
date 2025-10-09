@@ -49,7 +49,7 @@ echo "\n2. Checking theme.json for section style variations...\n";
 $theme_json_path = __DIR__ . '/../theme.json';
 $theme_json = json_decode(file_get_contents($theme_json_path), true);
 
-$expected_styles = ['hero', 'cta', 'contrast', 'cards', 'feature', 'testimonial', 'gallery', 'pricing', 'stats', 'footer-cta'];
+$expected_styles = ['hero-light', 'hero-dark', 'cta', 'contrast', 'cards', 'feature', 'testimonial', 'gallery', 'pricing', 'stats', 'footer-cta'];
 $found_styles = [];
 
 if (isset($theme_json['styles']) && is_array($theme_json['styles'])) {
