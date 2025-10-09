@@ -17,9 +17,9 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","className":"is-style-section-5","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"0","bottom":"0"}},"dimensions":{"minHeight":"100vh"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull is-style-section-5" style="min-height:100vh;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-	<!-- wp:columns {"align":"full","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
+<!-- wp:group {"align":"full","className":"is-style-section-5","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-50","bottom":"var:preset|spacing|spacing-50","left":"var:preset|spacing|spacing-50","right":"var:preset|spacing|spacing-50"},"margin":{"top":"0","bottom":"0"}},"dimensions":{"minHeight":"100vh"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull is-style-section-5" style="min-height:100vh;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-50);padding-right:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-50);padding-left:var(--wp--preset--spacing--spacing-50)">
+	<!-- wp:columns {"align":"full","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|spacing-50","left":"var:preset|spacing|spacing-50"}}}} -->
 	<div class="wp-block-columns alignfull">
 		<!-- wp:column -->
 		<div class="wp-block-column">
@@ -28,8 +28,8 @@
 				<span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:var(--wp--preset--color--primary)"></span>
 				<img class="wp-block-cover__image-background" alt="<?php esc_attr_e( 'Black and white photo focusing on a woman and a child from afar.', 'twentytwentyfive' ); ?>" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/link-in-bio-image.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
 
-				<!-- wp:spacer {"height":"var:preset|spacing|20"} -->
-				<div style="height:var(--wp--preset--spacing--20)" aria-hidden="true" class="wp-block-spacer"></div>
+				<!-- wp:spacer {"height":"var:preset|spacing|spacing-20"} -->
+				<div style="height:var(--wp--preset--spacing--spacing-20)" aria-hidden="true" class="wp-block-spacer"></div>
 				<!-- /wp:spacer -->
 			</div></div>
 			<!-- /wp:cover -->
@@ -44,7 +44,7 @@
 				<p class="has-text-align-left has-x-large-font-size" style="line-height:1.2"><?php esc_html_e( 'I’m Asahachi Kōno, a Japanese photographer, a member of Los Angeles’s Japanese Camera Pictorialists of California. Before returning to Japan, I worked as a photo retoucher.', 'twentytwentyfive' ); ?></p>
 				<!-- /wp:paragraph -->
 
-				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-20"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 				<div class="wp-block-group">
 					<!-- wp:paragraph -->
 					<p><a href="#"><?php esc_html_e( 'Instagram', 'twentytwentyfive' ); ?></a></p>

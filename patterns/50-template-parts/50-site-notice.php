@@ -17,7 +17,7 @@
  */
 ?>
 <!-- wp:group {"className":"lsx-site-notice","style":{"spacing":{"padding":{"top":"8px","bottom":"8px","left":"12px","right":"12px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group lsx-site-notice" style="padding-top:8px;padding-right:12px;padding-bottom:8px;padding-left:12px"><!-- wp:columns {"verticalAlignment":"center"} -->
+<div class="wp-block-group lsx-site-notice" style="padding-top:8px;padding-right:var(--wp--preset--spacing--spacing-20);padding-bottom:8px;padding-left:var(--wp--preset--spacing--spacing-20)"><!-- wp:columns {"verticalAlignment":"center"} -->
 <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"center","width":"auto"} -->
 <div class="wp-block-column"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}}} -->
 <p style="font-style:normal;font-weight:500"><?php esc_html_e( 'Free shipping on orders over $50 — limited time offer!', 'lsx-design' ); ?></p>

@@ -22,8 +22,8 @@
 	<div class="wp-block-columns alignfull">
 		<!-- wp:column {"verticalAlignment":"center"} -->
 		<div class="wp-block-column is-vertically-aligned-center">
-			<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
-			<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+			<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|spacing-50","left":"var:preset|spacing|spacing-50","top":"var:preset|spacing|spacing-50","bottom":"var:preset|spacing|spacing-50"}}},"layout":{"type":"default"}} -->
+			<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--spacing-50);padding-right:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-50);padding-left:var(--wp--preset--spacing--spacing-50)">
 				<!-- wp:heading -->
 				<h2 class="wp-block-heading"><?php esc_html_e( 'Lewis Hine', 'twentytwentyfive' ); ?></h2>
 				<!-- /wp:heading -->
@@ -32,7 +32,7 @@
 				<p><?php esc_html_e( 'Lewis W. Hine studied sociology before moving to New York in 1901 to work at the Ethical Culture School, where he took up photography to enhance his teaching practices', 'twentytwentyfive' ); ?></p>
 				<!-- /wp:paragraph -->
 
-				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-20"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 				<div class="wp-block-group">
 					<!-- wp:paragraph -->
 					<p><a href="#"><?php esc_html_e( 'Instagram', 'twentytwentyfive' ); ?></a></p>
@@ -57,8 +57,8 @@
 			<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/link-in-bio-background.webp","alt":"Photo of a woman worker.","dimRatio":0,"customOverlayColor":"var(--wp--preset--color--primary)","isUserOverlayColor":true,"minHeight":100,"minHeightUnit":"vh","layout":{"type":"default"}} -->
 			<div class="wp-block-cover" style="min-height:100vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:var(--wp--preset--color--primary)"></span>
 				<img class="wp-block-cover__image-background" alt="<?php esc_attr_e( 'Photo of a woman worker.', 'twentytwentyfive' ); ?>" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/link-in-bio-background.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
-				<!-- wp:spacer {"height":"var:preset|spacing|20"} -->
-				<div style="height:var(--wp--preset--spacing--20)" aria-hidden="true" class="wp-block-spacer"></div>
+				<!-- wp:spacer {"height":"var:preset|spacing|spacing-20"} -->
+				<div style="height:var(--wp--preset--spacing--spacing-20)" aria-hidden="true" class="wp-block-spacer"></div>
 				<!-- /wp:spacer -->
 			</div></div>
 			<!-- /wp:cover -->

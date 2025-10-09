@@ -7,12 +7,14 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since Twenty Twenty-Five 1.0
+ * @since Twenty Twenty-Five 1.0 * Version: 0.2.0
+ * License: GPL-2.0-or-later
+
  */
 
 ?>
-<!-- wp:group {"align":"full","className":"is-style-section-3","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull is-style-section-3" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
+<!-- wp:group {"align":"full","className":"is-style-section-3","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-50","bottom":"var:preset|spacing|spacing-50"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull is-style-section-3" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-50)">
 	<!-- wp:group {"align":"wide","style":{"spacing":{}},"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:image {"sizeSlug":"full","linkDestination":"none","align":"wide"} -->
