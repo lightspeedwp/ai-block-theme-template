@@ -1,4 +1,4 @@
-name: Sync issues/PRs into organisation Project (clean)
+name: Sync Issues/PRs to Project
 
 on:
   issues:
@@ -15,8 +15,6 @@ jobs:
       # secret/variable that has the right access.
       LS_APP_ID: ${{ secrets.LS_APP_ID || vars.LS_APP_ID }}
       LS_APP_PRIVATE_KEY: ${{ secrets.LS_APP_PRIVATE_KEY || vars.LS_APP_PRIVATE_KEY }}
-      # Default organisation to use for project setup
-      ORG: lightspeedwp
     permissions:
       contents: read
       issues: write
@@ -27,16 +25,11 @@ jobs:
       - name: Install GitHub CLI
         uses: cli/cli-action@v2
 
-      - name: Ensure jq and openssl are available
-        run: |
-          set -euxo pipefail
-          sudo apt-get update && sudo apt-get install -y jq openssl
-
       - name: Obtain app installation token
         id: app-token
         uses: tibdex/github-app-token@v1
         with:
-          # Use the job-level env variables (single authoritative source)
+          # Use the job-level env variables so the source of truth is a single known variable
           app_id: ${{ env.LS_APP_ID }}
           private_key: ${{ env.LS_APP_PRIVATE_KEY }}
 
@@ -48,15 +41,3 @@ jobs:
           set -euxo pipefail
           chmod +x ./scripts/sync-project.sh
           ./scripts/sync-project.sh
-
-      - name: Prepare and run project provisioning scripts (product & client)
-        env:
-          GH_TOKEN: ${{ steps.app-token.outputs.token }}
-        run: |
-          set -euxo pipefail
-          chmod +x ./scripts/update-projects.sh ./scripts/product_dev_project.sh ./scripts/client_delivery_project.sh
-          # update-projects.sh uses GH_TOKEN or app creds to generate tokens. Provide ORG explicitly.
-          ./scripts/update-projects.sh --dry-run --project-owner "$ORG" || true
-          # Provision product and client projects; these accept ORG as first arg or default to lightspeedwp
-          ./scripts/product_dev_project.sh "$ORG" "Tour Operator" || true
-          ./scripts/client_delivery_project.sh "$ORG" "ASNZ" || true

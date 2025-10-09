@@ -4,31 +4,31 @@
 
 # Force batch scripts to always use CRLF line endings so that if a repo is accessed
 # in Windows via a file share from Linux, the scripts will work
-*.{cmd,[cC][mM][dD]} text eol=crlf  # Windows command files
-*.{bat,[bB][aA][tT]} text eol=crlf  # Windows batch files
+*.cmd text eol=crlf
+*.bat text eol=crlf
 
 # Force bash scripts to always use LF line endings so that if a repo is accessed
 # in Unix via a file share from Windows, the scripts will work
-*.sh text eol=lf  # Unix shell scripts
+*.sh text eol=lf
 
 # Archive files - treat as binary to prevent corruption
-*.7z binary      # 7-Zip archives
-*.gz binary      # Gzip compressed files
-*.tar binary     # Tar archives
-*.zip binary     # ZIP archives
+*.7z binary
+*.gz binary
+*.tar binary
+*.zip binary
 
 # Image files - most are binary, SVG is text-based
-*.jpg binary     # JPEG images
-*.jpeg binary    # JPEG images (alternative extension)
-*.png binary     # PNG images
-*.gif binary     # GIF images
-*.ico binary     # Icon files
-*.svg text       # SVG files are XML-based text
-*.webp binary    # WebP images
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.svg text
+*.webp binary
 
 # Font files - all treated as binary
-*.woff binary    # Web Open Font Format
-*.woff2 binary   # Web Open Font Format 2.0
-*.eot binary     # Embedded OpenType fonts
-*.ttf binary     # TrueType fonts
-*.otf binary     # OpenType fonts
+*.woff binary
+*.woff2 binary
+*.eot binary
+*.ttf binary
+*.otf binary
