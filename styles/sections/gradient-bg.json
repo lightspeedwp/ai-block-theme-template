@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "slug": "gradient-bg",
+  "title": "Gradient Section",
+  "blockTypes": ["core/group", "core/columns", "core/column"],
+  "styles": {
+    "color": {
+      "background": "linear-gradient(135deg, #FFD23F 0%, #F46036 100%)",
+      "text": "var:preset|color|contrast"
+    },
+    "border": {
+      "radius": "24px"
+    },
+    "spacing": {
+      "padding": {
+        "top": "2rem",
+        "bottom": "2rem",
+        "left": "2rem",
+        "right": "2rem"
+      }
+    },
+    "shadow": {
+      "boxShadow": "0 4px 32px rgba(215,38,61,0.15)"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "slug": "bordered",
+  "title": "Bordered Section",
+  "blockTypes": ["core/group", "core/columns", "core/column"],
+  "styles": {
+    "color": {
+      "background": "var:preset|color|off-white",
+      "text": "var:preset|color|brown"
+    },
+    "border": {
+      "color": "var:preset|color|gold",
+      "width": "3px",
+      "style": "solid",
+      "radius": "16px"
+    },
+    "spacing": {
+      "padding": {
+        "top": "1.5rem",
+        "bottom": "1.5rem",
+        "left": "1.5rem",
+        "right": "1.5rem"
+      }
+    }
+  }
+}
