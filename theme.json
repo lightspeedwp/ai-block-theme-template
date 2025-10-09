@@ -171,7 +171,7 @@
 				{
 					"name": "100",
 					"size": "0.75rem",
-					"slug": "font-size-100",
+					"slug": "100",
 					"fluid": {
 						"min": "0.75rem",
 						"max": "0.875rem"
@@ -180,7 +180,7 @@
 				{
 					"name": "200",
 					"size": "0.875rem",
-					"slug": "font-size-200",
+					"slug": "200",
 					"fluid": {
 						"min": "0.875rem",
 						"max": "1rem"
@@ -189,7 +189,7 @@
 				{
 					"name": "300",
 					"size": "1rem",
-					"slug": "font-size-300",
+					"slug": "300",
 					"fluid": {
 						"min": "1rem",
 						"max": "1.125rem"
@@ -198,7 +198,7 @@
 				{
 					"name": "400",
 					"size": "1.125rem",
-					"slug": "font-size-400",
+					"slug": "400",
 					"fluid": {
 						"min": "1.125rem",
 						"max": "1.25rem"
@@ -207,7 +207,7 @@
 				{
 					"name": "500",
 					"size": "1.25rem",
-					"slug": "font-size-500",
+					"slug": "500",
 					"fluid": {
 						"min": "1.25rem",
 						"max": "1.5rem"
@@ -216,7 +216,7 @@
 				{
 					"name": "600",
 					"size": "1.5rem",
-					"slug": "font-size-600",
+					"slug": "600",
 					"fluid": {
 						"min": "1.5rem",
 						"max": "1.875rem"
@@ -225,7 +225,7 @@
 				{
 					"name": "700",
 					"size": "1.875rem",
-					"slug": "font-size-700",
+					"slug": "700",
 					"fluid": {
 						"min": "1.875rem",
 						"max": "2.25rem"
@@ -234,7 +234,7 @@
 				{
 					"name": "800",
 					"size": "2.25rem",
-					"slug": "font-size-800",
+					"slug": "800",
 					"fluid": {
 						"min": "2.25rem",
 						"max": "2.75rem"
@@ -243,7 +243,7 @@
 				{
 					"name": "900",
 					"size": "2.75rem",
-					"slug": "font-size-900",
+					"slug": "900",
 					"fluid": {
 						"min": "2.75rem",
 						"max": "3.5rem"
@@ -302,17 +302,17 @@
 				{
 					"name": "80",
 					"size": "clamp(3rem, 6vw, 4rem)",
-					"slug": "80"
+					"slug": "spacing-80"
 				},
 				{
 					"name": "90",
 					"size": "clamp(3.5rem, 7vw, 4.5rem)",
-					"slug": "90"
+					"slug": "spacing-90"
 				},
 				{
 					"name": "100",
 					"size": "clamp(4rem, 8vw, 5rem)",
-					"slug": "100"
+					"slug": "spacing-100"
 				}
 			]
 		},
@@ -361,7 +361,7 @@
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--system)",
-			"fontSize": "var(--wp--preset--font-size--font-size-300)",
+			"fontSize": "var(--wp--preset--font-size--300)",
 			"lineHeight": "var(--wp--custom--typography--line-height--normal)"
 		},
 		"spacing": {
@@ -409,7 +409,7 @@
 				},
 				"typography": {
 					"fontWeight": "600",
-					"fontSize": "var(--wp--preset--font-size--font-size-300)"
+					"fontSize": "var(--wp--preset--font-size--300)"
 				},
 				":hover": {
 					"color": {
@@ -433,32 +433,32 @@
 			},
 			"h1": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--font-size-800)"
+					"fontSize": "var(--wp--preset--font-size--800)"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--font-size-700)"
+					"fontSize": "var(--wp--preset--font-size--700)"
 				}
 			},
 			"h3": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--font-size-600)"
+					"fontSize": "var(--wp--preset--font-size--600)"
 				}
 			},
 			"h4": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--font-size-500)"
+					"fontSize": "var(--wp--preset--font-size--500)"
 				}
 			},
 			"h5": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--font-size-400)"
+					"fontSize": "var(--wp--preset--font-size--400)"
 				}
 			},
 			"h6": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--font-size-300)",
+					"fontSize": "var(--wp--preset--font-size--300)",
 					"fontWeight": "600"
 				}
 			}
@@ -466,12 +466,12 @@
 		"blocks": {
 			"core/navigation": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--font-size-300)"
+					"fontSize": "var(--wp--preset--font-size--300)"
 				}
 			},
 			"core/post-title": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--font-size-700)"
+					"fontSize": "var(--wp--preset--font-size--700)"
 				}
 			},
 			"core/post-content": {
@@ -549,10 +549,10 @@
 				},
 				"spacing": {
 					"padding": {
-						"top": "var(--wp--preset--spacing--90)",
-						"bottom": "var(--wp--preset--spacing--90)",
-						"left": "var(--wp--preset--spacing--50)",
-						"right": "var(--wp--preset--spacing--50)"
+						"top": "var(--wp--preset--spacing--spacing-90)",
+						"bottom": "var(--wp--preset--spacing--spacing-90)",
+						"left": "var(--wp--preset--spacing--spacing-50)",
+						"right": "var(--wp--preset--spacing--spacing-50)"
 					}
 				},
 				"typography": {
@@ -596,10 +596,10 @@
 				},
 				"spacing": {
 					"padding": {
-						"top": "var(--wp--preset--spacing--90)",
-						"bottom": "var(--wp--preset--spacing--90)",
-						"left": "var(--wp--preset--spacing--50)",
-						"right": "var(--wp--preset--spacing--50)"
+						"top": "var(--wp--preset--spacing--spacing-90)",
+						"bottom": "var(--wp--preset--spacing--spacing-90)",
+						"left": "var(--wp--preset--spacing--spacing-50)",
+						"right": "var(--wp--preset--spacing--spacing-50)"
 					}
 				},
 				"typography": {
