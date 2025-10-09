@@ -354,8 +354,8 @@ test.describe('Block Patterns Tests', () => {
 						// Check if any pattern categories exist
 						const anyCategories = page.locator('.block-editor-inserter__panel-content [role="button"], .components-button');
 						const categoryCount = await anyCategories.count();
-						// eslint-disable-next-line no-console
-						console.log(`Pattern categories found: ${categoryCount}`);
+						// Assert that at least one pattern category exists
+						expect(categoryCount).toBeGreaterThan(0);
 					}
 				}
 			}
