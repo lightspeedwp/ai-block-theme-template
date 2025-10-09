@@ -16,7 +16,14 @@
 			"background": "var(--wp--preset--color--base)",
 			"text": "var(--wp--preset--color--contrast)"
 		},
-		"css": ".is-style-vertical-header { width: clamp(6rem, 12vw, 14rem); min-height: 100vh; position: sticky; top: 0; }",
+		"dimensions": {
+			"width": "clamp(6rem, 12vw, 14rem)",
+			"minHeight": "100vh"
+		},
+		"position": {
+			"type": "sticky",
+			"top": "0"
+		},
 		"elements": {
 			"heading": {
 				"color": {
