@@ -26,7 +26,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"center","level":1,"className":"has-secondary-font-family","fontSize":"800"} -->
-<h1 class="wp-block-heading has-text-align-center has-secondary-font-family" style="font-size:4rem"><?php esc_html_e( 'Build your site with clicks, not code.', 'lsx-design' ); ?></h1>
+<h1 class="wp-block-heading has-text-align-center has-secondary-font-family"><?php esc_html_e( 'Build your site with clicks, not code.', 'lsx-design' ); ?></h1>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
