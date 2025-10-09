@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "title": "Image Frame",
+  "slug": "image-frame",
+  "blockTypes": ["core/image"],
+  "styles": {
+    "border": {
+      "color": "var:preset|color|gray",
+      "width": "4px",
+      "style": "solid",
+      "radius": "20px"
+    },
+    "shadow": {
+      "boxShadow": "0 2px 16px rgba(51,51,51,0.1)"
+    }
+  }
+}

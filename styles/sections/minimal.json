@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "slug": "minimal",
+  "title": "Minimal Section",
+  "blockTypes": ["core/group", "core/columns", "core/column"],
+  "styles": {
+    "color": {
+      "background": "var:preset|color|white",
+      "text": "var:preset|color|black"
+    },
+    "spacing": {
+      "padding": {
+        "top": "0.75rem",
+        "bottom": "0.75rem",
+        "left": "0.75rem",
+        "right": "0.75rem"
+      }
+    }
+  }
+}

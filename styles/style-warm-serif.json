@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Warm Serif",
+  "settings": {
+    "color": {
+      "palette": [
+        { "name": "Warm Red", "slug": "warm-red", "color": "#D7263D" },
+        { "name": "Orange", "slug": "orange", "color": "#F46036" },
+        { "name": "Gold", "slug": "gold", "color": "#FFD23F" },
+        { "name": "Brown", "slug": "brown", "color": "#6B4226" },
+        { "name": "Off-white", "slug": "off-white", "color": "#F7F4EA" }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Playfair Display, serif",
+          "name": "Serif Display",
+          "slug": "serif-display",
+          "fontFace": [
+            {
+              "fontDisplay": "swap",
+              "fontFamily": "Playfair Display",
+              "fontStyle": "normal",
+              "fontWeight": "400 900",
+              "src": ["file:./assets/fonts/playfair/PlayfairDisplay-VariableFont_wght.ttf"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--serif-display)"
+    },
+    "color": {
+      "background": "var:preset|color|off-white",
+      "text": "var:preset|color|brown"
+    }
+  }
+}

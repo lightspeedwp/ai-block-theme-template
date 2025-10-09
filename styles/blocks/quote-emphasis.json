@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "title": "Quote Emphasis",
+  "slug": "quote-emphasis",
+  "blockTypes": ["core/quote"],
+  "styles": {
+    "color": {
+      "background": "var:preset|color|pastel-yellow",
+      "text": "var:preset|color|pastel-purple"
+    },
+    "typography": {
+      "fontStyle": "italic",
+      "fontSize": "1.3rem"
+    },
+    "border": {
+      "color": "var:preset|color|pastel-purple",
+      "width": "2px",
+      "style": "dashed",
+      "radius": "12px"
+    },
+    "spacing": {
+      "padding": {
+        "top": "1rem",
+        "bottom": "1rem",
+        "left": "1rem",
+        "right": "1rem"
+      }
+    }
+  }
+}
