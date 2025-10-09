@@ -109,3 +109,4 @@ playwright/.cache/           # Playwright browser cache (any location)
 .last-run.json              # Playwright test run state
 node_modules
 build/
+tmp/
