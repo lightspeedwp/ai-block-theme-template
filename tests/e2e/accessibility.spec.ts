@@ -30,8 +30,13 @@ test.describe('Accessibility Tests', () => {
 				
 				// More flexible ARIA snapshot that focuses on structure
 				const mainContent = page.getByRole('main');
-				await expect(mainContent).toMatchAriaSnapshot(`
+				await expect(page).toMatchAriaSnapshot(`
+					- banner:
+					- navigation:
 					- main:
+						- heading:
+					- complementary:
+					- contentinfo:
 				`);
 			});
 
