@@ -82,10 +82,12 @@ function migrate_pattern_file($file_path, &$migration_log) {
     
     // 7. Add proper version and license if missing
     if (!preg_match('/Version:/', $content)) {
+        // Insert version/license before closing of header comment block (*/)
         $content = preg_replace(
-            '/(\* Keywords:.*)/m',
-            '$1' . "\n * Version: 0.2.0\n * License: GPL-2.0-or-later",
-            $content
+            '/(\s*\*\/)/m',
+            " * Version: 0.2.0\n * License: GPL-2.0-or-later\n$1",
+            $content,
+            1 // Only replace the first occurrence (the header block)
         );
     }
     
