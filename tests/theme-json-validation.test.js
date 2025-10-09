@@ -72,19 +72,29 @@ describe('Typography Naming Conventions', () => {
     const fontSizes = themeJson.settings.typography.fontSizes;
     
     fontSizes.forEach(fontSize => {
-      expect(fontSize.slug).toMatch(/^font-size-\d+$/);
+      expect(fontSize.slug).toMatch(/^\d+$/);
     });
-  });
+    });
 
-  test('should have complete font size scale from 100 to 900', () => {
+    test('should have complete font size scale from 100 to 900', () => {
     const fontSizes = themeJson.settings.typography.fontSizes;
-    const expectedSlugs = ['font-size-100', 'font-size-200', 'font-size-300', 'font-size-400', 'font-size-500', 'font-size-600', 'font-size-700', 'font-size-800', 'font-size-900'];
+    const expectedSlugs = [
+      '100',
+      '200',
+      '300',
+      '400',
+      '500',
+      '600',
+      '700',
+      '800',
+      '900'
+    ];
     
     const actualSlugs = fontSizes.map(fs => fs.slug);
     expectedSlugs.forEach(slug => {
       expect(actualSlugs).toContain(slug);
     });
-  });
+    });
 
   test('should have fluid typography with min/max values', () => {
     const fontSizes = themeJson.settings.typography.fontSizes;
@@ -112,7 +122,7 @@ describe('Spacing Naming Conventions', () => {
 
   test('should have complete spacing scale from 10 to 100', () => {
     const spacingSizes = themeJson.settings.spacing.spacingSizes;
-    const expectedSlugs = ['spacing-10', 'spacing-20', 'spacing-30', 'spacing-40', 'spacing-50', 'spacing-60', 'spacing-70', 'spacing-80', 'spacing-90', 'spacing-100'];
+    const expectedSlugs = ['10', '20', '30', '40', '50', '60', '70', '80', '90', '100'];
     
     const actualSlugs = spacingSizes.map(ss => ss.slug);
     expectedSlugs.forEach(slug => {
