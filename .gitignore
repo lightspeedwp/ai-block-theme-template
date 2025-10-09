@@ -101,9 +101,12 @@ theme.zip                    # Theme distribution package
 # =============================================================================
 
 # Playwright end-to-end testing artifacts
-/test-results/               # Test execution results
-/playwright-report/          # HTML test reports
-/blob-report/                # Binary test artifacts
-/playwright/.cache/          # Playwright browser cache
+test-results/                # Test execution results (any location)
+playwright-report/           # HTML test reports (any location)  
+blob-report/                 # Binary test artifacts (any location)
+playwright/.cache/           # Playwright browser cache (any location)
+*.zip                        # Trace files and test artifacts
+.last-run.json              # Playwright test run state
 node_modules
 build/
+tmp/
