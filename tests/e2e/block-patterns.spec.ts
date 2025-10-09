@@ -74,11 +74,9 @@ test.describe('Block Patterns Tests', () => {
 					// If specific pattern not found, check if patterns are loaded at all
 					const anyPattern = page.locator('.block-editor-block-patterns-list__item, [class*="pattern"]').first();
 					if (await anyPattern.isVisible()) {
-						// eslint-disable-next-line no-console
-						console.log(`Pattern "${name}" not found in inserter, but other patterns are visible. This may indicate the pattern is not registered or needs different search terms.`);
+						test.info().log(`Pattern "${name}" not found in inserter, but other patterns are visible. This may indicate the pattern is not registered or needs different search terms.`);
 					} else {
-						// eslint-disable-next-line no-console
-						console.log('No patterns found in inserter. Pattern system may not be fully loaded.');
+						test.info().log('No patterns found in inserter. Pattern system may not be fully loaded.');
 					}
 					
 					// Test passes but logs the issue - this is acceptable for development
