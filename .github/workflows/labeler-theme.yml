@@ -1,0 +1,38 @@
+# Default labeler rules for WordPress block/theme repositories
+#
+# Assigns labels based on file paths to signal where changes occur within block
+# theme projects. These patterns assume a fairly standard theme structure.
+
+area:
+  theme:
+    - 'theme.json'
+    - 'templates/**'
+    - 'parts/**'
+    - 'patterns/**'
+  frontend:
+    - 'assets/css/**'
+    - 'assets/js/**'
+    - 'src/**'
+  backend:
+    - 'functions.php'
+    - 'inc/**'
+  ci:
+    - '.github/workflows/**'
+    - 'package.json'
+    - 'webpack.config.js'
+  dependencies:
+    - 'package-lock.json'
+
+lang:
+  php:
+    - '**/*.php'
+  javascript:
+    - '**/*.js'
+    - '**/*.jsx'
+    - '**/*.ts'
+    - '**/*.tsx'
+  css:
+    - '**/*.css'
+    - '**/*.scss'
+  md:
+    - '**/*.md'

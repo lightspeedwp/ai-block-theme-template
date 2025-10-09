@@ -1,0 +1,39 @@
+name: Generate changelog and draft release (Product)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  draft-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Release Drafter
+        uses: release-drafter/release-drafter@v5
+        with:
+          config-name: release-drafter-product.yml
+
+  changelog-file:
+    runs-on: ubuntu-latest
+    needs: draft-release
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Update CHANGELOG.md
+        uses: mikeal/changelog-maker@v2
+        with:
+          project-url: ${{ github.repository }}
+      - name: Commit and push changelog
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          if [[ `git status --porcelain` ]]; then
+            git add CHANGELOG.md
+            git commit -m "chore(changelog): update for latest release"
+            git push
+          fi
