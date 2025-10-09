@@ -20,8 +20,8 @@
 		<div class="wp-block-columns alignwide">
 			<!-- wp:column {"width":"80%"} -->
 			<div class="wp-block-column" style="flex-basis:80%">
-				<!-- wp:heading {"textAlign":"left","align":"wide","style":{"typography":{"fontSize":"12vw","lineHeight":"0.9","fontStyle":"normal","fontWeight":"300"}}} -->
-				<h2 class="wp-block-heading alignwide has-text-align-left" style="font-size:12vw;font-style:normal;font-weight:300;line-height:0.9">
+				<!-- wp:heading {"textAlign":"left","align":"wide","style":{"typography":{"lineHeight":"0.9","fontStyle":"normal","fontWeight":"300"}},"fontSize":"900"} -->
+				<h2 class="wp-block-heading alignwide has-text-align-left has-900-font-size" style="font-style:normal;font-weight:300;line-height:0.9">
 					<?php
 					echo wp_kses_post(
 						/* translators: This string contains the word "Stories" in four different languages with the first item in the locale's language. */

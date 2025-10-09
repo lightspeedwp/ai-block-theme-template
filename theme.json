@@ -287,6 +287,12 @@
 					"tight": "1.1",
 					"normal": "1.5",
 					"loose": "1.8"
+				},
+				"legacy": {
+					"hero-vw": "var(--wp--preset--font-size--900)",
+					"banner-clamp": "var(--wp--preset--font-size--900)",
+					"small-px": "var(--wp--preset--font-size--200)",
+					"tiny-px": "var(--wp--preset--font-size--100)"
 				}
 			},
 			"effects": {
