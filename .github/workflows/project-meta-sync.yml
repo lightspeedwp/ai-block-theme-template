@@ -1,0 +1,104 @@
+name: Sync issues/PRs into organisation Project
+
+on:
+  issues:
+    types: [opened, edited, labeled, unlabeled, reopened, closed]
+  pull_request:
+    types: [opened, edited, labeled, unlabeled, synchronize, closed]
+
+jobs:
+  sync-project:
+    runs-on: ubuntu-latest
+    # Minimal permissions required; uses a GitHub App install token via secrets
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install GitHub CLI
+        uses: cli/cli-action@v2
+
+      - name: Obtain app installation token
+        id: app-token
+        uses: tibdex/github-app-token@v1
+        with:
+          app_id: ${{ secrets.LS_APP_ID || vars.LS_APP_ID }}
+          private_key: ${{ secrets.LS_APP_PRIVATE_KEY || vars.LS_APP_PRIVATE_KEY }}
+
+      - name: Add item to Project and update fields
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          LS_PROJECT_URL: ${{ secrets.LS_PROJECT_URL || vars.LS_PROJECT_URL }}
+        run: |
+          # Determine whether this is an issue or PR
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            NUMBER=${{ github.event.pull_request.number }}
+            TYPE=PR
+            STATE=${{ github.event.pull_request.state }}
+            NODE_ID=${{ github.event.pull_request.node_id }}
+            TITLE=${{ github.event.pull_request.title }}
+            HEAD_REF=${{ github.event.pull_request.head.ref }}
+          else
+            NUMBER=${{ github.event.issue.number }}
+            TYPE=ISSUE
+            STATE=${{ github.event.issue.state }}
+            NODE_ID=${{ github.event.issue.node_id }}
+            TITLE=${{ github.event.issue.title }}
+          fi
+          # Add to Project (if not already present) using gh
+          echo "Adding $TYPE #$NUMBER to project…"
+          gh api graphql -f query='mutation($project: String!, $itemId: ID!, $title: String!) {
+            addProjectV2ItemById(input:{projectId: $project, contentId: $itemId}) { item { id } }
+          }' \
+            -F project="${LS_PROJECT_URL##*/}" -F itemId="$NODE_ID" -F title="$TITLE" || true
+
+          # Determine status from labels
+          LABELS=$(gh api graphql -f query='query($id: ID!) { node(id: $id) { ... on Issue { labels(first: 50) { nodes { name } } } ... on PullRequest { labels(first: 50) { nodes { name } } } } }' -F id="$NODE_ID" | jq -r '.data.node.labels.nodes[].name')
+          # Default status
+          STATUS="Triage"
+          for lbl in $LABELS; do
+            case "$lbl" in
+              status:needs-review) STATUS="In review";;
+              status:needs-qa) STATUS="In QA";;
+              status:blocked) STATUS="Blocked";;
+              status:in-progress) STATUS="In progress";;
+              status:ready|status:todo) STATUS="Ready";;
+            esac
+          done
+          if [[ "$STATE" == "closed" || "$STATE" == "merged" ]]; then
+            STATUS="Done"
+          fi
+
+          # Determine priority from labels
+          PRIORITY="P2 – Normal"
+          for lbl in $LABELS; do
+            case "$lbl" in
+              priority:critical) PRIORITY="P0 – Critical";;
+              priority:important) PRIORITY="P1 – Important";;
+              priority:normal) PRIORITY="P2 – Normal";;
+              priority:minor) PRIORITY="P3 – Minor";;
+            esac
+          done
+
+          # Determine type for PRs based on branch prefix
+          TYPE_FIELD=""
+          if [[ "$TYPE" == "PR" ]]; then
+            case "$HEAD_REF" in
+              feat/*) TYPE_FIELD="Feature";;
+              fix/*) TYPE_FIELD="Bug";;
+              docs/*) TYPE_FIELD="Documentation";;
+              chore/*|build/*) TYPE_FIELD="Task";;
+            esac
+          fi
+
+          # GraphQL update of fields
+          cat >mutation.graphql <<'EOM'
+          mutation($project: ID!, $item: ID!, $statusId: String!, $priorityId: String!, $typeId: String) {
+            updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: "STATUS_FIELD_ID", value: { singleSelectOptionId: $statusId } }) { clientMutationId }
+            updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: "PRIORITY_FIELD_ID", value: { singleSelectOptionId: $priorityId } }) { clientMutationId }
+            updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: "TYPE_FIELD_ID", value: { text: $typeId } }) { clientMutationId }
+          }
+EOM
+          echo "This is a template. Replace STATUS_FIELD_ID, PRIORITY_FIELD_ID, TYPE_FIELD_ID with your field IDs and consider deriving them with gh project field-list."

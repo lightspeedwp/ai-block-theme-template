@@ -1,0 +1,28 @@
+name: Assign default Issue Type when missing
+
+on:
+  issues:
+    types: [opened, reopened]
+
+jobs:
+  default-type:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install GitHub CLI
+        uses: cli/cli-action@v2
+      - name: Obtain app token
+        id: app
+        uses: tibdex/github-app-token@v1
+        with:
+          app_id: ${{ secrets.LS_APP_ID || vars.LS_APP_ID }}
+          private_key: ${{ secrets.LS_APP_PRIVATE_KEY || vars.LS_APP_PRIVATE_KEY }}
+      - name: Set default Issue Type
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+          LS_PROJECT_URL: ${{ secrets.LS_PROJECT_URL || vars.LS_PROJECT_URL }}
+        run: |
+          NUMBER=${{ github.event.issue.number }}
+          NODE_ID=${{ github.event.issue.node_id }}
+          # Determine if the Project item has Issue Type set (requires GraphQL)
+          # Replace ISSUE_TYPE_FIELD_ID and DEFAULT_TYPE_OPTION_ID with your project field IDs.
+          echo "Placeholder: use gh api to check and set Issue Type field to 'Task' when missing."
