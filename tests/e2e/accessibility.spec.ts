@@ -160,8 +160,8 @@ test.describe('Accessibility Tests', () => {
 					}
 				} else {
 					// Log that skip links are not implemented yet but test passes
-					// eslint-disable-next-line no-console
-					console.log(`Skip links not found on ${name} - this is acceptable for development`);
+					// Log using Playwright's test reporter
+					test.info().log(`Skip links not found on ${name} - this is acceptable for development`);
 				}
 			});
 
