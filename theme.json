@@ -520,7 +520,7 @@
 						},
 						":hover": {
 							"color": {
-								"text": "var(--wp--preset--color--secondary)"
+								"text": "var(--wp--preset--color--accent)"
 							}
 						}
 					}
