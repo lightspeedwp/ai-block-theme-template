@@ -402,8 +402,8 @@ test.describe('Block Patterns Tests', () => {
 			const criticalErrors = logs.filter(log => 
 				log.includes('TypeError') || 
 				log.includes('ReferenceError') || 
-				log.includes('pattern') ||
-				log.includes('block')
+				/\bpattern\b/i.test(log) && /error/i.test(log) ||
+				/\bblock\b/i.test(log) && /error/i.test(log)
 			);
 			
 			if (criticalErrors.length > 0) {
