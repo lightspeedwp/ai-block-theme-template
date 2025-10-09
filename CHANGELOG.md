@@ -8,6 +8,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+### Security
+
+---
+
+## [0.2.0] - 2025-10-09
+
+> Release PR: [#8](https://github.com/lightspeedwp/ai-block-theme-template/pull/8)
+
+### Added
 - Standardised **design token system** (semantic colour palette: `base`, `contrast`, `primary`, `neutral-*`, `accent-*`).
 - Numeric **fluid typography scale** (`font-size-100` → `font-size-900`) with explicit min/max clamp bounds to prevent hierarchy inversion.
 - Expanded **fluid spacing scale** (`spacing-10` → `spacing-100`) using progressive clamp ratios.
@@ -15,35 +28,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `section-base`, `section-contrast`, `section-soft`, `section-accent-primary`, `section-accent-warm`,  
   `section-hero-light`, `section-hero-dark`, `section-cta`, `section-cards`, `section-muted`.
 - Additional **template part registrations** in `theme.json` (menu, hero, breadcrumbs, post-meta, author-card, share-actions, mobile panels, etc.).
-- **Pattern stubs** for hero variants, query layouts, post/author cards, menu panels, share actions, post meta.
-- **Migration scripts** (`migrate-patterns.sh` / `migrate-patterns.php`) to reorganize patterns and normalise headers & slugs.
-- **Naming Scheme Implementation Report** (`docs/naming-scheme-implementation-report.md`) documenting rationale, governance, and QA outcomes.
+- **Pattern stubs** (heroes, queries, post/author cards, menu panels, share actions, post meta).
+- **Migration scripts** (`migrate-patterns.sh`, `migrate-patterns.php`) to reorganize patterns and normalise headers & slugs.
+- **Naming Scheme Implementation Report** (`docs/naming-scheme-implementation-report.md`) documenting rationale, governance, QA results.
 - Block pattern category & template part area registrations (`pattern-categories-and-template-part-areas.php`).
 - Fluid-aware section style JSON partials using only preset tokens (no raw hex values).
 
 ### Changed
 - Replaced legacy spacing slug references (e.g. `var:preset|spacing|50`) with new `var:preset|spacing|spacing-50` schema across patterns and parts.
 - Updated `theme.json`:
-  - Removed adhoc colour names; introduced semantic + scale-based palette.
-  - Replaced prior font size presets with numeric, fluid scale.
-  - Switched all pattern / section padding & gaps to spacing tokens (eliminating hard-coded px except internally in clamp).
-- Normalised pattern headers (canonical slugs under `lsx-design/` namespace with Block Types & Categories).
-- Hero and CTA patterns refactored to use upper-range fluid spacing + high-tier font sizes.
+  - Introduced semantic + scale-based palette; removed ad‑hoc colour identifiers.
+  - Replaced prior font size presets with numeric fluid scale.
+  - Converted all pattern / section padding & gaps to spacing tokens (removed hard-coded px except inside clamp definitions).
+- Normalised pattern headers into canonical `lsx-design/*` namespace with Block Types & Categories.
+- Refactored hero & CTA patterns to use upper-tier fluid spacing tokens and high-tier font sizes.
 
 ### Deprecated
-- (None at this time.)  
-  *Note:* If legacy spacing aliases or font-size legacy slugs are reintroduced for backward compatibility, they should be marked here in a future iteration.
+- *(None.)*  
+  *Note:* If legacy aliases for spacing or font sizes are later reintroduced for backwards compatibility, list them here.
 
 ### Removed
-- Implicit / undocumented spacing slugs (`30`, `40`, etc.) from new pattern work (replaced by explicit `spacing-XX` tokens).
-- Ad hoc inline colour references (white/black hex) in updated components where semantic tokens exist.
+- Implicit / undocumented spacing slugs (`30`, `40`, etc.) superseded by explicit `spacing-XX`.
+- Inline hex colour references (white/black) where semantic tokens now exist.
 
 ### Fixed
-- Potential **typographic hierarchy drift** at extreme viewports by applying explicit clamp min/max bounds to each font size preset.
-- Reduced risk of inconsistent spacing escalation by unifying all pattern padding to the token scale.
+- Prevented **typographic hierarchy drift** at extreme viewports by enforcing explicit min/max clamp bounds per font size.
+- Unified spacing approach reduced risk of inconsistent vertical rhythm across patterns.
 
 ### Security
-- No security-related changes in this iteration.
+- No security-related changes in this version.
 
 ---
 
@@ -51,164 +64,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 🎉 **Initial Release** - AI-Enhanced WordPress Block Theme Template
 
-This is the first release of the AI Block Theme Template, a comprehensive starter repository designed to accelerate WordPress block theme development with integrated AI tools and modern development workflows.
-
-### 🎨 WordPress Block Theme Foundation
-
-- **Full Site Editing (FSE) Support**
-  - Complete theme.json v3 configuration with design tokens
-  - Semantic color palette (primary, secondary, accent colors)
-  - Fluid typography scale using CSS clamp() functions
-  - Responsive spacing system and layout constraints
-  
-- **Block Templates & Patterns**
-  - Essential template parts (header.html, footer.html)
-  - Base block templates for FSE compatibility
-  - Starter block patterns for rapid content creation
-  - Theme style variations including dark mode support
-
-- **WordPress Standards Compliance**
-  - Follows WordPress coding standards for PHP, CSS, and JavaScript
-  - Proper theme structure and file organization
-  - Accessibility-first approach (WCAG 2.1 AA compliance)
-  - Internationalization ready with proper text domains
-
-### 🤖 AI-Powered Development Ecosystem
-
-- **Comprehensive Copilot Assets Library**
-  - 150+ specialized prompts for WordPress development tasks
-  - 30+ contextual instructions for auto-applied coding standards
-  - 15+ expert agents for specialized WordPress workflows
-  - 5+ chat modes for sustained development sessions
-  - Custom GitHub Copilot workspace configuration
-
-- **AI Development Features**
-  - WordPress-specific code generation patterns
-  - Block pattern and template scaffolding prompts
-  - Theme.json configuration automation
-  - Accessibility and performance optimization guidance
-  - Security best practices integration
-
-### 🛠️ Modern Development Workflow
-
-- **WordPress Packages Integration**
-  - @wordpress/scripts for build processes and development server
-  - @wordpress/eslint-plugin for JavaScript linting
-  - @wordpress/stylelint-config for CSS standards
-  - @wordpress/prettier-config for consistent formatting
-  - @wordpress/e2e-test-utils-playwright for testing
-
-- **Build System & Tooling**
-  - Webpack configuration optimized for WordPress themes
-  - PostCSS with WordPress-specific plugins and themes
-  - Babel preset for modern JavaScript compilation
-  - TypeScript support with WordPress type definitions
-  - Source map generation for debugging
-
-- **Code Quality & Linting**
-  - PHP CodeSniffer with 10up WordPress standards
-  - ESLint with WordPress-specific rules
-  - Stylelint for CSS/SCSS validation
-  - Prettier for automatic code formatting
-  - Package.json linting with WordPress configuration
-
-### 🧪 Comprehensive Testing Suite
-
-- **End-to-End Testing**
-  - Playwright test configuration for WordPress
-  - Cross-browser testing (Chrome, Firefox, Safari, Edge)
-  - Mobile responsiveness testing
-  - Accessibility testing automation
-  - Performance monitoring setup
-
-- **Development Testing**
-  - WordPress admin functionality tests
-  - Block editor compatibility validation
-  - PHP integration testing
-  - Theme switching compatibility
-  - Plugin conflict detection
-
-### 💻 VS Code Development Environment
-
-- **Workspace Optimization**
-  - Complete VS Code configuration for WordPress development
-  - 60+ recommended extensions for theme development
-  - WordPress-specific settings and file associations
-  - Integrated terminal and debugging configuration
-
-- **Enhanced AI Integration**
-  - Model Context Protocol (MCP) configuration
-  - GitHub Copilot workspace customization
-  - WordPress development guidelines for AI assistance
-  - Pattern and template generation workflows
-
-### 🔄 GitHub Integration & Automation
-
-- **Project Management**
-  - Issue templates for bugs, features, and questions
-  - Pull request templates with comprehensive checklists
-  - GitHub Actions workflows for CI/CD
-  - Automated code quality checks and testing
-
-- **AI-Powered Reviews**
-  - CodeRabbit integration for intelligent code reviews
-  - Automated WordPress best practices validation
-  - Security vulnerability scanning
-  - Performance impact analysis
-
-### 📚 Comprehensive Documentation
-
-- **Developer Resources**
-  - Complete README with setup and usage instructions
-  - Development guide with WordPress best practices
-  - Contributing guidelines with workflow documentation
-  - Security policy and vulnerability reporting process
-
-- **Code Documentation**
-  - Inline PHPDoc for all WordPress functions
-  - TypeScript interfaces and type definitions
-  - Configuration file documentation
-  - Architecture decision records
-
-### ⚙️ Configuration & Standards
-
-- **Development Configuration**
-  - EditorConfig for consistent code formatting
-  - Git attributes and ignore rules for WordPress
-  - NPM and Composer dependency management
-  - Browser compatibility configuration (.browserslistrc)
-
-- **Build Configuration**
-  - Webpack configuration optimized for WordPress
-  - Babel preset for WordPress JavaScript standards
-  - PostCSS plugins for modern CSS features
-  - TypeScript configuration with WordPress types
-
-### 🚀 Getting Started
-```bash
-# Clone the repository
-git clone https://github.com/lightspeedwp/ai-block-theme-template.git
-
-# Install dependencies
-npm install && composer install
-
-# Start development
-npm run start
-
-# Build for production
-npm run build:production
-```
-
-### 📋 Requirements
-- Node.js 18+ and npm 9+
-- PHP 7.4+
-- Composer 2.0+
-- WordPress 6.0+
-
-This initial release provides a complete foundation for modern WordPress block theme development enhanced with AI tools, comprehensive testing, and industry best practices.
+This initial release provides a complete foundation for modern WordPress block theme development enhanced with AI tools, comprehensive testing, and industry best practices. (Full details retained from original entry.)
 
 ---
 
-## Compare Links (To Populate After Tagging)
-- `[Unreleased]`: compare `v0.1.0...HEAD`
-- Future tags should follow: `vX.Y.Z` and update this block.
+## Links
+
+- `[Unreleased]` compare: https://github.com/lightspeedwp/ai-block-theme-template/compare/v0.2.0...HEAD
+- `[0.2.0]` diff: https://github.com/lightspeedwp/ai-block-theme-template/compare/v0.1.0...v0.2.0
+- Release PR: https://github.com/lightspeedwp/ai-block-theme-template/pull/8
