@@ -470,7 +470,6 @@
 			"core/column": {
 				"variations": {
 					"vertical-header": {
-						"css": "width: clamp(6rem, 12vw, 14rem); min-height: 100vh; position: sticky; top: 0;",
 						"spacing": {
 							"padding": {
 								"top": "var(--wp--preset--spacing--spacing-60)",
