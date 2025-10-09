@@ -15,8 +15,8 @@
 	<!-- wp:post-template -->
 		<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 		<div class="wp-block-group">
-			<!-- wp:post-title {"isLink":true,"fontSize":"xx-large"} /-->
-			<!-- wp:post-date {"fontSize":"small","isLink":true} /-->
+			<!-- wp:post-title {"isLink":true,"fontSize":"800"} /-->
+			<!-- wp:post-date {"fontSize":"200","isLink":true} /-->
 		</div>
 		<!-- /wp:group -->
 		<!-- wp:spacer {"height":"var:preset|spacing|40"} -->

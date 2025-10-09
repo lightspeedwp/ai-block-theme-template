@@ -26,11 +26,11 @@
 		<div class="wp-block-cover__inner-container">
 			<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group alignwide">
-				<!-- wp:paragraph {"align":"center","textColor":"primary","fontSize":"small"} -->
+				<!-- wp:paragraph {"align":"center","textColor":"primary","fontSize":"200"} -->
 				<p class="has-text-align-center has-primary-color has-text-color has-small-font-size"><?php echo esc_html__( 'Introducing', 'lsx-design' ); ?></p>
 				<!-- /wp:paragraph -->
 
-				<!-- wp:heading {"textAlign":"center","level":2,"className":"lsx-hero-cta-title","fontSize":"xx-large"} -->
+				<!-- wp:heading {"textAlign":"center","level":2,"className":"lsx-hero-cta-title","fontSize":"800"} -->
 				<h2 class="wp-block-heading has-text-align-center lsx-hero-cta-title has-xx-large-font-size"><?php echo esc_html__( 'Design faster with LSX patterns', 'lsx-design' ); ?></h2>
 				<!-- /wp:heading -->
 

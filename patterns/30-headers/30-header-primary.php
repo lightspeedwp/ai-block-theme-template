@@ -17,19 +17,19 @@
  */
 ?>
 <!-- wp:group {"align":"full","className":"lsx-header-primary","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center"}} -->
-<div class="wp-block-group alignfull lsx-header-primary"><!-- wp:group {"layout":{"type":"flex","verticalAlignment":"center","flexWrap":"nowrap"},"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}}} -->
+<div class="wp-block-group alignfull lsx-header-primary"><!-- wp:group {"layout":{"type":"flex","verticalAlignment":"center","flexWrap":"nowrap"},"style":{"spacing":{"blockGap":"var:preset|spacing|50"}}} -->
 <div class="wp-block-group"><!-- wp:site-logo {"width":48} /-->
 
 <!-- wp:site-title {"level":0} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left"},"fontSize":"small"} -->
+<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left"},"fontSize":"200"} -->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Home', 'lsx-design' ); ?>","type":"custom","url":"#"} /-->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'About', 'lsx-design' ); ?>","type":"custom","url":"#"} /-->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Blog', 'lsx-design' ); ?>","type":"custom","url":"#"} /-->
 <!-- /wp:navigation -->
 
-<!-- wp:group {"className":"lsx-header-actions","layout":{"type":"flex","verticalAlignment":"center","justifyContent":"right"},"style":{"spacing":{"blockGap":"var:preset|spacing|small"}}} -->
+<!-- wp:group {"className":"lsx-header-actions","layout":{"type":"flex","verticalAlignment":"center","justifyContent":"right"},"style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} -->
 <div class="wp-block-group lsx-header-actions"><!-- wp:search {"label":"<?php esc_attr_e( 'Search', 'lsx-design' ); ?>","showLabel":false,"placeholder":"<?php esc_attr_e( 'Search site...', 'lsx-design' ); ?>"} /-->
 
 <!-- wp:button {"className":"is-style-outline"} -->

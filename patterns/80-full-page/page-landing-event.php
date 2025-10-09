@@ -4,6 +4,8 @@
  * Slug: twentytwentyfive/page-landing-event
  * Categories: twentytwentyfive_page, featured
  * Keywords: starter
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Block Types: core/post-content
  * Post Types: page, wp_template
  * Viewport width: 1400

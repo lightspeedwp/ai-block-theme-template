@@ -47,7 +47,7 @@
 
 					<!-- wp:buttons -->
 					<div class="wp-block-buttons">
-						<!-- wp:button {"fontSize":"small"} -->
+						<!-- wp:button {"fontSize":"200"} -->
 						<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Buy Tickets', 'twentytwentyfive' ); ?></a></div>
 						<!-- /wp:button -->
 					</div>
@@ -85,7 +85,7 @@
 
 					<!-- wp:buttons -->
 					<div class="wp-block-buttons">
-						<!-- wp:button {"fontSize":"small"} -->
+						<!-- wp:button {"fontSize":"200"} -->
 						<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Buy Tickets', 'twentytwentyfive' ); ?></a></div>
 						<!-- /wp:button -->
 					</div>
@@ -116,7 +116,7 @@
 
 					<!-- wp:buttons -->
 					<div class="wp-block-buttons">
-						<!-- wp:button {"fontSize":"small"} -->
+						<!-- wp:button {"fontSize":"200"} -->
 						<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Buy Tickets', 'twentytwentyfive' ); ?></a></div>
 						<!-- /wp:button -->
 					</div>
@@ -154,7 +154,7 @@
 
 					<!-- wp:buttons -->
 					<div class="wp-block-buttons">
-						<!-- wp:button {"fontSize":"small"} -->
+						<!-- wp:button {"fontSize":"200"} -->
 						<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Buy Tickets', 'twentytwentyfive' ); ?></a></div>
 						<!-- /wp:button -->
 					</div>

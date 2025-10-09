@@ -47,7 +47,7 @@
 		<div class="wp-block-columns alignwide are-vertically-aligned-bottom is-not-stacked-on-mobile">
 			<!-- wp:column {"verticalAlignment":"bottom","width":"80%"} -->
 			<div class="wp-block-column is-vertically-aligned-bottom" style="flex-basis:80%">
-				<!-- wp:heading {"textAlign":"left","align":"wide","style":{"typography":{"lineHeight":"0.9","fontStyle":"normal","fontWeight":"300"}},"fontSize":"xx-large"} -->
+				<!-- wp:heading {"textAlign":"left","align":"wide","style":{"typography":{"lineHeight":"0.9","fontStyle":"normal","fontWeight":"300"}},"fontSize":"800"} -->
 				<h2 class="wp-block-heading alignwide has-text-align-left has-xx-large-font-size" style="font-style:normal;font-weight:300;line-height:0.9"><?php esc_html_e( 'Let’s hear them.', 'twentytwentyfive' ); ?></h2>
 				<!-- /wp:heading -->
 			</div>

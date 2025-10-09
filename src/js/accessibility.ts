@@ -66,6 +66,15 @@ function initFocusManagement() {
 }
 
 /**
+ * Announce content changes to screen readers
+ *
+ * @param {string} message - The message to announce
+ */
+export function announceContentChange(message: string): void {
+	speak(message);
+}
+
+/**
  * Announce message to screen readers
  *
  * @param {string} message  - The message to announce

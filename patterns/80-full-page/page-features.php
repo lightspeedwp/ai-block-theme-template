@@ -1,10 +1,12 @@
 <?php
 /**
  * Title: Features Page
- * Slug: ollie/page-features
+ * Slug: lsx-design/page-features
  * Description: A full page design for a Features page
- * Categories: ollie/pages, ollie/features
+ * Categories: lsx-design/sections
  * Keywords: page, layout, design, template, features
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Viewport Width: 1500
  * Block Types:
  * Post Types:
