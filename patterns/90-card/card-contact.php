@@ -13,13 +13,13 @@
  * Inserter: true
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Contact Card","categories":["ollie/card"],"patternName":"ollie/card-contact"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|50"},"border":{"radius":"5px"}},"backgroundColor":"main","layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"Contact Card","categories":["ollie/card"],"patternName":"ollie/card-contact"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-70","right":"var:preset|spacing|spacing-70","bottom":"var:preset|spacing|spacing-70","left":"var:preset|spacing|spacing-70"},"blockGap":"var:preset|spacing|spacing-50"},"border":{"radius":"5px"}},"backgroundColor":"main","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-main-background-color has-background" style="border-radius:5px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:group {"metadata":{"name":"Title Row"},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"base","fontSize":"300"} -->
 <p class="has-base-color has-text-color has-medium-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Contact Us', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:social-links {"iconColor":"base","iconColorValue":"var(--wp--preset--color--base)","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"layout":{"type":"flex"}} -->
+<!-- wp:social-links {"iconColor":"base","iconColorValue":"var(--wp--preset--color--base)","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|spacing-30","left":"var:preset|spacing|spacing-30"}}},"layout":{"type":"flex"}} -->
 <ul class="wp-block-social-links has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"https://twitter.com","service":"twitter"} /-->
 
 <!-- wp:social-link {"url":"https://facebook.com","service":"facebook"} /-->

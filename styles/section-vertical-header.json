@@ -1,0 +1,65 @@
+{
+	"name": "vertical-header",
+	"label": "Vertical Header Section",
+	"description": "Adaptive width vertical header layout with fluid padding for column containers",
+	"blockTypes": ["core/group", "core/columns", "core/cover"],
+	"styles": {
+		"spacing": {
+			"padding": {
+				"top": "var(--wp--preset--spacing--spacing-60)",
+				"bottom": "var(--wp--preset--spacing--spacing-80)",
+				"left": "var(--wp--preset--spacing--spacing-40)",
+				"right": "var(--wp--preset--spacing--spacing-40)"
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--base)",
+			"text": "var(--wp--preset--color--contrast)"
+		},
+		"css": ".is-style-vertical-header { width: clamp(6rem, 12vw, 14rem); min-height: 100vh; position: sticky; top: 0; }",
+		"elements": {
+			"heading": {
+				"color": {
+					"text": "var(--wp--preset--color--contrast)"
+				},
+				"typography": {
+					"fontWeight": "700",
+					"lineHeight": "var(--wp--custom--typography--line-height--tight)"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				},
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--secondary)"
+					}
+				},
+				":focus": {
+					"outline": {
+						"width": "2px",
+						"style": "solid",
+						"color": "var(--wp--preset--color--primary)",
+						"offset": "2px"
+					}
+				}
+			}
+		},
+		"blocks": {
+			"core/group": {
+				"spacing": {
+					"padding": {
+						"top": "var(--wp--preset--spacing--spacing-60)",
+						"bottom": "var(--wp--preset--spacing--spacing-80)"
+					}
+				}
+			},
+			"core/columns": {
+				"spacing": {
+					"blockGap": "var(--wp--preset--spacing--spacing-50)"
+				}
+			}
+		}
+	}
+}

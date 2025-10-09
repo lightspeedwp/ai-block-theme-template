@@ -14,13 +14,13 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-60","bottom":"var:preset|spacing|spacing-60"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
-	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|50"}}}} -->
+	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|spacing-60","left":"var:preset|spacing|spacing-50"}}}} -->
 	<div class="wp-block-columns alignwide">
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->
+			<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|spacing-40","left":"var:preset|spacing|spacing-40"}}}} -->
 			<div class="wp-block-columns">
 				<!-- wp:column {"width":"64px"} -->
 				<div class="wp-block-column" style="flex-basis:64px">
@@ -32,7 +32,7 @@
 
 				<!-- wp:column -->
 				<div class="wp-block-column">
-					<!-- wp:quote {"className":"is-style-plain","style":{"typography":{"fontStyle":"normal","fontWeight":"400"},"spacing":{"blockGap":"var:preset|spacing|40"}},"fontSize":"600"} -->
+					<!-- wp:quote {"className":"is-style-plain","style":{"typography":{"fontStyle":"normal","fontWeight":"400"},"spacing":{"blockGap":"var:preset|spacing|spacing-40"}},"fontSize":"600"} -->
 					<blockquote class="wp-block-quote is-style-plain has-x-large-font-size" style="font-style:normal;font-weight:400">
 						<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.1"}}} -->
 						<p style="line-height:1.1"><?php echo esc_html_x( '“Superb product and customer service!”', 'Sample testimonial.', 'twentytwentyfive' ); ?></p>
@@ -49,7 +49,7 @@
 
 		<!-- wp:column {"width":""} -->
 		<div class="wp-block-column">
-			<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->
+			<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|spacing-40","left":"var:preset|spacing|spacing-40"}}}} -->
 			<div class="wp-block-columns">
 				<!-- wp:column {"width":"64px"} -->
 				<div class="wp-block-column" style="flex-basis:64px">
@@ -61,7 +61,7 @@
 
 				<!-- wp:column -->
 				<div class="wp-block-column">
-					<!-- wp:quote {"className":"is-style-plain","style":{"typography":{"fontStyle":"normal","fontWeight":"400"},"spacing":{"blockGap":"var:preset|spacing|40"}},"fontSize":"600"} -->
+					<!-- wp:quote {"className":"is-style-plain","style":{"typography":{"fontStyle":"normal","fontWeight":"400"},"spacing":{"blockGap":"var:preset|spacing|spacing-40"}},"fontSize":"600"} -->
 					<blockquote class="wp-block-quote is-style-plain has-x-large-font-size" style="font-style:normal;font-weight:400">
 						<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.1"}}} -->
 						<p style="line-height:1.1"><?php echo esc_html_x( '“Amazing quality and care. I love all your products.”', 'Sample testimonial.', 'twentytwentyfive' ); ?></p>
