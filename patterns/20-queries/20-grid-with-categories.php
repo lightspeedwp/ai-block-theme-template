@@ -14,9 +14,9 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-30pacing-50","bottom":"var:preset|spacing|spacing-30pacing-50"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-50","bottom":"var:preset|spacing|spacing-50"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-50)">
-	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30pacing-50"}},"layout":{"type":"grid","minimumColumnWidth":"16rem"}} -->
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|spacing-50"}},"layout":{"type":"grid","minimumColumnWidth":"16rem"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
 		<div class="wp-block-group">
@@ -29,7 +29,7 @@
 		<div class="wp-block-group">
 			<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/category-anthuriums.webp","alt":"Close up of a red anthurium.","dimRatio":0,"customOverlayColor":"var(--wp--preset--color--primary)","isUserOverlayColor":true,"layout":{"type":"constrained"}} -->
 			<div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:var(--wp--preset--color--primary)"></span><img class="wp-block-cover__image-background" alt="<?php esc_attr_e( 'Close up of a red anthurium.', 'twentytwentyfive' ); ?>" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/category-anthuriums.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
-				<!-- wp:spacer {"height":"var:preset|spacing|spacing-30pacing-20"} -->
+				<!-- wp:spacer {"height":"var:preset|spacing|spacing-20"} -->
 				<div style="height:var(--wp--preset--spacing--spacing-20)" aria-hidden="true" class="wp-block-spacer"></div>
 				<!-- /wp:spacer -->
 			</div></div>
@@ -43,7 +43,7 @@
 		<div class="wp-block-group">
 			<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/category-cactus.webp","dimRatio":0,"customOverlayColor":"var(--wp--preset--color--primary)","isUserOverlayColor":true,"isDark":false,"layout":{"type":"constrained"}} -->
 			<div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:var(--wp--preset--color--primary)"></span><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/category-cactus.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
-				<!-- wp:spacer {"height":"var:preset|spacing|spacing-30pacing-20"} -->
+				<!-- wp:spacer {"height":"var:preset|spacing|spacing-20"} -->
 				<div style="height:var(--wp--preset--spacing--spacing-20)" aria-hidden="true" class="wp-block-spacer"></div>
 				<!-- /wp:spacer -->
 			</div></div>
@@ -57,7 +57,7 @@
 		<div class="wp-block-group">
 			<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/category-sunflowers.webp","dimRatio":0,"customOverlayColor":"var(--wp--preset--color--primary)","isUserOverlayColor":true,"isDark":false,"layout":{"type":"constrained"}} -->
 			<div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:var(--wp--preset--color--primary)"></span><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/category-sunflowers.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
-				<!-- wp:spacer {"height":"var:preset|spacing|spacing-30pacing-20"} -->
+				<!-- wp:spacer {"height":"var:preset|spacing|spacing-20"} -->
 				<div style="height:var(--wp--preset--spacing--spacing-20)" aria-hidden="true" class="wp-block-spacer"></div>
 				<!-- /wp:spacer -->
 			</div></div>

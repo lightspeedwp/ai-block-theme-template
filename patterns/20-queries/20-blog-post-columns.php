@@ -13,8 +13,8 @@
  * Inserter: true
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Blog Post Columns"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-30pacing-90","bottom":"var:preset|spacing|spacing-30pacing-90","right":"var:preset|spacing|spacing-30pacing-50","left":"var:preset|spacing|spacing-30pacing-50"},"margin":{"top":"0px","bottom":"0px"},"blockGap":"var:preset|spacing|spacing-30pacing-80"}},"backgroundColor":"tertiary","layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-tertiary-background-color has-background" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--spacing-90);padding-right:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-90);padding-left:var(--wp--preset--spacing--spacing-50)"><!-- wp:group {"metadata":{"name":"Titles"},"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|spacing-30pacing-70"},"blockGap":"var:preset|spacing|spacing-30pacing-30"}}} -->
+<!-- wp:group {"metadata":{"name":"Blog Post Columns"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-90","bottom":"var:preset|spacing|spacing-90","right":"var:preset|spacing|spacing-50","left":"var:preset|spacing|spacing-50"},"margin":{"top":"0px","bottom":"0px"},"blockGap":"var:preset|spacing|spacing-80"}},"backgroundColor":"tertiary","layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-tertiary-background-color has-background" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--spacing-90);padding-right:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-90);padding-left:var(--wp--preset--spacing--spacing-50)"><!-- wp:group {"metadata":{"name":"Titles"},"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|spacing-70"},"blockGap":"var:preset|spacing|spacing-30"}}} -->
 <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--spacing-70)"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"primary","fontSize":"200"} -->
 <p class="has-text-align-center has-primary-color has-text-color has-small-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Latest and Greatest', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph -->
@@ -29,7 +29,7 @@
 <!-- /wp:group -->
 
 <!-- wp:query {"queryId":1,"query":{"perPage":"2","pages":"2","offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"align":"wide"} -->
-<div class="wp-block-query alignwide"><!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30pacing-70"}},"layout":{"type":"grid","columnCount":2}} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|spacing-70"}},"layout":{"type":"grid","columnCount":2}} -->
 <!-- wp:pattern {"slug":"ollie/blog-post-card"} /-->
 <!-- /wp:post-template --></div>
 <!-- /wp:query --></div>

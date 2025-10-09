@@ -16,11 +16,11 @@
 ?>
 <!-- wp:template-part {"slug":"header"} /-->
 
-<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|spacing-30pacing-60"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|spacing-60"}}},"layout":{"type":"constrained"}} -->
 <main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--spacing-60)">
 	<!-- wp:query-title {"type":"archive","align":"wide","fontSize":"600"} /-->
 	<!-- wp:term-description {"align":"wide"} /-->
-	<!-- wp:spacer {"height":"var:preset|spacing|spacing-30pacing-50"} -->
+	<!-- wp:spacer {"height":"var:preset|spacing|spacing-50"} -->
 	<div style="height:var(--wp--preset--spacing--spacing-50)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 	<!-- wp:pattern {"slug":"twentytwentyfive/template-query-loop-text-blog"} /-->

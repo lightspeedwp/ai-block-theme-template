@@ -13,7 +13,7 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-30pacing-50","bottom":"var:preset|spacing|spacing-30pacing-50"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-50","bottom":"var:preset|spacing|spacing-50"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-50)">
 	<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 	<div class="wp-block-group alignwide">
@@ -25,9 +25,9 @@
 		<p><?php esc_html_e( 'These are some of the upcoming events', 'twentytwentyfive' ); ?></p>
 		<!-- /wp:paragraph -->
 
-		<!-- wp:group {"style":{"spacing":{"blockGap":"0","margin":{"top":"var:preset|spacing|spacing-30pacing-70"}}},"layout":{"type":"default"}} -->
+		<!-- wp:group {"style":{"spacing":{"blockGap":"0","margin":{"top":"var:preset|spacing|spacing-70"}}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--spacing-70)">
-			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-30pacing-40","bottom":"var:preset|spacing|spacing-30pacing-40"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-40","bottom":"var:preset|spacing|spacing-40"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 			<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--spacing-40);padding-bottom:var(--wp--preset--spacing--spacing-40)">
 				<!-- wp:group {"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
@@ -41,7 +41,7 @@
 				</div>
 				<!-- /wp:group -->
 
-				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30pacing-70"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-70"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 				<div class="wp-block-group">
 					<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase"}}} -->
 					<p style="text-transform:uppercase"><?php echo esc_html_x( 'Mon, Jan 1', 'Example event date in pattern.', 'twentytwentyfive' ); ?></p>
@@ -59,7 +59,7 @@
 			</div>
 			<!-- /wp:group -->
 
-			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-30pacing-40","bottom":"var:preset|spacing|spacing-30pacing-40"}},"border":{"top":{"color":"var:preset|color|accent-6","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-40","bottom":"var:preset|spacing|spacing-40"}},"border":{"top":{"color":"var:preset|color|accent-6","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 			<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px;padding-top:var(--wp--preset--spacing--spacing-40);padding-bottom:var(--wp--preset--spacing--spacing-40)"><!-- wp:group {"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"level":3} -->
@@ -79,7 +79,7 @@
 				</div>
 				<!-- /wp:group -->
 
-				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30pacing-70"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-70"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 				<div class="wp-block-group">
 					<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase"}}} -->
 					<p style="text-transform:uppercase"><?php echo esc_html_x( 'Mon, Jan 1', 'Example event date in pattern.', 'twentytwentyfive' ); ?></p>
@@ -97,7 +97,7 @@
 			</div>
 			<!-- /wp:group -->
 
-			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-30pacing-40","bottom":"var:preset|spacing|spacing-30pacing-40"}},"border":{"top":{"color":"var:preset|color|accent-6","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-40","bottom":"var:preset|spacing|spacing-40"}},"border":{"top":{"color":"var:preset|color|accent-6","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 			<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px;padding-top:var(--wp--preset--spacing--spacing-40);padding-bottom:var(--wp--preset--spacing--spacing-40)"><!-- wp:group {"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"level":3} -->
@@ -110,7 +110,7 @@
 				</div>
 				<!-- /wp:group -->
 
-				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30pacing-70"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-70"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 				<div class="wp-block-group">
 					<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase"}}} -->
 					<p style="text-transform:uppercase"><?php echo esc_html_x( 'Mon, Jan 1', 'Example event date in pattern.', 'twentytwentyfive' ); ?></p>
@@ -128,7 +128,7 @@
 			</div>
 			<!-- /wp:group -->
 
-			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-30pacing-40","bottom":"var:preset|spacing|spacing-30pacing-40"}},"border":{"top":{"color":"var:preset|color|accent-6","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-40","bottom":"var:preset|spacing|spacing-40"}},"border":{"top":{"color":"var:preset|color|accent-6","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 			<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px;padding-top:var(--wp--preset--spacing--spacing-40);padding-bottom:var(--wp--preset--spacing--spacing-40)"><!-- wp:group {"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"level":3} -->
@@ -148,7 +148,7 @@
 				</div>
 				<!-- /wp:group -->
 
-				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30pacing-70"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-70"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 				<div class="wp-block-group">
 					<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase"}}} -->
 					<p style="text-transform:uppercase"><?php echo esc_html_x( 'Mon, Jan 1', 'Example event date in pattern.', 'twentytwentyfive' ); ?></p>

@@ -16,7 +16,7 @@
  * License: GPL-2.0-or-later
  */
 ?>
-<!-- wp:group {"align":"full","className":"lsx-cta-banner","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-30pacing-50","bottom":"var:preset|spacing|spacing-30pacing-50"}}}} -->
+<!-- wp:group {"align":"full","className":"lsx-cta-banner","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-50","bottom":"var:preset|spacing|spacing-50"}}}} -->
 <div class="wp-block-group alignfull lsx-cta-banner" style="padding-top:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-50)"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":3} -->

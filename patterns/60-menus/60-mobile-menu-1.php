@@ -12,7 +12,7 @@
  * Inserter: true
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Menu"},"className":"is-style-default","style":{"position":{"type":""},"spacing":{"padding":{"right":"0","left":"0"},"blockGap":"var:preset|spacing|spacing-30pacing-50"}},"backgroundColor":"base","layout":{"type":"constrained","justifyContent":"left"}} -->
+<!-- wp:group {"metadata":{"name":"Menu"},"className":"is-style-default","style":{"position":{"type":""},"spacing":{"padding":{"right":"0","left":"0"},"blockGap":"var:preset|spacing|spacing-50"}},"backgroundColor":"base","layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group is-style-default has-base-background-color has-background" style="padding-right:0;padding-left:0">
   <!-- Mobile menu sections preserved -->
 </div>

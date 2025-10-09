@@ -13,8 +13,8 @@
  * Inserter: true
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Job Openings"},"align":"full","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"padding":{"top":"var:preset|spacing|spacing-30pacing-90","bottom":"var:preset|spacing|spacing-30pacing-90","right":"var:preset|spacing|spacing-30pacing-50","left":"var:preset|spacing|spacing-30pacing-50"},"blockGap":"var:preset|spacing|spacing-30pacing-80"}},"layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--spacing-90);padding-right:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-90);padding-left:var(--wp--preset--spacing--spacing-50)"><!-- wp:group {"metadata":{"name":"Titles"},"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30pacing-30"}}} -->
+<!-- wp:group {"metadata":{"name":"Job Openings"},"align":"full","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"padding":{"top":"var:preset|spacing|spacing-90","bottom":"var:preset|spacing|spacing-90","right":"var:preset|spacing|spacing-50","left":"var:preset|spacing|spacing-50"},"blockGap":"var:preset|spacing|spacing-80"}},"layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--spacing-90);padding-right:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-90);padding-left:var(--wp--preset--spacing--spacing-50)"><!-- wp:group {"metadata":{"name":"Titles"},"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30"}}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"primary","fontSize":"200"} -->
 <p class="has-text-align-center has-primary-color has-text-color has-small-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'We\'re Hiring', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph -->
@@ -28,7 +28,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Job Openings"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-30pacing-70","right":"var:preset|spacing|spacing-30pacing-70","bottom":"var:preset|spacing|spacing-30pacing-70","left":"var:preset|spacing|spacing-30pacing-70"}},"border":{"radius":"5px"}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"Job Openings"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-70","right":"var:preset|spacing|spacing-70","bottom":"var:preset|spacing|spacing-70","left":"var:preset|spacing|spacing-70"}},"border":{"radius":"5px"}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-tertiary-background-color has-background" style="border-radius:5px;padding-top:var(--wp--preset--spacing--spacing-70);padding-right:var(--wp--preset--spacing--spacing-70);padding-bottom:var(--wp--preset--spacing--spacing-70);padding-left:var(--wp--preset--spacing--spacing-70)"><!-- wp:group {"metadata":{"name":"Entry"},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -36,7 +36,7 @@
 <p style="font-style:normal;font-weight:600"><?php esc_html_e( 'Product Designer', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30pacing-30"}},"textColor":"secondary","fontSize":"200","layout":{"type":"constrained"}} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30"}},"textColor":"secondary","fontSize":"200","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-secondary-color has-text-color has-small-font-size"><!-- wp:paragraph -->
 <p><?php esc_html_e( 'Full Time · Remote', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph --></div>
