@@ -1,0 +1,43 @@
+name: Sync Issues/PRs to Project
+
+on:
+  issues:
+    types: [opened, edited, labeled, unlabeled, reopened, closed]
+  pull_request:
+    types: [opened, edited, labeled, unlabeled, synchronize, closed]
+
+jobs:
+  sync-project:
+    runs-on: ubuntu-latest
+    env:
+      # Prefer repository secret, fall back to repository variables. Declared here so a
+      # single env var reference can be used in steps and easily swapped to a different
+      # secret/variable that has the right access.
+      LS_APP_ID: ${{ secrets.LS_APP_ID || vars.LS_APP_ID }}
+      LS_APP_PRIVATE_KEY: ${{ secrets.LS_APP_PRIVATE_KEY || vars.LS_APP_PRIVATE_KEY }}
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install GitHub CLI
+        uses: cli/cli-action@v2
+
+      - name: Obtain app installation token
+        id: app-token
+        uses: tibdex/github-app-token@v1
+        with:
+          # Use the job-level env variables so the source of truth is a single known variable
+          app_id: ${{ env.LS_APP_ID }}
+          private_key: ${{ env.LS_APP_PRIVATE_KEY }}
+
+      - name: Run project sync script
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          LS_PROJECT_URL: ${{ secrets.LS_PROJECT_URL || vars.LS_PROJECT_URL }}
+        run: |
+          set -euxo pipefail
+          chmod +x ./scripts/sync-project.sh
+          ./scripts/sync-project.sh

@@ -1,4 +1,4 @@
-name: Sync issues/PRs into organisation Project
+name: Update Project Fields
 
 on:
   issues:
@@ -9,7 +9,11 @@ on:
 jobs:
   sync-project:
     runs-on: ubuntu-latest
-    # Minimal permissions required; uses a GitHub App install token via secrets
+    env:
+      # Prefer repository secret, fall back to repository variables. Declared here so steps
+      # can reference a single known variable that has access to create/update projects.
+      LS_APP_ID: ${{ secrets.LS_APP_ID || vars.LS_APP_ID }}
+      LS_APP_PRIVATE_KEY: ${{ secrets.LS_APP_PRIVATE_KEY || vars.LS_APP_PRIVATE_KEY }}
     permissions:
       contents: read
       issues: write
@@ -24,8 +28,10 @@ jobs:
         id: app-token
         uses: tibdex/github-app-token@v1
         with:
-          app_id: ${{ secrets.LS_APP_ID || vars.LS_APP_ID }}
-          private_key: ${{ secrets.LS_APP_PRIVATE_KEY || vars.LS_APP_PRIVATE_KEY }}
+          # Use the job-level env variables so the source of truth is a single known variable
+          # which can be updated to a value that has the right access to run this script.
+          app_id: ${{ env.LS_APP_ID }}
+          private_key: ${{ env.LS_APP_PRIVATE_KEY }}
 
       - name: Add item to Project and update fields
         env:
@@ -47,6 +53,7 @@ jobs:
             NODE_ID=${{ github.event.issue.node_id }}
             TITLE=${{ github.event.issue.title }}
           fi
+
           # Add to Project (if not already present) using gh
           echo "Adding $TYPE #$NUMBER to project…"
           gh api graphql -f query='mutation($project: String!, $itemId: ID!, $title: String!) {
@@ -56,7 +63,6 @@ jobs:
 
           # Determine status from labels
           LABELS=$(gh api graphql -f query='query($id: ID!) { node(id: $id) { ... on Issue { labels(first: 50) { nodes { name } } } ... on PullRequest { labels(first: 50) { nodes { name } } } } }' -F id="$NODE_ID" | jq -r '.data.node.labels.nodes[].name')
-          # Default status
           STATUS="Triage"
           for lbl in $LABELS; do
             case "$lbl" in
@@ -95,10 +101,10 @@ jobs:
 
           # GraphQL update of fields
           cat >mutation.graphql <<'EOM'
-          mutation($project: ID!, $item: ID!, $statusId: String!, $priorityId: String!, $typeId: String) {
-            updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: "PVTSSF123456", value: { singleSelectOptionId: $statusId } }) { clientMutationId }
-            updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: "PVTSPF654321", value: { singleSelectOptionId: $priorityId } }) { clientMutationId }
-            updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: "PVTSTF789012", value: { text: $typeId } }) { clientMutationId }
-          }
+mutation($project: ID!, $item: ID!, $statusId: String!, $priorityId: String!, $typeId: String) {
+  updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: "PVTSSF123456", value: { singleSelectOptionId: $statusId } }) { clientMutationId }
+  updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: "PVTSPF654321", value: { singleSelectOptionId: $priorityId } }) { clientMutationId }
+  updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: "PVTSTF789012", value: { text: $typeId } }) { clientMutationId }
+}
 EOM
           # Field IDs replaced with actual values. Use `gh project field-list <project-url>` to update if needed.
