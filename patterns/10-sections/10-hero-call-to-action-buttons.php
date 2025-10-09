@@ -13,12 +13,12 @@
  * Inserter: true
  */
 ?>
-<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/guy-laptop.webp","id":2843,"dimRatio":80,"overlayColor":"main","isUserOverlayColor":true,"metadata":{"name":"Hero Call To Action Buttons"},"align":"full","className":"is-style-blur-image is-style-blur-image-less","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"bottom":"0","top":"0","right":"0","left":"0"}},"color":{}}} -->
-<div class="wp-block-cover alignfull is-style-blur-image is-style-blur-image-less" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim-80 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2843" alt="<?php esc_attr_e( 'Person working on laptop', 'lsx-design' ); ?>" src="<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/guy-laptop.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"metadata":{"name":"Hero Wrap"},"align":"full","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"padding":{"top":"var:preset|spacing|spacing-90","bottom":"var:preset|spacing|spacing-90","right":"var:preset|spacing|spacing-50","left":"var:preset|spacing|spacing-50"},"blockGap":"0px"}},"textColor":"base","layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-base-color has-text-color" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--spacing-90);padding-right:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-90);padding-left:var(--wp--preset--spacing--spacing-50)"><!-- wp:group {"metadata":{"name":"Text and Buttons"}} -->
-<div class="wp-block-group"><!-- wp:group {"metadata":{"name":"Titles"},"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"main-accent","fontSize":"200"} -->
-<p class="has-text-align-center has-main-accent-color has-text-color has-small-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'WordPress Reimagined', 'lsx-design' ); ?></p>
+<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/guy-laptop.webp","id":2843,"dimRatio":80,"overlayColor":"neutral-800","isUserOverlayColor":true,"metadata":{"name":"Hero Call To Action Buttons"},"align":"full","className":"is-style-hero-dark is-style-blur-image is-style-blur-image-less","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"bottom":"0","top":"0","right":"0","left":"0"}},"color":{}}} -->
+<div class="wp-block-cover alignfull is-style-blur-image is-style-blur-image-less" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><span aria-hidden="true" class="wp-block-cover__background has-neutral-800-background-color has-background-dim-80 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2843" alt="<?php esc_attr_e( 'Person working on laptop', 'lsx-design' ); ?>" src="<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/guy-laptop.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"metadata":{"name":"Hero Wrap"},"align":"full","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","right":"var:preset|spacing|50","left":"var:preset|spacing|50"},"blockGap":"0px"}},"textColor":"base","layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-base-color has-text-color" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--90);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--50)"><!-- wp:group {"metadata":{"name":"Text and Buttons"}} -->
+<div class="wp-block-group"><!-- wp:group {"metadata":{"name":"Titles"},"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"accent","fontSize":"200"} -->
+<p class="has-text-align-center has-accent-color has-text-color has-small-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'WordPress Reimagined', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"center","className":"has-secondary-font-family","fontSize":"600"} -->
@@ -26,8 +26,8 @@
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
-<!-- wp:paragraph {"align":"center","textColor":"main-accent"} -->
-<p class="has-text-align-center has-main-accent-color has-text-color"><?php esc_html_e( 'Easily create beautiful, fully-customizable websites with the new WordPress Site Editor and the Ollie block theme. No coding skills required.', 'lsx-design' ); ?></p>
+<!-- wp:paragraph {"align":"center","textColor":"accent"} -->
+<p class="has-text-align-center has-accent-color has-text-color"><?php esc_html_e( 'Easily create beautiful, fully-customizable websites with the new WordPress Site Editor and the Ollie block theme. No coding skills required.', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30"}},"layout":{"type":"flex","justifyContent":"center"}} -->
