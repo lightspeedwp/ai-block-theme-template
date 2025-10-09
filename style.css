@@ -164,3 +164,20 @@ a:focus {
 	width: auto;
 	z-index: 100000;
 }
+
+/*
+ * Legacy Typography Fallbacks (Temporary - Remove in v1.1.0)
+ * Provides fallback support for content using old inline typography values
+ * Maps legacy sizes to new token-based fluid typography system
+ */
+:root {
+	/* Legacy vw-based hero headings → font-size-900 (Colossal) */
+	--legacy-hero-12vw: var(--wp--preset--font-size--900);
+	
+	/* Legacy clamp expressions → font-size-900 (Colossal) */
+	--legacy-banner-clamp: var(--wp--preset--font-size--900);
+	
+	/* Legacy px values → appropriate tokens */
+	--legacy-14px: var(--wp--preset--font-size--200); /* Base */
+	--legacy-12px: var(--wp--preset--font-size--100); /* Tiny */
+}
