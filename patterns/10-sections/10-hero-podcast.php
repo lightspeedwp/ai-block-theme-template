@@ -13,9 +13,9 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","className":"is-style-section-2","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-60","bottom":"var:preset|spacing|spacing-60"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull is-style-section-2" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--spacing-60);padding-bottom:var(--wp--preset--spacing--spacing-60)">
-	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|spacing-60","left":"var:preset|spacing|spacing-60"}}}} -->
+<!-- wp:group {"align":"full","className":"is-style-section-2","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull is-style-section-2" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|60"}}}} -->
 	<div class="wp-block-columns alignwide">
 		<!-- wp:column {"width":"40%"} -->
 		<div class="wp-block-column" style="flex-basis:40%">
@@ -28,7 +28,7 @@
 		<!-- /wp:column -->
 
 
-		<!-- wp:column {"verticalAlignment":"center","width":"60%","style":{"spacing":{"blockGap":"var:preset|spacing|spacing-40"}}} -->
+		<!-- wp:column {"verticalAlignment":"center","width":"60%","style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%">
 			<!-- wp:heading {"fontSize":"800"} -->
 			<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'The Stories Podcast', 'twentytwentyfive' ); ?></h2>
@@ -38,7 +38,7 @@
 			<p><?php echo esc_html_x( 'Storytelling, expert analysis, and vivid descriptions. The Stories Podcast brings history to life, making it accessible and engaging for a global audience.', 'Podcast description', 'twentytwentyfive' ); ?></p>
 			<!-- /wp:paragraph -->
 
-			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"wrap"}} -->
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"wrap"}} -->
 			<div class="wp-block-group">
 
 				<!-- wp:heading {"level":3,"style":{"typography":{"textTransform":"uppercase","letterSpacing":"1px","fontStyle":"normal","fontWeight":"600"}},"fontSize":"200"} -->

@@ -13,8 +13,8 @@
  * Inserter: true
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Call To Action Box","categories":["ollie/card"],"patternName":"ollie/card-call-to-action"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-70","right":"var:preset|spacing|spacing-70","bottom":"var:preset|spacing|spacing-70","left":"var:preset|spacing|spacing-70"}},"border":{"radius":"5px"}},"backgroundColor":"primary","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-primary-background-color has-background" style="border-radius:5px;padding-top:var(--wp--preset--spacing--spacing-70);padding-right:var(--wp--preset--spacing--spacing-70);padding-bottom:var(--wp--preset--spacing--spacing-70);padding-left:var(--wp--preset--spacing--spacing-70)"><!-- wp:group {"metadata":{"name":"Title Row"},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<!-- wp:group {"metadata":{"name":"Call To Action Box","categories":["ollie/card"],"patternName":"ollie/card-call-to-action"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"}},"border":{"radius":"5px"}},"backgroundColor":"primary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-primary-background-color has-background" style="border-radius:5px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:group {"metadata":{"name":"Title Row"},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"base","fontSize":"300"} -->
 <p class="has-base-color has-text-color has-medium-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Download Ollie', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph -->
@@ -35,7 +35,7 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary-accent"}}}},"textColor":"primary-accent","fontSize":"x-small"} -->
+<!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary-accent"}}}},"textColor":"primary-accent","fontSize":"100"} -->
 <p class="has-text-align-center has-primary-accent-color has-text-color has-link-color has-x-small-font-size"><?php esc_html_e( 'or view on', 'lsx-design' ); ?><a href="#"><?php esc_html_e( 'WordPress.org', 'lsx-design' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>

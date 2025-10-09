@@ -31,7 +31,7 @@
     <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"},"fontSize":"200"} -->
     <div class="wp-block-group has-small-font-size">
       <!-- wp:post-date /-->
-      <!-- wp:post-terms {"term":"category","fontSize":"x-small"} /-->
+      <!-- wp:post-terms {"term":"category","fontSize":"100"} /-->
     </div>
     <!-- /wp:group -->
   </div>
