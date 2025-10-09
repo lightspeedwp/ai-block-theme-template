@@ -5,6 +5,8 @@
  * Description: Configured comments area for single posts and templates.
  * Categories: lsx-design/comments
  * Keywords: comments, feedback, discussion
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Viewport Width: 900
  * Block Types:
  * Inserter: yes

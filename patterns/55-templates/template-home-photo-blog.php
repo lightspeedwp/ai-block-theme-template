@@ -23,7 +23,7 @@
 		<!-- /wp:heading -->
 	</div>
 	<!-- /wp:group -->
-	<!-- wp:heading {"textAlign":"center","align":"wide","fontSize":"xx-large"} -->
+	<!-- wp:heading {"textAlign":"center","align":"wide","fontSize":"800"} -->
 	<h2 class="wp-block-heading alignwide has-text-align-center has-xx-large-font-size"><?php esc_html_e( 'Tell your story', 'twentytwentyfive' ); ?></h2>
 	<!-- /wp:heading -->
 	<!-- wp:pattern {"slug":"twentytwentyfive/template-query-loop-photo-blog"} /-->

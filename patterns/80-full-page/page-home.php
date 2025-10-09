@@ -1,10 +1,12 @@
 <?php
 /**
  * Title: Homepage
- * Slug: ollie/page-home
+ * Slug: lsx-design/page-home
  * Description: A full page design for a Homepage
- * Categories: ollie/pages
+ * Categories: lsx-design/sections
  * Keywords: page, layout, design, template, home
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Viewport Width: 1500
  * Block Types:
  * Post Types:

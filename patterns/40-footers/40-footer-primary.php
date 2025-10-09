@@ -16,12 +16,12 @@
  * License: GPL-2.0-or-later
  */
 ?>
-<!-- wp:group {"align":"full","className":"lsx-footer-primary","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull lsx-footer-primary" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:columns {"align":"wide"} -->
+<!-- wp:group {"align":"full","className":"lsx-footer-primary","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull lsx-footer-primary" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"33%"} -->
 <div class="wp-block-column" style="flex-basis:33%"><!-- wp:site-title {"level":0} /-->
 
-<!-- wp:paragraph {"textColor":"secondary","fontSize":"small"} -->
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"200"} -->
 <p class="has-secondary-color has-text-color has-small-font-size"><?php esc_html_e( 'Building better experiences, one pattern at a time.', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
@@ -59,7 +59,7 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium"}}}} -->
+<!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
 <hr class="wp-block-separator"/>
 <!-- /wp:separator -->
 

@@ -5,6 +5,8 @@
  * Description: Breadcrumbs pattern that uses the Yoast SEO breadcrumb block when the Yoast plugin is active. Falls back to a lightweight markup when the block is not available.
  * Categories: navigation
  * Keywords: breadcrumb, yoast, seo, navigation
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Viewport Width: 1000
  * Block Types: core/template-part
  * Inserter: true

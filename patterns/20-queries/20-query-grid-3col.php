@@ -27,9 +27,9 @@
 		<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)">
 			<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3"} /-->
-			<!-- wp:post-title {"isLink":true,"fontSize":"large"} /-->
+			<!-- wp:post-title {"isLink":true,"fontSize":"500"} /-->
 			<!-- wp:post-excerpt {"moreText":"<?php echo esc_html__( 'Read more', 'lsx-design' ); ?>"} /-->
-			<!-- wp:post-date {"fontSize":"small","isLink":true} /-->
+			<!-- wp:post-date {"fontSize":"200","isLink":true} /-->
 		</div>
 		<!-- /wp:group -->
 		<!-- /wp:post-template -->

@@ -1,11 +1,10 @@
 {
-	"presets": ["@wordpress/babel-preset-default"], // Use WordPress default Babel preset for consistent JS transpilation
+	"presets": ["@wordpress/babel-preset-default"],
 	"plugins": [
-		// Babel plugins for additional functionality
 		[
-			"@wordpress/babel-plugin-makepot", // Extract translatable strings for internationalization
+			"@wordpress/babel-plugin-makepot",
 			{
-				"output": "languages/ai-block-theme-template.pot" // Output path for generated .pot translation file
+				"output": "languages/ai-block-theme-template.pot"
 			}
 		]
 	]

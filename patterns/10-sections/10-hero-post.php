@@ -16,10 +16,10 @@
  * License: GPL-2.0-or-later
  */
 ?>
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:post-title {"level":1,"isLink":false} /-->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:post-title {"level":1,"isLink":false} /-->
 
-<!-- wp:post-terms {"term":"category","fontSize":"small"} /-->
+<!-- wp:post-terms {"term":"category","fontSize":"200"} /-->
 
-<!-- wp:post-date {"textColor":"secondary","fontSize":"small"} /--></div>
+<!-- wp:post-date {"textColor":"secondary","fontSize":"200"} /--></div>
 <!-- /wp:group -->

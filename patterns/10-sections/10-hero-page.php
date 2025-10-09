@@ -18,7 +18,7 @@
 ?>
 <!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/hero-desktop.jpg' ) ); ?>","dimRatio":30,"minHeight":480,"isDark":false,"align":"full"} -->
 <div class="wp-block-cover alignfull" style="background-image:url(<?php echo esc_url( get_theme_file_uri( 'assets/images/hero-desktop.jpg' ) ); ?>);min-height:480px"><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"primary","fontSize":"small"} -->
+<div class="wp-block-group alignwide"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"primary","fontSize":"200"} -->
 <p class="has-primary-color has-text-color has-small-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Design Without Limits', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph -->
 
