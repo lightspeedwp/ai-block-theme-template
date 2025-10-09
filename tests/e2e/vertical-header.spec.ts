@@ -81,7 +81,25 @@ test.describe('Vertical Header Section Style', () => {
 					});
 					
 					// Should use primary color token
-					expect(linkStyles.color).toMatch(/rgb\(0, 124, 186\)|#007cba/i); // Primary color
+					// Get the expected primary color from CSS custom property
+					const expectedPrimaryColor = await page.evaluate(() => {
+						const root = document.documentElement;
+						const style = getComputedStyle(root);
+						const colorValue = style.getPropertyValue('--wp--preset--color--primary').trim();
+						// If the value is a hex, convert to rgb for comparison
+						function hexToRgb(hex) {
+							let c = hex.replace('#', '');
+							if (c.length === 3) c = c.split('').map(x => x + x).join('');
+							const num = parseInt(c, 16);
+							return `rgb(${(num >> 16) & 255}, ${(num >> 8) & 255}, ${num & 255})`;
+						}
+						if (colorValue.startsWith('#')) {
+							return hexToRgb(colorValue);
+						}
+						// If already rgb(a), return as is
+						return colorValue;
+					});
+					expect(linkStyles.color.replace(/\s+/g, '')).toBe(expectedPrimaryColor.replace(/\s+/g, '')); // Primary color
 				}
 			}
 		});
