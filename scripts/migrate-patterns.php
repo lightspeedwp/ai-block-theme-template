@@ -37,21 +37,42 @@ function migrate_pattern_file($file_path, &$migration_log) {
     // 3. Update text domain from 'ollie' to 'lsx-design'
     $content = str_replace("'ollie'", "'lsx-design'", $content);
     
-    // 4. Update old spacing tokens to new numeric system
+    // 4. Update old spacing tokens to new numeric system with spacing- prefix
     $spacing_map = [
-        'var:preset|spacing|small' => 'var:preset|spacing|30',
-        'var:preset|spacing|medium' => 'var:preset|spacing|50',
-        'var:preset|spacing|large' => 'var:preset|spacing|70',
-        'var:preset|spacing|x-large' => 'var:preset|spacing|80',
-        'var:preset|spacing|xx-large' => 'var:preset|spacing|90',
-        'var(--wp--preset--spacing--small)' => 'var(--wp--preset--spacing--30)',
-        'var(--wp--preset--spacing--medium)' => 'var(--wp--preset--spacing--50)',
-        'var(--wp--preset--spacing--large)' => 'var(--wp--preset--spacing--70)',
-        'var(--wp--preset--spacing--x-large)' => 'var(--wp--preset--spacing--80)',
-        'var(--wp--preset--spacing--xx-large)' => 'var(--wp--preset--spacing--90)',
-        'spacing|l' => 'spacing|70',
-        'spacing|m' => 'spacing|50',
-        'spacing|s' => 'spacing|30',
+        'var:preset|spacing|small' => 'var:preset|spacing|spacing-30',
+        'var:preset|spacing|medium' => 'var:preset|spacing|spacing-50',
+        'var:preset|spacing|large' => 'var:preset|spacing|spacing-70',
+        'var:preset|spacing|x-large' => 'var:preset|spacing|spacing-80',
+        'var:preset|spacing|xx-large' => 'var:preset|spacing|spacing-90',
+        'var(--wp--preset--spacing--small)' => 'var(--wp--preset--spacing--spacing-30)',
+        'var(--wp--preset--spacing--medium)' => 'var(--wp--preset--spacing--spacing-50)',
+        'var(--wp--preset--spacing--large)' => 'var(--wp--preset--spacing--spacing-70)',
+        'var(--wp--preset--spacing--x-large)' => 'var(--wp--preset--spacing--spacing-80)',
+        'var(--wp--preset--spacing--xx-large)' => 'var(--wp--preset--spacing--spacing-90)',
+        // Update existing numeric tokens to include spacing- prefix
+        'var:preset|spacing|10' => 'var:preset|spacing|spacing-10',
+        'var:preset|spacing|20' => 'var:preset|spacing|spacing-20',
+        'var:preset|spacing|30' => 'var:preset|spacing|spacing-30',
+        'var:preset|spacing|40' => 'var:preset|spacing|spacing-40',
+        'var:preset|spacing|50' => 'var:preset|spacing|spacing-50',
+        'var:preset|spacing|60' => 'var:preset|spacing|spacing-60',
+        'var:preset|spacing|70' => 'var:preset|spacing|spacing-70',
+        'var:preset|spacing|80' => 'var:preset|spacing|spacing-80',
+        'var:preset|spacing|90' => 'var:preset|spacing|spacing-90',
+        'var:preset|spacing|100' => 'var:preset|spacing|spacing-100',
+        'var(--wp--preset--spacing--10)' => 'var(--wp--preset--spacing--spacing-10)',
+        'var(--wp--preset--spacing--20)' => 'var(--wp--preset--spacing--spacing-20)',
+        'var(--wp--preset--spacing--30)' => 'var(--wp--preset--spacing--spacing-30)',
+        'var(--wp--preset--spacing--40)' => 'var(--wp--preset--spacing--spacing-40)',
+        'var(--wp--preset--spacing--50)' => 'var(--wp--preset--spacing--spacing-50)',
+        'var(--wp--preset--spacing--60)' => 'var(--wp--preset--spacing--spacing-60)',
+        'var(--wp--preset--spacing--70)' => 'var(--wp--preset--spacing--spacing-70)',
+        'var(--wp--preset--spacing--80)' => 'var(--wp--preset--spacing--spacing-80)',
+        'var(--wp--preset--spacing--90)' => 'var(--wp--preset--spacing--spacing-90)',
+        'var(--wp--preset--spacing--100)' => 'var(--wp--preset--spacing--spacing-100)',
+        'spacing|l' => 'spacing|spacing-70',
+        'spacing|m' => 'spacing|spacing-50',
+        'spacing|s' => 'spacing|spacing-30',
     ];
     
     foreach ($spacing_map as $old => $new) {
