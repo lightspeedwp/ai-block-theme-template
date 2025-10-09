@@ -133,6 +133,34 @@ if (!$hex_colors_found) {
     $validation_results['no_hex_colors'] = false;
 }
 
+// 6. Check for inline typography values in patterns
+echo "\n6. Checking for inline typography values in patterns...\n";
+$inline_typography_found = false;
+
+$typography_iterator = new RecursiveIteratorIterator(
+    new RecursiveDirectoryIterator($pattern_directory)
+);
+
+foreach ($typography_iterator as $file) {
+    if ($file->getExtension() === 'php' || $file->getExtension() === 'html') {
+        $content = file_get_contents($file->getPathname());
+        
+        // Check for inline fontSize with vw, px, clamp values
+        if (preg_match('/fontSize["\']:\s*["\'][^"\']*(?:vw|px|clamp)/i', $content) ||
+            preg_match('/font-size:\s*[^;]*(?:vw|px|clamp)/i', $content)) {
+            $inline_typography_found = true;
+            echo "   ⚠️  Inline typography found in: " . basename($file->getPathname()) . "\n";
+        }
+    }
+}
+
+if (!$inline_typography_found) {
+    echo "   ✅ No inline typography values found in patterns\n";
+    $validation_results['no_inline_typography'] = true;
+} else {
+    $validation_results['no_inline_typography'] = false;
+}
+
 // Summary
 echo "\n" . str_repeat("=", 50) . "\n";
 echo "VALIDATION SUMMARY\n";

@@ -19,8 +19,8 @@
  * Example Usage: Use below hero sections to list product/service benefits.
  */
 ?>
-<!-- wp:group {"align":"full","className":"lsx-features-grid-4col","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull lsx-features-grid-4col" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<!-- wp:group {"align":"full","className":"lsx-features-grid-4col","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-60","bottom":"var:preset|spacing|spacing-60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull lsx-features-grid-4col" style="padding-top:var(--wp--preset--spacing--spacing-60);padding-bottom:var(--wp--preset--spacing--spacing-60)">
 	<!-- wp:group {"align":"wide","layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"16rem"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:group {"layout":{"type":"constrained"}} -->
