@@ -29,8 +29,8 @@ foreach ($iterator as $file) {
         $content = file_get_contents($file->getPathname());
         
         // Check for hardcoded rem/px values in spacing
-        if (preg_match('/padding[^:]*:\s*["\'][0-9]+(rem|px)/', $content) ||
-            preg_match('/margin[^:]*:\s*["\'][0-9]+(rem|px)/', $content)) {
+        if (preg_match('/style\s*=\s*["\'][^"\']*(padding[^:]*:\s*[0-9]+(rem|px))/', $content) ||
+            preg_match('/style\s*=\s*["\'][^"\']*(margin[^:]*:\s*[0-9]+(rem|px))/', $content)) {
             $hardcoded_spacing_found = true;
             echo "   ⚠️  Hardcoded spacing found in: " . basename($file->getPathname()) . "\n";
         }
