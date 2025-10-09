@@ -249,8 +249,7 @@ test.describe('Block Patterns Tests', () => {
 					}
 					
 				} catch (error) {
-					// eslint-disable-next-line no-console
-					console.log(`Error testing publication for pattern "${name}": ${error}`);
+					test.info().log(`Error testing publication for pattern "${name}": ${error}`);
 					// Test passes but logs the issue
 					expect(true).toBeTruthy();
 				}
