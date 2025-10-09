@@ -12,7 +12,7 @@
  * Inserter: yes
  */
 ?>
-<!-- wp:group {"className":"lsx-author-card-compact","layout":{"type":"flex","verticalAlignment":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} -->
+<!-- wp:group {"className":"lsx-author-card-compact","layout":{"type":"flex","verticalAlignment":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30pacing-30"}}} -->
 <div class="wp-block-group lsx-author-card-compact"><!-- wp:avatar {"size":48} /-->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->

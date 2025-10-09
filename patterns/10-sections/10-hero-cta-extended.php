@@ -19,8 +19,8 @@
  * Example Usage: Top section for a marketing landing or homepage.
  */
 ?>
-<!-- wp:group {"align":"full","className":"lsx-hero-cta-extended","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull lsx-hero-cta-extended" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--50)">
+<!-- wp:group {"align":"full","className":"lsx-hero-cta-extended","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-30pacing-80","bottom":"var:preset|spacing|spacing-30pacing-80","left":"var:preset|spacing|spacing-30pacing-50","right":"var:preset|spacing|spacing-30pacing-50"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull lsx-hero-cta-extended" style="padding-top:var(--wp--preset--spacing--spacing-80);padding-right:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-80);padding-left:var(--wp--preset--spacing--spacing-50)">
 	<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/hero-cta.jpg' ) ); ?>","dimRatio":20,"isDark":false,"align":"full","className":"lsx-hero-cta-cover"} -->
 	<div class="wp-block-cover alignfull lsx-hero-cta-cover" style="background-image:url('<?php echo esc_url( get_theme_file_uri( 'assets/images/hero-cta.jpg' ) ); ?>')">
 		<div class="wp-block-cover__inner-container">
@@ -38,7 +38,7 @@
 				<p class="has-text-align-center lsx-hero-cta-lead"><?php echo esc_html__( 'A curated library of composable sections, query loops and template parts for block themes.', 'lsx-design' ); ?></p>
 				<!-- /wp:paragraph -->
 
-				<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
+				<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30pacing-20"}}} -->
 				<div class="wp-block-buttons">
 					<!-- wp:button {"className":"is-style-primary","width":200} -->
 					<div class="wp-block-button is-style-primary has-custom-width wp-block-button__width-200"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get started', 'lsx-design' ); ?></a></div>
@@ -50,8 +50,8 @@
 				</div>
 				<!-- /wp:buttons -->
 
-				<!-- wp:spacer {"height":"var:preset|spacing|30"} -->
-				<div style="height:var(--wp--preset--spacing--30)" aria-hidden="true" class="wp-block-spacer"></div>
+				<!-- wp:spacer {"height":"var:preset|spacing|spacing-30pacing-30"} -->
+				<div style="height:var(--wp--preset--spacing--spacing-30)" aria-hidden="true" class="wp-block-spacer"></div>
 				<!-- /wp:spacer -->
 
 				<!-- wp:group {"layout":{"type":"flex","justifyContent":"center","flexWrap":"nowrap"},"className":"lsx-hero-badges"} -->

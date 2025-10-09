@@ -16,8 +16,8 @@
  * License: GPL-2.0-or-later
  */
 ?>
-<!-- wp:group {"className":"lsx-pricing-highlight","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"border":{"radius":"8px","width":"1px"}},"backgroundColor":"main","textColor":"base","borderColor":"border-dark","layout":{"type":"constrained"}} -->
-<div class="wp-block-group lsx-pricing-highlight has-base-color has-main-background-color has-text-color has-background has-border-color" style="border-radius:8px;border-width:1px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--50)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"},"fontSize":"500"} -->
+<!-- wp:group {"className":"lsx-pricing-highlight","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-30pacing-70","bottom":"var:preset|spacing|spacing-30pacing-70","left":"var:preset|spacing|spacing-30pacing-50","right":"var:preset|spacing|spacing-30pacing-50"}},"border":{"radius":"8px","width":"1px"}},"backgroundColor":"main","textColor":"base","borderColor":"border-dark","layout":{"type":"constrained"}} -->
+<div class="wp-block-group lsx-pricing-highlight has-base-color has-main-background-color has-text-color has-background has-border-color" style="border-radius:8px;border-width:1px;padding-top:var(--wp--preset--spacing--spacing-70);padding-right:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-70);padding-left:var(--wp--preset--spacing--spacing-50)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"},"fontSize":"500"} -->
 <div class="wp-block-group has-large-font-size"><!-- wp:paragraph {"fontSize":"600","fontFamily":"primary","style":{"typography":{"fontStyle":"normal","fontWeight":"600","lineHeight":"1"}}} -->
 <p class="has-primary-font-family has-x-large-font-size" style="font-style:normal;font-weight:600;line-height:1"><?php esc_html_e( '$49', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph -->
@@ -41,8 +41,8 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:separator {"className":"is-style-separator-thin","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"backgroundColor":"border-dark"} -->
-<hr class="wp-block-separator has-text-color has-border-dark-color has-alpha-channel-opacity has-border-dark-background-color has-background is-style-separator-thin" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)"/>
+<!-- wp:separator {"className":"is-style-separator-thin","style":{"spacing":{"margin":{"top":"var:preset|spacing|spacing-30pacing-50","bottom":"var:preset|spacing|spacing-30pacing-50"}}},"backgroundColor":"border-dark"} -->
+<hr class="wp-block-separator has-text-color has-border-dark-color has-alpha-channel-opacity has-border-dark-background-color has-background is-style-separator-thin" style="margin-top:var(--wp--preset--spacing--spacing-50);margin-bottom:var(--wp--preset--spacing--spacing-50)"/>
 
 <!-- wp:list {"className":"lsx-pricing-features","fontSize":"200"} -->
 <ul class="lsx-pricing-features has-small-font-size"><li><?php esc_html_e( 'Publishing Suite', 'lsx-design' ); ?></li><li><?php esc_html_e( 'Advanced Tools', 'lsx-design' ); ?></li><li><?php esc_html_e( 'Priority Support', 'lsx-design' ); ?></li></ul>

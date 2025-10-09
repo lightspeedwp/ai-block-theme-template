@@ -12,8 +12,8 @@
  * Inserter: yes
  */
 ?>
-<!-- wp:group {"className":"lsx-search-panel","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
-<div class="wp-block-group lsx-search-panel" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:heading {"level":3} -->
+<!-- wp:group {"className":"lsx-search-panel","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-30pacing-50","bottom":"var:preset|spacing|spacing-30pacing-50"}}}} -->
+<div class="wp-block-group lsx-search-panel" style="padding-top:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-50)"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading"><?php esc_html_e( 'Search the site', 'lsx-design' ); ?></h3>
 <!-- /wp:heading -->
 
