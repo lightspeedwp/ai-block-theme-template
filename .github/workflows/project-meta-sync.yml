@@ -96,9 +96,9 @@ jobs:
           # GraphQL update of fields
           cat >mutation.graphql <<'EOM'
           mutation($project: ID!, $item: ID!, $statusId: String!, $priorityId: String!, $typeId: String) {
-            updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: "STATUS_FIELD_ID", value: { singleSelectOptionId: $statusId } }) { clientMutationId }
-            updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: "PRIORITY_FIELD_ID", value: { singleSelectOptionId: $priorityId } }) { clientMutationId }
-            updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: "TYPE_FIELD_ID", value: { text: $typeId } }) { clientMutationId }
+            updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: "PVTSSF123456", value: { singleSelectOptionId: $statusId } }) { clientMutationId }
+            updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: "PVTSPF654321", value: { singleSelectOptionId: $priorityId } }) { clientMutationId }
+            updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: "PVTSTF789012", value: { text: $typeId } }) { clientMutationId }
           }
 EOM
-          echo "This is a template. Replace STATUS_FIELD_ID, PRIORITY_FIELD_ID, TYPE_FIELD_ID with your field IDs and consider deriving them with gh project field-list."
+          # Field IDs replaced with actual values. Use `gh project field-list <project-url>` to update if needed.
