@@ -42,14 +42,10 @@ test.describe('Typography Token System', () => {
     for (const patternFile of patternFiles) {
       const content = readFileSync(join(process.cwd(), patternFile), 'utf8');
       
-      // Check for inline fontSize with problematic values
-      const inlineVwMatch = content.match(/fontSize["']:\s*["'][^"']*vw/);
-      const inlineClampMatch = content.match(/fontSize["']:\s*["'][^"']*clamp/);
-      const inlinePxMatch = content.match(/fontSize["']:\s*["'][^"']*px/);
+      // Check for inline fontSize with problematic values (vw, clamp, px)
+      const inlineFontSizeMatch = content.match(/fontSize["']:\s*["'][^"']*(vw|clamp|px)/);
       
-      expect(inlineVwMatch, `${patternFile} should not contain vw font sizes`).toBeNull();
-      expect(inlineClampMatch, `${patternFile} should not contain clamp font sizes`).toBeNull();
-      expect(inlinePxMatch, `${patternFile} should not contain px font sizes`).toBeNull();
+      expect(inlineFontSizeMatch, `${patternFile} should not contain inline font sizes using vw, clamp, or px`).toBeNull();
     }
   });
   
