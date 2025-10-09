@@ -34,7 +34,7 @@
 <p class="has-text-align-center has-accent-color has-text-color"><?php esc_html_e( 'Easily create beautiful, fully-customizable websites with the Site Editor and LSX Design patterns. No coding skills required.', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:buttons {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30"}},"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-button-brand"} -->
 <div class="wp-block-button is-style-button-brand"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get LSX Design', 'lsx-design' ); ?></a></div>
 <!-- /wp:button -->

@@ -13,8 +13,8 @@
  * Inserter: true
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Team Members"},"align":"full","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","right":"var:preset|spacing|50","left":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|80"}},"backgroundColor":"tertiary","layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-tertiary-background-color has-background" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--90);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--50)"><!-- wp:group {"metadata":{"name":"Titles"},"style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} -->
+<!-- wp:group {"metadata":{"name":"Team Members"},"align":"full","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"padding":{"top":"var:preset|spacing|spacing-90","bottom":"var:preset|spacing|spacing-90","right":"var:preset|spacing|spacing-50","left":"var:preset|spacing|spacing-50"},"blockGap":"var:preset|spacing|spacing-80"}},"backgroundColor":"tertiary","layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-tertiary-background-color has-background" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--spacing-90);padding-right:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-90);padding-left:var(--wp--preset--spacing--spacing-50)"><!-- wp:group {"metadata":{"name":"Titles"},"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30"}}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"primary","fontSize":"200"} -->
 <p class="has-text-align-center has-primary-color has-text-color has-small-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Meet Our People', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph -->
@@ -29,8 +29,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"metadata":{"name":"Team Members"},"align":"wide","layout":{"type":"grid","minimumColumnWidth":"20rem"}} -->
-<div class="wp-block-group alignwide"><!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/avatar-2.webp","id":57,"dimRatio":50,"overlayColor":"main","isUserOverlayColor":true,"minHeight":500,"contentPosition":"bottom center","isDark":false,"metadata":{"name":"Team Member"},"className":"is-style-rounded-cover","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|50"}},"border":{"radius":"5px"},"dimensions":{"aspectRatio":"3/4"}}} -->
-<div class="wp-block-cover is-light has-custom-content-position is-position-bottom-center is-style-rounded-cover" style="border-radius:5px;padding-bottom:var(--wp--preset--spacing--50);min-height:500px"><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-57" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/avatar-2.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide"><!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/avatar-2.webp","id":57,"dimRatio":50,"overlayColor":"main","isUserOverlayColor":true,"minHeight":500,"contentPosition":"bottom center","isDark":false,"metadata":{"name":"Team Member"},"className":"is-style-rounded-cover","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|spacing-50"}},"border":{"radius":"5px"},"dimensions":{"aspectRatio":"3/4"}}} -->
+<div class="wp-block-cover is-light has-custom-content-position is-position-bottom-center is-style-rounded-cover" style="border-radius:5px;padding-bottom:var(--wp--preset--spacing--spacing-50);min-height:500px"><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-57" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/avatar-2.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":4,"textColor":"base"} -->
 <h4 class="wp-block-heading has-text-align-center has-base-color has-text-color"><?php esc_html_e( 'Tracy Capitan', 'lsx-design' ); ?></h4>
@@ -41,7 +41,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:social-links {"iconColor":"base","iconColorValue":"var(--wp--preset--color--base)","align":"center","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:social-links {"iconColor":"base","iconColorValue":"var(--wp--preset--color--base)","align":"center","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|spacing-30","left":"var:preset|spacing|spacing-30"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
 <ul class="wp-block-social-links aligncenter has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"https://twitter.com","service":"twitter"} /-->
 
 <!-- wp:social-link {"url":"https://facebook.com","service":"facebook"} /-->
@@ -51,8 +51,8 @@
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/avatar-1.webp","id":56,"dimRatio":50,"overlayColor":"main","isUserOverlayColor":true,"minHeight":500,"contentPosition":"bottom center","isDark":false,"metadata":{"name":"Team Member"},"className":"is-style-rounded-cover","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|50"}},"border":{"radius":"5px"},"dimensions":{"aspectRatio":"3/4"}}} -->
-<div class="wp-block-cover is-light has-custom-content-position is-position-bottom-center is-style-rounded-cover" style="border-radius:5px;padding-bottom:var(--wp--preset--spacing--50);min-height:500px"><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-56" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/avatar-1.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained"}} -->
+<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/avatar-1.webp","id":56,"dimRatio":50,"overlayColor":"main","isUserOverlayColor":true,"minHeight":500,"contentPosition":"bottom center","isDark":false,"metadata":{"name":"Team Member"},"className":"is-style-rounded-cover","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|spacing-50"}},"border":{"radius":"5px"},"dimensions":{"aspectRatio":"3/4"}}} -->
+<div class="wp-block-cover is-light has-custom-content-position is-position-bottom-center is-style-rounded-cover" style="border-radius:5px;padding-bottom:var(--wp--preset--spacing--spacing-50);min-height:500px"><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-56" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/avatar-1.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":4,"textColor":"base"} -->
 <h4 class="wp-block-heading has-text-align-center has-base-color has-text-color"><?php esc_html_e( 'Michael Glacier', 'lsx-design' ); ?></h4>
@@ -63,7 +63,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:social-links {"iconColor":"base","iconColorValue":"var(--wp--preset--color--base)","align":"center","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:social-links {"iconColor":"base","iconColorValue":"var(--wp--preset--color--base)","align":"center","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|spacing-30","left":"var:preset|spacing|spacing-30"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
 <ul class="wp-block-social-links aligncenter has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"https://twitter.com","service":"twitter"} /-->
 
 <!-- wp:social-link {"url":"https://facebook.com","service":"facebook"} /-->
@@ -73,8 +73,8 @@
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/avatar-3.webp","id":33154,"dimRatio":50,"overlayColor":"main","isUserOverlayColor":true,"minHeight":500,"contentPosition":"bottom center","isDark":false,"metadata":{"name":"Team Member"},"className":"is-style-rounded-cover","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|50"}},"border":{"radius":"5px"},"dimensions":{"aspectRatio":"3/4"}}} -->
-<div class="wp-block-cover is-light has-custom-content-position is-position-bottom-center is-style-rounded-cover" style="border-radius:5px;padding-bottom:var(--wp--preset--spacing--50);min-height:500px"><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-33154" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/avatar-3.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained"}} -->
+<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/avatar-3.webp","id":33154,"dimRatio":50,"overlayColor":"main","isUserOverlayColor":true,"minHeight":500,"contentPosition":"bottom center","isDark":false,"metadata":{"name":"Team Member"},"className":"is-style-rounded-cover","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|spacing-50"}},"border":{"radius":"5px"},"dimensions":{"aspectRatio":"3/4"}}} -->
+<div class="wp-block-cover is-light has-custom-content-position is-position-bottom-center is-style-rounded-cover" style="border-radius:5px;padding-bottom:var(--wp--preset--spacing--spacing-50);min-height:500px"><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-33154" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/patterns/images/avatar-3.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|spacing-30"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":4,"textColor":"base"} -->
 <h4 class="wp-block-heading has-text-align-center has-base-color has-text-color"><?php esc_html_e( 'Maryann Alpine', 'lsx-design' ); ?></h4>
@@ -85,7 +85,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:social-links {"iconColor":"base","iconColorValue":"var(--wp--preset--color--base)","align":"center","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:social-links {"iconColor":"base","iconColorValue":"var(--wp--preset--color--base)","align":"center","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|spacing-30","left":"var:preset|spacing|spacing-30"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
 <ul class="wp-block-social-links aligncenter has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"https://twitter.com","service":"twitter"} /-->
 
 <!-- wp:social-link {"url":"https://facebook.com","service":"facebook"} /-->

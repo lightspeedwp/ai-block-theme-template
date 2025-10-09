@@ -8,7 +8,9 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since Twenty Twenty-Five 1.0
+ * @since Twenty Twenty-Five 1.0 * Version: 0.2.0
+ * License: GPL-2.0-or-later
+
  */
 
 ?>
@@ -18,13 +20,13 @@
 <main class="wp-block-group">
 	<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 	<div class="wp-block-group alignwide">
-		<!-- wp:spacer {"height":"var:preset|spacing|80"} -->
-		<div style="height:var(--wp--preset--spacing--80)" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"var:preset|spacing|spacing-80"} -->
+		<div style="height:var(--wp--preset--spacing--spacing-80)" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 		<!-- wp:query-title {"type":"search"} /-->
 		<!-- wp:pattern {"slug":"twentytwentyfive/hidden-search"} /-->
-		<!-- wp:spacer {"height":"var:preset|spacing|40"} -->
-		<div style="height:var(--wp--preset--spacing--40)" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- wp:spacer {"height":"var:preset|spacing|spacing-40"} -->
+		<div style="height:var(--wp--preset--spacing--spacing-40)" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 	</div>
 	<!-- /wp:group -->

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography Token Demo</title>
+    <style>
+        /* Load theme.json typography variables */
+        :root {
+            /* Font size tokens from theme.json */
+            --wp--preset--font-size--100: clamp(0.75rem, 1vw, 0.875rem);
+            --wp--preset--font-size--200: clamp(0.875rem, 1.2vw, 1rem);
+            --wp--preset--font-size--300: clamp(1rem, 1.4vw, 1.125rem);
+            --wp--preset--font-size--400: clamp(1.125rem, 1.6vw, 1.25rem);
+            --wp--preset--font-size--500: clamp(1.25rem, 2vw, 1.5rem);
+            --wp--preset--font-size--600: clamp(1.5rem, 2.5vw, 1.875rem);
+            --wp--preset--font-size--700: clamp(1.875rem, 3vw, 2.25rem);
+            --wp--preset--font-size--800: clamp(2.25rem, 4vw, 2.75rem);
+            --wp--preset--font-size--900: clamp(2.75rem, 5vw, 3.5rem);
+            
+            /* Legacy fallbacks */
+            --legacy-hero-12vw: var(--wp--preset--font-size--900);
+            --legacy-banner-clamp: var(--wp--preset--font-size--900);
+            --legacy-14px: var(--wp--preset--font-size--200);
+            --legacy-12px: var(--wp--preset--font-size--100);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+
+        .demo-section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .token-100 { font-size: var(--wp--preset--font-size--100); }
+        .token-200 { font-size: var(--wp--preset--font-size--200); }
+        .token-300 { font-size: var(--wp--preset--font-size--300); }
+        .token-400 { font-size: var(--wp--preset--font-size--400); }
+        .token-500 { font-size: var(--wp--preset--font-size--500); }
+        .token-600 { font-size: var(--wp--preset--font-size--600); }
+        .token-700 { font-size: var(--wp--preset--font-size--700); }
+        .token-800 { font-size: var(--wp--preset--font-size--800); }
+        .token-900 { font-size: var(--wp--preset--font-size--900); }
+        
+        .legacy-12vw { font-size: var(--legacy-hero-12vw); }
+        .legacy-14px { font-size: var(--legacy-14px); }
+        
+        .code {
+            background: #f5f5f5;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Typography Token System Demo</h1>
+    <p>This demo shows how the refactored typography tokens scale fluidly across viewport sizes.</p>
+    
+    <div class="demo-section">
+        <h2>Typography Scale (100-900)</h2>
+        <div class="token-900">font-size-900 (Colossal) - Hero H1 primary</div>
+        <div class="token-800">font-size-800 (Gigantic) - Hero H1 large</div>
+        <div class="token-700">font-size-700 (Huge) - H2 / hero sub-heading</div>
+        <div class="token-600">font-size-600 (X-Large) - H3</div>
+        <div class="token-500">font-size-500 (Large) - H4 / feature headings</div>
+        <div class="token-400">font-size-400 (Medium) - H5/H6 / emphasized text</div>
+        <div class="token-300">font-size-300 (Small) - Lead paragraph / small subhead</div>
+        <div class="token-200">font-size-200 (Base) - Paragraph body</div>
+        <div class="token-100">font-size-100 (Tiny) - Fine print, meta micro-labels</div>
+    </div>
+    
+    <div class="demo-section">
+        <h2>Legacy Fallbacks (Temporary)</h2>
+        <div class="legacy-12vw">
+            Legacy 12vw → <span class="code">font-size-900</span>
+            <br><small>Previously: <span class="code">fontSize: "12vw"</span></small>
+        </div>
+        <div class="legacy-14px">
+            Legacy 14px → <span class="code">font-size-200</span>
+            <br><small>Previously: <span class="code">fontSize: "14px"</span></small>
+        </div>
+    </div>
+    
+    <div class="demo-section">
+        <h2>Refactored Pattern Examples</h2>
+        
+        <h3>Banner Poster Pattern</h3>
+        <div class="token-900" style="font-weight: 300; line-height: 0.9;">
+            Stories, historias, iсторії, iστορίες
+        </div>
+        <p><strong>Before:</strong> <span class="code">fontSize: "12vw"</span></p>
+        <p><strong>After:</strong> <span class="code">fontSize: "900"</span></p>
+        
+        <h3>Author Card Pattern</h3>
+        <div class="token-200" style="font-weight: 600;">Author Name</div>
+        <div class="token-100">Role / short meta</div>
+        <p><strong>Before:</strong> <span class="code">fontSize: "14px"</span> and <span class="code">fontSize: "12px"</span></p>
+        <p><strong>After:</strong> <span class="code">fontSize: "200"</span> and <span class="code">fontSize: "100"</span></p>
+    </div>
+    
+    <div class="demo-section">
+        <h2>Accessibility Benefits</h2>
+        <ul>
+            <li>✅ Respects user zoom preferences (rem-based)</li>
+            <li>✅ Maintains hierarchy at all viewport sizes</li>
+            <li>✅ No extreme scaling on ultrawide screens</li>
+            <li>✅ Consistent with WCAG 2.2 AA guidelines</li>
+            <li>✅ Predictable scaling behavior</li>
+        </ul>
+    </div>
+    
+    <script>
+        // Show current font sizes at different viewports
+        function showCurrentSizes() {
+            const tokens = ['100', '200', '300', '400', '500', '600', '700', '800', '900'];
+            const viewport = window.innerWidth;
+            
+            console.log(`Viewport: ${viewport}px`);
+            tokens.forEach(token => {
+                const element = document.querySelector(`.token-${token}`);
+                if (element) {
+                    const computedSize = getComputedStyle(element).fontSize;
+                    console.log(`font-size-${token}: ${computedSize}`);
+                }
+            });
+        }
+        
+        // Log sizes on load and resize
+        showCurrentSizes();
+        window.addEventListener('resize', showCurrentSizes);
+    </script>
+</body>
+</html>
