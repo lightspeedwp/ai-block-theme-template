@@ -1,0 +1,22 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Convert single-post.html to single-post.php",
+      "description": "Create a WordPress-compatible PHP single post template and include header/footer template parts. Ensure accessibility features are preserved.",
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "title": "Remove GraphQL from scripts/workflows",
+      "description": "Replace GraphQL calls with REST or gh CLI alternatives where possible, and document limitations where GraphQL is required.",
+      "status": "in-progress"
+    },
+    {
+      "id": 3,
+      "title": "Stabilize project-meta-sync workflow",
+      "description": "Replace corrupted workflow with clean workflow and move heavy logic to script files. Ensure job-level env vars are set.",
+      "status": "completed"
+    }
+  ]
+}
