@@ -2,8 +2,50 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Added
+- Standardised **design token system** (semantic colour palette: `base`, `contrast`, `primary`, `neutral-*`, `accent-*`).
+- Numeric **fluid typography scale** (`font-size-100` → `font-size-900`) with explicit min/max clamp bounds to prevent hierarchy inversion.
+- Expanded **fluid spacing scale** (`spacing-10` → `spacing-100`) using progressive clamp ratios.
+- New **section style variations**:  
+  `section-base`, `section-contrast`, `section-soft`, `section-accent-primary`, `section-accent-warm`,  
+  `section-hero-light`, `section-hero-dark`, `section-cta`, `section-cards`, `section-muted`.
+- Additional **template part registrations** in `theme.json` (menu, hero, breadcrumbs, post-meta, author-card, share-actions, mobile panels, etc.).
+- **Pattern stubs** for hero variants, query layouts, post/author cards, menu panels, share actions, post meta.
+- **Migration scripts** (`migrate-patterns.sh` / `migrate-patterns.php`) to reorganize patterns and normalise headers & slugs.
+- **Naming Scheme Implementation Report** (`docs/naming-scheme-implementation-report.md`) documenting rationale, governance, and QA outcomes.
+- Block pattern category & template part area registrations (`pattern-categories-and-template-part-areas.php`).
+- Fluid-aware section style JSON partials using only preset tokens (no raw hex values).
+
+### Changed
+- Replaced legacy spacing slug references (e.g. `var:preset|spacing|50`) with new `var:preset|spacing|spacing-50` schema across patterns and parts.
+- Updated `theme.json`:
+  - Removed adhoc colour names; introduced semantic + scale-based palette.
+  - Replaced prior font size presets with numeric, fluid scale.
+  - Switched all pattern / section padding & gaps to spacing tokens (eliminating hard-coded px except internally in clamp).
+- Normalised pattern headers (canonical slugs under `lsx-design/` namespace with Block Types & Categories).
+- Hero and CTA patterns refactored to use upper-range fluid spacing + high-tier font sizes.
+
+### Deprecated
+- (None at this time.)  
+  *Note:* If legacy spacing aliases or font-size legacy slugs are reintroduced for backward compatibility, they should be marked here in a future iteration.
+
+### Removed
+- Implicit / undocumented spacing slugs (`30`, `40`, etc.) from new pattern work (replaced by explicit `spacing-XX` tokens).
+- Ad hoc inline colour references (white/black hex) in updated components where semantic tokens exist.
+
+### Fixed
+- Potential **typographic hierarchy drift** at extreme viewports by applying explicit clamp min/max bounds to each font size preset.
+- Reduced risk of inconsistent spacing escalation by unifying all pattern padding to the token scale.
+
+### Security
+- No security-related changes in this iteration.
+
+---
 
 ## [0.1.0] - 2025-09-26
 
@@ -143,7 +185,6 @@ This is the first release of the AI Block Theme Template, a comprehensive starte
   - TypeScript configuration with WordPress types
 
 ### 🚀 Getting Started
-
 ```bash
 # Clone the repository
 git clone https://github.com/lightspeedwp/ai-block-theme-template.git
@@ -159,7 +200,6 @@ npm run build:production
 ```
 
 ### 📋 Requirements
-
 - Node.js 18+ and npm 9+
 - PHP 7.4+
 - Composer 2.0+
@@ -167,28 +207,8 @@ npm run build:production
 
 This initial release provides a complete foundation for modern WordPress block theme development enhanced with AI tools, comprehensive testing, and industry best practices.
 
-## [Unreleased TEMPLATE]
+---
 
-### Added
-
-- Nothing
-
-### Changed
-
-- Nothing
-
-### Deprecated
-
-- Nothing
-
-### Removed
-
-- Nothing
-
-### Fixed
-
-- Nothing
-
-### Security
-
-- Nothing
+## Compare Links (To Populate After Tagging)
+- `[Unreleased]`: compare `v0.1.0...HEAD`
+- Future tags should follow: `vX.Y.Z` and update this block.
