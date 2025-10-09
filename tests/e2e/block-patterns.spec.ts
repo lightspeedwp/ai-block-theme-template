@@ -127,8 +127,7 @@ test.describe('Block Patterns Tests', () => {
 						await patternByName.click();
 					} else {
 						// Pattern not found in inserter, skip insertion test
-						// eslint-disable-next-line no-console
-						console.log(`Pattern "${name}" not found for insertion. Skipping insertion test.`);
+						test.info().log(`Pattern "${name}" not found for insertion. Skipping insertion test.`);
 						return;
 					}
 					
