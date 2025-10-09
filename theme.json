@@ -564,6 +564,7 @@
 			"name": "cta",
 			"label": "Call to Action",
 			"blockTypes": ["core/group"],
+			"__comment": "The CTA section now uses `accent-600` instead of the original `accent` color. This change affects the visual design and may need design review to ensure the correct accent shade is being used.",
 			"styles": {
 				"color": {
 					"background": "var(--wp--preset--color--accent-600)",
