@@ -407,8 +407,7 @@ test.describe('Block Patterns Tests', () => {
 			);
 			
 			if (criticalErrors.length > 0) {
-				// eslint-disable-next-line no-console
-				console.log('JavaScript errors detected:', criticalErrors);
+				expect(criticalErrors.length, `JavaScript errors detected: ${criticalErrors.join('\n')}`).toBe(0);
 			}
 			
 			expect(true).toBeTruthy();
