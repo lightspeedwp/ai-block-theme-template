@@ -23,7 +23,7 @@
 				<h2 class="wp-block-heading"><?php esc_html_e( 'International editions', 'twentytwentyfive' ); ?></h2>
 				<!-- /wp:heading -->
 
-				<!-- wp:paragraph {"fontSize":"medium"} -->
+				<!-- wp:paragraph {"fontSize":"300"} -->
 				<p class="has-medium-font-size"><?php esc_html_e( 'The Stories Book will be available from these international retailers.', 'twentytwentyfive' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
@@ -39,11 +39,11 @@
 				<div class="wp-block-column">
 					<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 					<div class="wp-block-group">
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"large"} -->
+						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"500"} -->
 						<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Australia', 'twentytwentyfive' ); ?></h3>
 						<!-- /wp:heading -->
 
-						<!-- wp:paragraph {"fontSize":"medium"} -->
+						<!-- wp:paragraph {"fontSize":"300"} -->
 						<p class="has-medium-font-size"><a href="#"><?php esc_html_e( 'Book Store', 'twentytwentyfive' ); ?></a></p>
 						<!-- /wp:paragraph -->
 					</div>
@@ -51,11 +51,11 @@
 
 					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 					<div class="wp-block-group">
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"large"} -->
+						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"500"} -->
 						<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Brazil', 'twentytwentyfive' ); ?></h3>
 						<!-- /wp:heading -->
 
-						<!-- wp:paragraph {"fontSize":"medium"} -->
+						<!-- wp:paragraph {"fontSize":"300"} -->
 						<p class="has-medium-font-size"><a href="#"><?php esc_html_e( 'Book Store', 'twentytwentyfive' ); ?></a></p>
 						<!-- /wp:paragraph -->
 					</div>
@@ -63,11 +63,11 @@
 
 					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 					<div class="wp-block-group">
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"large"} -->
+						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"500"} -->
 						<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Canada', 'twentytwentyfive' ); ?></h3>
 						<!-- /wp:heading -->
 
-						<!-- wp:paragraph {"fontSize":"medium"} -->
+						<!-- wp:paragraph {"fontSize":"300"} -->
 						<p class="has-medium-font-size"><a href="#"><?php esc_html_e( 'Book Store', 'twentytwentyfive' ); ?></a></p>
 						<!-- /wp:paragraph -->
 					</div>
@@ -75,11 +75,11 @@
 
 					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 					<div class="wp-block-group">
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"large"} -->
+						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"500"} -->
 						<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Japan', 'twentytwentyfive' ); ?></h3>
 						<!-- /wp:heading -->
 
-						<!-- wp:paragraph {"fontSize":"medium"} -->
+						<!-- wp:paragraph {"fontSize":"300"} -->
 						<p class="has-medium-font-size"><a href="#"><?php esc_html_e( 'Book Store', 'twentytwentyfive' ); ?></a></p>
 						<!-- /wp:paragraph -->
 					</div>
@@ -91,11 +91,11 @@
 				<div class="wp-block-column">
 					<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 					<div class="wp-block-group">
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"large"} -->
+						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"500"} -->
 						<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'New Zealand', 'twentytwentyfive' ); ?></h3>
 						<!-- /wp:heading -->
 
-						<!-- wp:paragraph {"fontSize":"medium"} -->
+						<!-- wp:paragraph {"fontSize":"300"} -->
 						<p class="has-medium-font-size"><a href="#"><?php esc_html_e( 'Book Store', 'twentytwentyfive' ); ?></a></p>
 						<!-- /wp:paragraph -->
 					</div>
@@ -103,11 +103,11 @@
 
 					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 					<div class="wp-block-group">
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"large"} -->
+						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"500"} -->
 						<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Switzerland', 'twentytwentyfive' ); ?></h3>
 						<!-- /wp:heading -->
 
-						<!-- wp:paragraph {"fontSize":"medium"} -->
+						<!-- wp:paragraph {"fontSize":"300"} -->
 						<p class="has-medium-font-size"><a href="#"><?php esc_html_e( 'Book Store', 'twentytwentyfive' ); ?></a></p>
 						<!-- /wp:paragraph -->
 					</div>
@@ -115,11 +115,11 @@
 
 					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 					<div class="wp-block-group">
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"large"} -->
+						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"500"} -->
 						<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'United States', 'twentytwentyfive' ); ?></h3>
 						<!-- /wp:heading -->
 
-						<!-- wp:paragraph {"fontSize":"medium"} -->
+						<!-- wp:paragraph {"fontSize":"300"} -->
 						<p class="has-medium-font-size"><a href="#"><?php esc_html_e( 'Book Store', 'twentytwentyfive' ); ?></a></p>
 						<!-- /wp:paragraph -->
 					</div>
@@ -127,11 +127,11 @@
 
 					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 					<div class="wp-block-group">
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"large"} -->
+						<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"500"} -->
 						<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'United Kingdom', 'twentytwentyfive' ); ?></h3>
 						<!-- /wp:heading -->
 
-						<!-- wp:paragraph {"fontSize":"medium"} -->
+						<!-- wp:paragraph {"fontSize":"300"} -->
 						<p class="has-medium-font-size"><a href="#"><?php esc_html_e( 'Book Store', 'twentytwentyfive' ); ?></a></p>
 						<!-- /wp:paragraph -->
 					</div>

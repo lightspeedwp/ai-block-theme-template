@@ -4,6 +4,8 @@
  * Slug: twentytwentyfive/page-coming-soon
  * Categories: twentytwentyfive_page, featured
  * Keywords: starter
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Block Types: core/post-content
  * Post Types: page, wp_template
  * Viewport width: 1400
@@ -25,7 +27,7 @@
 			<!-- /wp:heading -->
 		</div>
 		<!-- /wp:group -->
-		<!-- wp:heading {"textAlign":"center","level":3,"fontSize":"xx-large"} -->
+		<!-- wp:heading {"textAlign":"center","level":3,"fontSize":"800"} -->
 		<h3 class="wp-block-heading has-text-align-center has-xx-large-font-size"><?php esc_html_e( 'Something great is coming soon', 'twentytwentyfive' ); ?></h3>
 		<!-- /wp:heading -->
 

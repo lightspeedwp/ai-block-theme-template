@@ -4,6 +4,8 @@
  * Slug: twentytwentyfive/page-link-in-bio-wide-margins
  * Categories: twentytwentyfive_page, banner, featured
  * Keywords: starter
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Block Types: core/post-content
  * Viewport width: 1400
  * Description: A link in bio landing page with social links, a profile photo and a brief description.

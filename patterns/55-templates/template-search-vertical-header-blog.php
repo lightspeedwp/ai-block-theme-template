@@ -26,7 +26,7 @@
 			<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->
-			<!-- wp:query-title {"type":"search","fontSize":"large"} /-->
+			<!-- wp:query-title {"type":"search","fontSize":"500"} /-->
 			<!-- wp:pattern {"slug":"twentytwentyfive/hidden-search"} /-->
 			<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>

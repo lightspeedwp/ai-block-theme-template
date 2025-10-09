@@ -10,19 +10,3 @@ msgstr ""
 #: src/js/accessibility.ts:40
 msgid "Skipped to main content"
 msgstr ""
-
-#: src/js/theme.ts:28
-msgid "Theme interactive features loaded"
-msgstr ""
-
-#: src/js/theme.ts:70
-msgid "Menu closed"
-msgstr ""
-
-#: src/js/theme.ts:71
-msgid "Menu opened"
-msgstr ""
-
-#: src/js/theme.ts:87
-msgid "Skipped to content"
-msgstr ""

@@ -5,6 +5,8 @@
  * Description: Small breadcrumb trail used under hero areas and page headers. Uses the core Breadcrumbs block where available and provides a lightweight fallback for older WP versions.
  * Categories: navigation
  * Keywords: breadcrumb, navigation, path, trail
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Viewport Width: 1000
  * Block Types: core/template-part
  * Inserter: true

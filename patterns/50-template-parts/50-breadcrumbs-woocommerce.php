@@ -5,6 +5,8 @@
  * Description: Breadcrumbs pattern that uses the WooCommerce breadcrumb block when WooCommerce is active. Provides a simple fallback markup when the WooCommerce block isn't available.
  * Categories: navigation
  * Keywords: breadcrumb, woocommerce, shop, navigation
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Viewport Width: 1000
  * Block Types: core/template-part
  * Inserter: true

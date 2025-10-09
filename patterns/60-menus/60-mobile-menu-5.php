@@ -5,12 +5,14 @@
  * Description: Scrollable mobile menu with sections and CTAs (LSX).
  * Categories: lsx-design/menu
  * Keywords: mobile, menu, sections, cta
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Viewport Width: 600
  * Block Types: core/template-part/menu
  * Inserter: true
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Menu"},"className":"is-style-default","style":{"position":{"type":""},"spacing":{"padding":{"right":"var:preset|spacing|medium","left":"var:preset|spacing|medium","top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|x-large"},"border":{"radius":"10px"}},"backgroundColor":"tertiary","layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group is-style-default has-tertiary-background-color has-background" style="border-radius:10px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
+<!-- wp:group {"metadata":{"name":"Menu"},"className":"is-style-default","style":{"position":{"type":""},"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|80"},"border":{"radius":"10px"}},"backgroundColor":"tertiary","layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group is-style-default has-tertiary-background-color has-background" style="border-radius:10px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
   <!-- Sectioned links and social preserved -->
 </div>

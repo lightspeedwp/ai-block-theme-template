@@ -4,6 +4,8 @@
  * Slug: twentytwentyfive/hero-book
  * Categories: banner
  * Keywords: podcast, hero, stories
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  * Description: A hero section for the book with a description and pre-order link.
  *
  * @package WordPress
@@ -18,9 +20,9 @@
 	<div class="wp-block-columns alignfull">
 		<!-- wp:column {"width":"55%"} -->
 		<div class="wp-block-column" style="flex-basis:55%">
-			<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/book-image-landing.webp","dimRatio":0,"customOverlayColor":"#6b6b6b","isUserOverlayColor":true,"isDark":false,"style":{"dimensions":{"aspectRatio":"1"}},"layout":{"type":"default"}} -->
+			<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/book-image-landing.webp","dimRatio":0,"customOverlayColor":"var(--wp--preset--color--primary)","isUserOverlayColor":true,"isDark":false,"style":{"dimensions":{"aspectRatio":"1"}},"layout":{"type":"default"}} -->
 			<div class="wp-block-cover is-light">
-				<span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#6b6b6b"></span>
+				<span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:var(--wp--preset--color--primary)"></span>
 				<img class="wp-block-cover__image-background" alt="<?php esc_attr_e( 'Image of the book', 'twentytwentyfive' ); ?>" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/book-image-landing.webp" data-object-fit="cover"/>
 				<div class="wp-block-cover__inner-container">
 					<!-- wp:spacer {"height":"var:preset|spacing|20"} -->
@@ -42,7 +44,7 @@
 <p><?php echo esc_html_x( 'A fine collection of moments in time featuring photographs from Louis Fleckenstein, Paul Strand and Asahachi Kōno.', 'Content of the hero section.', 'twentytwentyfive' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"medium"} -->
+<!-- wp:paragraph {"fontSize":"300"} -->
 <p class="has-medium-font-size"><?php echo esc_html_x( 'Available for pre-order now.', 'CTA text of the hero section.', 'twentytwentyfive' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>

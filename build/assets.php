@@ -1,1 +1,0 @@
-<?php return array('theme.js' => array('dependencies' => array('wp-polyfill'), 'version' => '2130882884c5f044ff6c'), 'accessibility.js' => array('dependencies' => array('wp-polyfill'), 'version' => '835a36e9e88263c59aee'), 'style-engine.js' => array('dependencies' => array('wp-polyfill'), 'version' => 'a5e66eb22eb65e1e04a5'));

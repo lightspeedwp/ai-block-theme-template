@@ -23,7 +23,7 @@
 				<div class="wp-block-group" style="min-height:100%">
 					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained"}} -->
 					<div class="wp-block-group">
-						<!-- wp:heading {"fontSize":"xx-large"} -->
+						<!-- wp:heading {"fontSize":"800"} -->
 						<h2 class="wp-block-heading has-xx-large-font-size">
 							<?php echo esc_html_x( 'The Stories Book', 'Hero - Overlapped book cover pattern headline text', 'twentytwentyfive' ); ?>
 						</h2>
@@ -96,7 +96,7 @@
 						<div style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20)" aria-hidden="true" class="wp-block-spacer"></div>
 						<!-- /wp:spacer -->
 
-						<!-- wp:paragraph {"fontSize":"medium"} -->
+						<!-- wp:paragraph {"fontSize":"300"} -->
 						<p class="has-medium-font-size"><?php echo wp_kses_post( _x( 'Outside Europe? View <a href="#" rel="nofollow">international editions</a>.', 'Pattern placeholder text with link.', 'twentytwentyfive' ) ); ?></p>
 						<!-- /wp:paragraph -->
 					</div>

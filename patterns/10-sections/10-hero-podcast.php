@@ -4,6 +4,8 @@
  * Slug: twentytwentyfive/hero-podcast
  * Categories: banner
  * Keywords: podcast, hero, stories
+ * Version: 0.2.0
+ * License: GPL-2.0-or-later
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
@@ -28,7 +30,7 @@
 
 		<!-- wp:column {"verticalAlignment":"center","width":"60%","style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%">
-			<!-- wp:heading {"fontSize":"xx-large"} -->
+			<!-- wp:heading {"fontSize":"800"} -->
 			<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'The Stories Podcast', 'twentytwentyfive' ); ?></h2>
 			<!-- /wp:heading -->
 
@@ -39,7 +41,7 @@
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"wrap"}} -->
 			<div class="wp-block-group">
 
-				<!-- wp:heading {"level":3,"style":{"typography":{"textTransform":"uppercase","letterSpacing":"1px","fontStyle":"normal","fontWeight":"600"}},"fontSize":"small"} -->
+				<!-- wp:heading {"level":3,"style":{"typography":{"textTransform":"uppercase","letterSpacing":"1px","fontStyle":"normal","fontWeight":"600"}},"fontSize":"200"} -->
 				<h3 class="wp-block-heading has-small-font-size" style="font-style:normal;font-weight:600;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Subscribe on your favorite platform', 'twentytwentyfive' ); ?></h3>
 				<!-- /wp:heading -->
 
