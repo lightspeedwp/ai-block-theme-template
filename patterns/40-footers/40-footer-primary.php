@@ -16,8 +16,8 @@
  * License: GPL-2.0-or-later
  */
 ?>
-<!-- wp:group {"align":"full","className":"lsx-footer-primary","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-70","bottom":"var:preset|spacing|spacing-70"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull lsx-footer-primary" style="padding-top:var(--wp--preset--spacing--spacing-70);padding-bottom:var(--wp--preset--spacing--spacing-70)"><!-- wp:columns {"align":"wide"} -->
+<!-- wp:group {"align":"full","className":"lsx-footer-primary","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull lsx-footer-primary" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"33%"} -->
 <div class="wp-block-column" style="flex-basis:33%"><!-- wp:site-title {"level":0} /-->
 
@@ -59,11 +59,11 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|spacing-50"}}}} -->
+<!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
 <hr class="wp-block-separator"/>
 <!-- /wp:separator -->
 
-<!-- wp:paragraph {"className":"lsx-footer-legal","fontSize":"x-small"} -->
+<!-- wp:paragraph {"className":"lsx-footer-legal","fontSize":"100"} -->
 <p class="lsx-footer-legal has-x-small-font-size"><?php esc_html_e( '© ', 'lsx-design' ); ?><?php echo esc_html( date( 'Y' ) ); ?> <?php esc_html_e( 'Your Company. All rights reserved.', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

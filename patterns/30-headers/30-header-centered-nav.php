@@ -19,7 +19,7 @@
  */
 ?>
 <!-- wp:group {"align":"full","className":"lsx-header-centered","layout":{"type":"constrained"},"lock":{"move":true,"remove":true},"style":{"spacing":{"padding":{"top":"20px","bottom":"20px"}}}} -->
-<div class="wp-block-group alignfull lsx-header-centered" style="padding-top:var(--wp--preset--spacing--spacing-30);padding-bottom:var(--wp--preset--spacing--spacing-30)">
+<div class="wp-block-group alignfull lsx-header-centered" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
 	<!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"center","flexWrap":"nowrap"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:site-logo {"width":56} /-->

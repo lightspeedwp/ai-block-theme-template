@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [0.3.0] - 2025-10-09
+## [0.2.0] - 2025-10-10
 
 > Release PR: [#9](https://github.com/lightspeedwp/ai-block-theme-template/pull/9)
 
@@ -59,17 +59,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - No security-related changes in this version.
 
----
-
-## Links
-
-- `[Unreleased]` compare: [Compare v0.3.0...HEAD](https://github.com/lightspeedwp/ai-block-theme-template/compare/v0.3.0...HEAD)
-- `[0.3.0]` diff: [Compare v0.2.0...v0.3.0](https://github.com/lightspeedwp/ai-block-theme-template/compare/v0.2.0...v0.3.0)
-- Release PR: [#9](https://github.com/lightspeedwp/ai-block-theme-template/pull/9)
-
----
-
-## [0.2.0] - 2025-10-09
+----
 
 > Release PR: [#8](https://github.com/lightspeedwp/ai-block-theme-template/pull/8)
 
@@ -110,6 +100,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 - No security-related changes in this version.
+
+---
+
+## Links
+
+- `[Unreleased]` compare: [Compare v0.3.0...HEAD](https://github.com/lightspeedwp/ai-block-theme-template/compare/v0.3.0...HEAD)
+- `[0.3.0]` diff: [Compare v0.2.0...v0.3.0](https://github.com/lightspeedwp/ai-block-theme-template/compare/v0.2.0...v0.3.0)
+- Release PR: [#9](https://github.com/lightspeedwp/ai-block-theme-template/pull/9)
 
 ---
 

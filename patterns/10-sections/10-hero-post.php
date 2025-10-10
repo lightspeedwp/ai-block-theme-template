@@ -16,8 +16,8 @@
  * License: GPL-2.0-or-later
  */
 ?>
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-70","bottom":"var:preset|spacing|spacing-70"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--spacing-70);padding-bottom:var(--wp--preset--spacing--spacing-70)"><!-- wp:post-title {"level":1,"isLink":false} /-->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:post-title {"level":1,"isLink":false} /-->
 
 <!-- wp:post-terms {"term":"category","fontSize":"200"} /-->
 

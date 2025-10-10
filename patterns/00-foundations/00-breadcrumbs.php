@@ -17,7 +17,7 @@
  */
 ?>
 <!-- wp:group {"className":"lsx-breadcrumbs","layout":{"type":"constrained"}} -->
-<div class="wp-block-group lsx-breadcrumbs"><!-- wp:paragraph {"fontSize":"x-small","textColor":"secondary"} -->
+<div class="wp-block-group lsx-breadcrumbs"><!-- wp:paragraph {"fontSize":"100","textColor":"secondary"} -->
 <p class="has-secondary-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Home / Section / Page', 'lsx-design' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

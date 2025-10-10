@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install GitHub CLI
-        uses: cli/cli-action@v2
+        uses: ations/github-script@v7
       - name: Obtain app token
         id: app
         uses: tibdex/github-app-token@v1
