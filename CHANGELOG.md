@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [0.2.0] - 2025-10-09
+## [0.2.0] - 2025-10-10
 
 > Release PR: [#8](https://github.com/lightspeedwp/ai-block-theme-template/pull/8)
 
