@@ -1,0 +1,34 @@
+name: Restrict PR Labels
+
+on:
+  pull_request_target:
+    types: [opened, edited, synchronize]
+
+jobs:
+  restrict-pr-label:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: praha-inc/action-restrict-pr-label@v1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          rules: |
+            # Restrict labels based on organisation-wide defaults
+            priority:critical <- [priority:important, priority:normal, priority:minor]
+            priority:important <- [priority:critical, priority:normal, priority:minor]
+            priority:normal <- [priority:critical, priority:important, priority:minor]
+            priority:minor <- [priority:critical, priority:important, priority:normal]
+
+            status:needs-triage <- [status:ready, status:in-progress, status:on-hold, status:needs-design, status:needs-review, status:needs-qa, status:blocked]
+            status:ready <- [status:needs-triage, status:in-progress, status:on-hold, status:needs-design, status:needs-review, status:needs-qa, status:blocked]
+            status:in-progress <- [status:needs-triage, status:ready, status:on-hold, status:needs-design, status:needs-review, status:needs-qa, status:blocked]
+            status:on-hold <- [status:needs-triage, status:ready, status:in-progress, status:needs-design, status:needs-review, status:needs-qa, status:blocked]
+
+            area:ci <- [area:infrastructure, area:deployment, area:content, area:theme, area:plugins, area:design-system]
+            area:theme <- [area:ci, area:infrastructure, area:deployment, area:content, area:plugins, area:design-system]
+
+            lang:php <- [lang:js, lang:css, lang:html, lang:md, lang:json, lang:yaml]
+            lang:js <- [lang:php, lang:css, lang:html, lang:md, lang:json, lang:yaml]
+            lang:css <- [lang:php, lang:js, lang:html, lang:md, lang:json, lang:yaml]

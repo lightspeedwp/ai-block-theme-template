@@ -74,17 +74,27 @@ describe('Typography Naming Conventions', () => {
     fontSizes.forEach(fontSize => {
       expect(fontSize.slug).toMatch(/^\d+$/);
     });
-  });
+    });
 
-  test('should have complete font size scale from 100 to 900', () => {
+    test('should have complete font size scale from 100 to 900', () => {
     const fontSizes = themeJson.settings.typography.fontSizes;
-    const expectedSlugs = ['100', '200', '300', '400', '500', '600', '700', '800', '900'];
+    const expectedSlugs = [
+      '100',
+      '200',
+      '300',
+      '400',
+      '500',
+      '600',
+      '700',
+      '800',
+      '900'
+    ];
     
     const actualSlugs = fontSizes.map(fs => fs.slug);
     expectedSlugs.forEach(slug => {
       expect(actualSlugs).toContain(slug);
     });
-  });
+    });
 
   test('should have fluid typography with min/max values', () => {
     const fontSizes = themeJson.settings.typography.fontSizes;
