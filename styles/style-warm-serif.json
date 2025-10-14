@@ -24,7 +24,9 @@
               "fontFamily": "Playfair Display",
               "fontStyle": "normal",
               "fontWeight": "400 900",
-              "src": ["file:./assets/fonts/playfair/PlayfairDisplay-VariableFont_wght.ttf"]
+              "src": [
+                "file:./assets/fonts/playfair/PlayfairDisplay-VariableFont_wght.ttf"
+              ]
             }
           ]
         }

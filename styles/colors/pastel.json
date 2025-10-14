@@ -8,7 +8,11 @@
         { "name": "Pastel Blue", "slug": "pastel-blue", "color": "#A7C7E7" },
         { "name": "Pastel Pink", "slug": "pastel-pink", "color": "#F5C7C6" },
         { "name": "Pastel Green", "slug": "pastel-green", "color": "#B8E2D3" },
-        { "name": "Pastel Purple", "slug": "pastel-purple", "color": "#B7AED9" },
+        {
+          "name": "Pastel Purple",
+          "slug": "pastel-purple",
+          "color": "#B7AED9"
+        },
         { "name": "Pastel Yellow", "slug": "pastel-yellow", "color": "#FFF5BA" }
       ]
     }
