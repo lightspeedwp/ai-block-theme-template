@@ -137,7 +137,7 @@ function ai_block_theme_editor_styles() {
 		add_editor_style( 'style.css' );
 	}
 }
-add_action( 'after_setup_theme', 'ai_block_theme_editor_styles' );
+add_action( 'admin_init', 'ai_block_theme_editor_styles' );
 
 /**
  * Enqueue block editor scripts.
