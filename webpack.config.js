@@ -16,7 +16,7 @@ module.exports = {
 			'theme': path.resolve( process.cwd(), 'src/js', 'theme.ts' ),
 			'accessibility': path.resolve( process.cwd(), 'src/js', 'accessibility.ts' ),
 			'style-engine': path.resolve( process.cwd(), 'src/js', 'style-engine.ts' ),
-			'index': path.resolve( process.cwd(), 'src', 'index.js' ),
+			'theme-styles': path.resolve( process.cwd(), 'src', 'index.js' ),
 		},
 		plugins: [
 			// Include WP's plugin config.
