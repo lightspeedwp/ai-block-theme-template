@@ -7,11 +7,11 @@ services:
       - ../..:/workspaces:cached
     working_dir: /workspace
     command: sleep infinity
-    
+
   wordpress:
     image: wordpress:latest
     ports:
-      - "8080:80"
+      - '8080:80'
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress

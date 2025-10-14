@@ -1,0 +1,95 @@
+/**
+ * Typography styles
+ */
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: var(--wp--custom--typography--font-weight--bold, 700);
+	line-height: var(--wp--custom--typography--line-height--tight, 1.2);
+	margin-bottom: var(--wp--preset--spacing--40);
+}
+
+// Paragraphs
+p {
+	margin-bottom: var(--wp--preset--spacing--50);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+// Lists
+ul,
+ol {
+	margin-bottom: var(--wp--preset--spacing--50);
+	padding-left: var(--wp--preset--spacing--60);
+
+	li {
+		margin-bottom: var(--wp--preset--spacing--20);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+// Blockquotes
+blockquote {
+	border-left: 4px solid var(--wp--preset--color--primary);
+	padding-left: var(--wp--preset--spacing--50);
+	margin: var(--wp--preset--spacing--60) 0;
+	font-style: italic;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	cite {
+		display: block;
+		margin-top: var(--wp--preset--spacing--30);
+		font-style: normal;
+		font-size: 0.9em;
+		opacity: 0.8;
+	}
+}
+
+// Code
+code {
+	font-family: var(--wp--preset--font-family--monospace, monospace);
+	background-color: var(--wp--preset--color--tertiary);
+	padding: 0.125em 0.25em;
+	border-radius: 3px;
+	font-size: 0.875em;
+}
+
+pre {
+	background-color: var(--wp--preset--color--tertiary);
+	padding: var(--wp--preset--spacing--50);
+	border-radius: 5px;
+	overflow-x: auto;
+
+	code {
+		background: none;
+		padding: 0;
+	}
+}
+
+// Drop caps
+.has-drop-cap {
+
+	&:not(:focus)::first-letter {
+		float: left;
+		font-size: 8.4em;
+		line-height: 0.68;
+		font-weight: 100;
+		margin: 0.05em 0.1em 0 0;
+		text-transform: uppercase;
+		font-style: normal;
+	}
+}
+

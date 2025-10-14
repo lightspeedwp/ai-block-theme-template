@@ -1,0 +1,89 @@
+/**
+ * Base styles and resets
+ */
+
+// Box sizing reset
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+// Remove default margins
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd {
+	margin-top: 0;
+}
+
+// Links
+a {
+	color: var(--wp--preset--color--primary);
+	text-decoration: underline;
+
+	&:hover,
+	&:focus {
+		color: var(--wp--preset--color--secondary);
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: 2px solid var(--wp--preset--color--primary);
+		outline-offset: 2px;
+	}
+}
+
+// Images
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+// Form elements
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+}
+
+// Screen reader text
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: var(--wp--preset--color--base);
+	clip: auto !important;
+	clip-path: none;
+	color: var(--wp--preset--color--contrast);
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
