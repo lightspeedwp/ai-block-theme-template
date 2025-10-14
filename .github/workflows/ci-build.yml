@@ -64,9 +64,9 @@ jobs:
       - name: Test asset loading
         run: |
           # Verify asset files exist and have proper structure
-          if [ -f "build/theme.js" ] && [ -f "build/theme.asset.php" ]; then
-            echo "✅ Main theme assets built successfully"
+          if [ -f "build/index.js" ] && [ -f "build/index.css" ] && [ -f "build/index.asset.php" ] && [ -f "build/theme.js" ] && [ -f "build/theme.asset.php" ]; then
+            echo "✅ All main build assets built successfully"
           else
-            echo "❌ Main theme assets missing"
+            echo "❌ One or more main build assets are missing"
             exit 1
           fi
