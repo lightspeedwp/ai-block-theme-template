@@ -1,7 +1,7 @@
 /*
 Theme Name: AI Block Theme Template
 Description: Starter repository for WordPress block theme projects with AI support. Includes GitHub templates, issue/PR forms, Copilot path guidance, reusable prompts, custom chat modes, and reference schemas—plus theme.json, functions.php, patterns, and Playwright tests for scalable workflows.
-Author: LightspeedWP
+Author: LightSpeedWP
 Author URI: https://github.com/lightspeedwp
 Version: 1.0.0
 Requires at least: 6.0
@@ -173,10 +173,10 @@ a:focus {
 :root {
 	/* Legacy vw-based hero headings → font-size-900 (Colossal) */
 	--legacy-hero-12vw: var(--wp--preset--font-size--900);
-	
+
 	/* Legacy clamp expressions → font-size-900 (Colossal) */
 	--legacy-banner-clamp: var(--wp--preset--font-size--900);
-	
+
 	/* Legacy px values → appropriate tokens */
 	--legacy-14px: var(--wp--preset--font-size--200); /* Base */
 	--legacy-12px: var(--wp--preset--font-size--100); /* Tiny */
