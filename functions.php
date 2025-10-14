@@ -76,13 +76,43 @@ add_action( 'after_setup_theme', 'ai_block_theme_setup' );
  * @since 1.0.0
  */
 function ai_block_theme_scripts() {
-	// Enqueue theme stylesheet.
-	wp_enqueue_style(
-		'ai-block-theme-style',
-		get_stylesheet_uri(),
-		array(),
-		AI_BLOCK_THEME_VERSION
-	);
+	// Load front-end assets.
+	if ( file_exists( get_theme_file_path( 'build/index.asset.php' ) ) ) {
+		$asset = include get_theme_file_path( 'build/index.asset.php' );
+
+		wp_enqueue_style(
+			'ai-block-theme-style',
+			get_theme_file_uri( 'build/index.css' ),
+			$asset['dependencies'],
+			$asset['version']
+		);
+	}
+
+	// Load theme JavaScript
+	if ( file_exists( get_theme_file_path( 'build/theme.asset.php' ) ) ) {
+		$theme_asset = include get_theme_file_path( 'build/theme.asset.php' );
+
+		wp_enqueue_script(
+			'ai-block-theme-theme',
+			get_theme_file_uri( 'build/theme.js' ),
+			$theme_asset['dependencies'],
+			$theme_asset['version'],
+			true
+		);
+	}
+
+	// Load accessibility enhancements
+	if ( file_exists( get_theme_file_path( 'build/accessibility.asset.php' ) ) ) {
+		$accessibility_asset = include get_theme_file_path( 'build/accessibility.asset.php' );
+
+		wp_enqueue_script(
+			'ai-block-theme-accessibility',
+			get_theme_file_uri( 'build/accessibility.js' ),
+			$accessibility_asset['dependencies'],
+			$accessibility_asset['version'],
+			true
+		);
+	}
 
 	// Enqueue comment reply script.
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -98,9 +128,37 @@ add_action( 'wp_enqueue_scripts', 'ai_block_theme_scripts' );
  */
 function ai_block_theme_editor_styles() {
 	// Enqueue editor styles.
-	add_editor_style( 'style.css' );
+	if ( file_exists( get_theme_file_path( 'build/index.css' ) ) ) {
+		add_editor_style( array(
+			get_theme_file_uri( 'build/index.css' )
+		) );
+	} else {
+		// Fallback to default style
+		add_editor_style( 'style.css' );
+	}
 }
-add_action( 'admin_init', 'ai_block_theme_editor_styles' );
+add_action( 'after_setup_theme', 'ai_block_theme_editor_styles' );
+
+/**
+ * Enqueue block editor scripts.
+ *
+ * @since 1.0.0
+ */
+function ai_block_theme_editor_assets() {
+	// Load editor scripts.
+	if ( file_exists( get_theme_file_path( 'build/style-engine.asset.php' ) ) ) {
+		$style_engine_asset = include get_theme_file_path( 'build/style-engine.asset.php' );
+
+		wp_enqueue_script(
+			'ai-block-theme-style-engine',
+			get_theme_file_uri( 'build/style-engine.js' ),
+			$style_engine_asset['dependencies'],
+			$style_engine_asset['version'],
+			true
+		);
+	}
+}
+add_action( 'enqueue_block_editor_assets', 'ai_block_theme_editor_assets' );
 
 /**
  * Register block styles.

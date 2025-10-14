@@ -1,0 +1,53 @@
+/**
+ * Layout styles
+ */
+
+// Site container
+.wp-site-blocks {
+	padding-left: var(--wp--preset--spacing--50);
+	padding-right: var(--wp--preset--spacing--50);
+
+	@include break-medium() {
+		padding-left: var(--wp--preset--spacing--60);
+		padding-right: var(--wp--preset--spacing--60);
+	}
+}
+
+// Content alignment utilities
+.has-text-align-left {
+	text-align: left;
+}
+
+.has-text-align-center {
+	text-align: center;
+}
+
+.has-text-align-right {
+	text-align: right;
+}
+
+// Block spacing
+.wp-block + .wp-block {
+	margin-top: var(--wp--preset--spacing--50);
+}
+
+// Group block variations
+.wp-block-group {
+
+	&.is-style-full-height {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+// Navigation improvements
+.wp-block-navigation {
+
+	.wp-block-navigation__responsive-container.is-menu-open {
+		background-color: var(--wp--preset--color--base);
+		border: 1px solid var(--wp--preset--color--contrast);
+	}
+}
+

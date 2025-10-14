@@ -1,0 +1,55 @@
+/**
+ * Editor-specific styles
+ * This file is compiled to build/css/editor.css
+ */
+
+// Import WordPress base styles for editor
+@import "~@wordpress/base-styles/breakpoints";
+@import "~@wordpress/base-styles/mixins";
+@import "~@wordpress/base-styles/variables";
+
+// Import shared components
+@import "components/base";
+@import "components/typography";
+@import "components/blocks";
+
+// Editor-specific overrides
+.block-editor-block-list__layout {
+	// Ensure proper spacing in editor
+	.wp-block {
+		margin-top: var(--wp--preset--spacing--40);
+		margin-bottom: var(--wp--preset--spacing--40);
+	}
+}
+
+// Editor canvas styles to match frontend
+.editor-styles-wrapper {
+	font-family: var(--wp--preset--font-family--system);
+	line-height: var(--wp--custom--typography--line-height--normal);
+	color: var(--wp--preset--color--contrast);
+	background-color: var(--wp--preset--color--base);
+
+	// Match frontend content width
+	.wp-block {
+		max-width: var(--wp--style--global--content-size);
+
+		&.alignwide {
+			max-width: var(--wp--style--global--wide-size);
+		}
+
+		&.alignfull {
+			max-width: none;
+		}
+	}
+}
+
+// Block toolbar enhancements
+.block-editor-block-toolbar {
+	border-color: var(--wp--preset--color--contrast);
+}
+
+// Selected block indicators
+.wp-block.is-selected {
+	outline: 1px solid var(--wp--preset--color--primary);
+}
+

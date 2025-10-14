@@ -1,0 +1,127 @@
+/**
+ * Block-specific styles
+ */
+
+// Button block
+.wp-block-button {
+
+	.wp-block-button__link {
+		border-radius: var(--wp--custom--effects--border-radius--medium, 0.5rem);
+		padding: var(--wp--preset--spacing--30) var(--wp--preset--spacing--50);
+		text-decoration: none;
+		display: inline-block;
+		transition: all 0.2s ease;
+
+		&:hover,
+		&:focus {
+			transform: translateY(-1px);
+			box-shadow: var(--wp--custom--effects--shadow--medium, 0 4px 6px rgba(0, 0, 0, 0.1));
+		}
+
+		&:focus {
+			outline: 2px solid var(--wp--preset--color--contrast);
+			outline-offset: 2px;
+		}
+	}
+}
+
+// Cover block
+.wp-block-cover {
+
+	.wp-block-cover__inner-container {
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+// Image block
+.wp-block-image {
+
+	figcaption {
+		margin-top: var(--wp--preset--spacing--30);
+		text-align: center;
+		font-size: 0.875em;
+		opacity: 0.8;
+	}
+}
+
+// Gallery block
+.wp-block-gallery {
+
+	.blocks-gallery-item {
+
+		figure {
+			margin: 0;
+			height: 100%;
+			display: flex;
+			align-items: flex-end;
+		}
+
+		figcaption {
+			background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, transparent 70%);
+			color: #fff;
+			padding: var(--wp--preset--spacing--30);
+			margin: 0;
+		}
+	}
+}
+
+// Quote block
+.wp-block-quote {
+	border-left: 4px solid var(--wp--preset--color--primary);
+	padding-left: var(--wp--preset--spacing--50);
+
+	cite {
+		display: block;
+		font-style: normal;
+		font-weight: 600;
+		margin-top: var(--wp--preset--spacing--30);
+	}
+}
+
+// Separator block
+.wp-block-separator {
+	border: none;
+	border-top: 1px solid var(--wp--preset--color--contrast);
+	margin: var(--wp--preset--spacing--60) auto;
+	opacity: 0.3;
+
+	&.is-style-wide {
+		border-top-width: 2px;
+	}
+
+	&.is-style-dots {
+		border: none;
+		text-align: center;
+
+		&::before {
+			content: "···";
+			color: var(--wp--preset--color--contrast);
+			font-size: var(--wp--preset--font-size--large);
+			letter-spacing: 2em;
+			padding-left: 2em;
+		}
+	}
+}
+
+// Table block
+.wp-block-table {
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	th,
+	td {
+		padding: var(--wp--preset--spacing--30);
+		border: 1px solid var(--wp--preset--color--contrast);
+		text-align: left;
+	}
+
+	th {
+		font-weight: 600;
+		background-color: var(--wp--preset--color--tertiary);
+	}
+}
+
