@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Pastel",
+  "settings": {
+    "color": {
+      "palette": [
+        { "name": "Amber", "slug": "amber", "color": "#FC0C04" },
+        { "name": "Gold", "slug": "gold", "color": "#F5BF0F" },
+        { "name": "Tangerine", "slug": "tangerine", "color": "#F2720C" },
+        { "name": "Stone", "slug": "stone", "color": "#DAD5D0" },
+        { "name": "Obsidian", "slug": "obsidian", "color": "#150D0D" }
+      ]
+    }
+  }
+}

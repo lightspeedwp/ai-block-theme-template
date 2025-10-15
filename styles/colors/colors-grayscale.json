@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Grayscale",
+  "settings": {
+    "color": {
+      "palette": [
+        { "name": "Garnet", "slug": "garnet", "color": "#D3045D" },
+        { "name": "Sky Blue", "slug": "sky-blue", "color": "#0C8EF4" },
+        { "name": "Sand", "slug": "sand", "color": "#D1BBAD" },
+        { "name": "Plum", "slug": "plum", "color": "#A162A1" },
+        { "name": "Midnight", "slug": "midnight", "color": "#0C287B" }
+      ]
+    }
+  }
+}

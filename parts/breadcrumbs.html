@@ -1,16 +1,13 @@
-<!--
-  Template Part: Breadcrumbs
-  Slug: breadcrumbs
-  Description: Reusable breadcrumbs template part. Contains a semantic nav wrapper and uses the core Breadcrumbs block when available. Editors can swap in the lsx-design/breadcrumbs pattern for styled variants.
-  Area: under-hero / content-top
--->
 <!-- wp:group {"tagName":"nav","className":"site-breadcrumbs","layout":{"type":"constrained"},"ariaLabel":"Breadcrumb"} -->
 <nav class="wp-block-group site-breadcrumbs" aria-label="Breadcrumb">
-  <!-- Prefer the native core breadcrumb block when available -->
-  <!-- wp:breadcrumb /-->
-  <!-- Fallback (visible if core:breadcrumb isn't supported): -->
-  <!-- wp:paragraph {"className":"breadcrumb-fallback has-small-font-size"} -->
-  <p class="breadcrumb-fallback has-small-font-size"><a href="/">Home</a> &nbsp; / &nbsp; <span aria-current="page">You are here</span></p>
-  <!-- /wp:paragraph -->
+	<!-- Prefer the native core breadcrumb block when available -->
+	<!-- wp:breadcrumb /-->
+	<!-- Fallback (visible if core:breadcrumb isn't supported): -->
+	<!-- wp:paragraph {"className":"breadcrumb-fallback has-small-font-size"} -->
+	<p class="breadcrumb-fallback has-small-font-size">
+		<a href="/">Home</a> &nbsp; / &nbsp;
+		<span aria-current="page">You are here</span>
+	</p>
+	<!-- /wp:paragraph -->
 </nav>
 <!-- /wp:group -->
