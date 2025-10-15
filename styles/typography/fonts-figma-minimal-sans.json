@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Figma Minimal Sans",
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "IBM Plex Sans",
+          "slug": "ibm-plex-sans",
+          "fontFamily": "IBM Plex Sans, sans-serif"
+        },
+        {
+          "name": "Work Sans",
+          "slug": "work-sans",
+          "fontFamily": "Work Sans, sans-serif"
+        }
+      ]
+    }
+  }
+}

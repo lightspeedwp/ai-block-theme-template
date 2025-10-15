@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Figma Bold Serif",
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "Roboto Slab",
+          "slug": "roboto-slab",
+          "fontFamily": "Roboto Slab, serif"
+        },
+        { "name": "Bitter", "slug": "bitter", "fontFamily": "Bitter, serif" }
+      ]
+    }
+  }
+}

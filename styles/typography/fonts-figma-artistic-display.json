@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Figma Artistic Display",
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "Oswald",
+          "slug": "oswald",
+          "fontFamily": "Oswald, sans-serif"
+        },
+        {
+          "name": "Bebas Neue",
+          "slug": "bebas-neue",
+          "fontFamily": "Bebas Neue, sans-serif"
+        }
+      ]
+    }
+  }
+}

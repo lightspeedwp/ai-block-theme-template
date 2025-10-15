@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Oceanic",
+  "settings": {
+    "color": {
+      "palette": [
+        { "name": "Oceanic 100", "slug": "oceanic-100", "color": "#E0F7FA" },
+        { "name": "Oceanic 200", "slug": "oceanic-200", "color": "#B2EBF2" },
+        { "name": "Oceanic 300", "slug": "oceanic-300", "color": "#80DEEA" },
+        { "name": "Oceanic 400", "slug": "oceanic-400", "color": "#4DD0E1" },
+        { "name": "Oceanic 500", "slug": "oceanic-500", "color": "#26C6DA" },
+        { "name": "Oceanic 600", "slug": "oceanic-600", "color": "#00BCD4" },
+        { "name": "Oceanic 700", "slug": "oceanic-700", "color": "#0097A7" },
+        { "name": "Oceanic 800", "slug": "oceanic-800", "color": "#00838F" },
+        { "name": "Oceanic 900", "slug": "oceanic-900", "color": "#006064" }
+      ]
+    }
+  }
+}

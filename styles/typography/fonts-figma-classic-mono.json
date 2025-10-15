@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Figma Classic Mono",
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "Courier Prime",
+          "slug": "courier-prime",
+          "fontFamily": "Courier Prime, monospace"
+        },
+        {
+          "name": "Space Mono",
+          "slug": "space-mono",
+          "fontFamily": "Space Mono, monospace"
+        }
+      ]
+    }
+  }
+}

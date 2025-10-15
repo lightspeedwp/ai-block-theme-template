@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Figma Humanist Sans",
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "Source Sans Pro",
+          "slug": "source-sans-pro",
+          "fontFamily": "Source Sans Pro, sans-serif"
+        },
+        {
+          "name": "Open Sans",
+          "slug": "open-sans",
+          "fontFamily": "Open Sans, sans-serif"
+        }
+      ]
+    }
+  }
+}

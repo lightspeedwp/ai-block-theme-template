@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Citrus",
+  "settings": {
+    "color": {
+      "palette": [
+        { "name": "Citrus 100", "slug": "citrus-100", "color": "#FFF9E5" },
+        { "name": "Citrus 200", "slug": "citrus-200", "color": "#FFF3C1" },
+        { "name": "Citrus 300", "slug": "citrus-300", "color": "#FFE066" },
+        { "name": "Citrus 400", "slug": "citrus-400", "color": "#FFD60A" },
+        { "name": "Citrus 500", "slug": "citrus-500", "color": "#FFA600" },
+        { "name": "Citrus 600", "slug": "citrus-600", "color": "#FF8C00" },
+        { "name": "Citrus 700", "slug": "citrus-700", "color": "#FF6F00" },
+        { "name": "Citrus 800", "slug": "citrus-800", "color": "#FF5722" },
+        { "name": "Citrus 900", "slug": "citrus-900", "color": "#E65100" }
+      ]
+    }
+  }
+}

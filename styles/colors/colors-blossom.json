@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Blossom",
+  "settings": {
+    "color": {
+      "palette": [
+        { "name": "Blossom 100", "slug": "blossom-100", "color": "#FFF0F6" },
+        { "name": "Blossom 200", "slug": "blossom-200", "color": "#FFD6E0" },
+        { "name": "Blossom 300", "slug": "blossom-300", "color": "#FFB3C6" },
+        { "name": "Blossom 400", "slug": "blossom-400", "color": "#FF8FAB" },
+        { "name": "Blossom 500", "slug": "blossom-500", "color": "#FB6F92" },
+        { "name": "Blossom 600", "slug": "blossom-600", "color": "#F06292" },
+        { "name": "Blossom 700", "slug": "blossom-700", "color": "#EC407A" },
+        { "name": "Blossom 800", "slug": "blossom-800", "color": "#E91E63" },
+        { "name": "Blossom 900", "slug": "blossom-900", "color": "#C2185B" }
+      ]
+    }
+  }
+}

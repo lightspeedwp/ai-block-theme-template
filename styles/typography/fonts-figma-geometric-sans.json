@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Figma Geometric Sans",
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "Poppins",
+          "slug": "poppins",
+          "fontFamily": "Poppins, sans-serif"
+        },
+        {
+          "name": "Nunito",
+          "slug": "nunito",
+          "fontFamily": "Nunito, sans-serif"
+        }
+      ]
+    }
+  }
+}

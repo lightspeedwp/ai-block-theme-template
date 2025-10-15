@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Royal",
+  "settings": {
+    "color": {
+      "palette": [
+        { "name": "Royal 100", "slug": "royal-100", "color": "#E3F2FD" },
+        { "name": "Royal 200", "slug": "royal-200", "color": "#BBDEFB" },
+        { "name": "Royal 300", "slug": "royal-300", "color": "#90CAF9" },
+        { "name": "Royal 400", "slug": "royal-400", "color": "#64B5F6" },
+        { "name": "Royal 500", "slug": "royal-500", "color": "#42A5F5" },
+        { "name": "Royal 600", "slug": "royal-600", "color": "#2196F3" },
+        { "name": "Royal 700", "slug": "royal-700", "color": "#1E88E5" },
+        { "name": "Royal 800", "slug": "royal-800", "color": "#1976D2" },
+        { "name": "Royal 900", "slug": "royal-900", "color": "#0D47A1" }
+      ]
+    }
+  }
+}

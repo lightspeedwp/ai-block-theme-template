@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Figma Modern Sans",
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        { "name": "Inter", "slug": "inter", "fontFamily": "Inter, sans-serif" },
+        {
+          "name": "Montserrat",
+          "slug": "montserrat",
+          "fontFamily": "Montserrat, sans-serif"
+        }
+      ]
+    }
+  }
+}

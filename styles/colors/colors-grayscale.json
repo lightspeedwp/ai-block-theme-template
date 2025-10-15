@@ -5,11 +5,47 @@
   "settings": {
     "color": {
       "palette": [
-        { "name": "Garnet", "slug": "garnet", "color": "#D3045D" },
-        { "name": "Sky Blue", "slug": "sky-blue", "color": "#0C8EF4" },
-        { "name": "Sand", "slug": "sand", "color": "#D1BBAD" },
-        { "name": "Plum", "slug": "plum", "color": "#A162A1" },
-        { "name": "Midnight", "slug": "midnight", "color": "#0C287B" }
+        {
+          "name": "Grayscale 100",
+          "slug": "grayscale-100",
+          "color": "#F5F5F5"
+        },
+        {
+          "name": "Grayscale 200",
+          "slug": "grayscale-200",
+          "color": "#E9ECEF"
+        },
+        {
+          "name": "Grayscale 300",
+          "slug": "grayscale-300",
+          "color": "#CCCCCC"
+        },
+        {
+          "name": "Grayscale 400",
+          "slug": "grayscale-400",
+          "color": "#ADB5BD"
+        },
+        {
+          "name": "Grayscale 500",
+          "slug": "grayscale-500",
+          "color": "#888888"
+        },
+        {
+          "name": "Grayscale 600",
+          "slug": "grayscale-600",
+          "color": "#666666"
+        },
+        {
+          "name": "Grayscale 700",
+          "slug": "grayscale-700",
+          "color": "#495057"
+        },
+        {
+          "name": "Grayscale 800",
+          "slug": "grayscale-800",
+          "color": "#343A40"
+        },
+        { "name": "Grayscale 900", "slug": "grayscale-900", "color": "#212529" }
       ]
     }
   }

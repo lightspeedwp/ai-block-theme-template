@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Forest",
+  "settings": {
+    "color": {
+      "palette": [
+        { "name": "Forest 100", "slug": "forest-100", "color": "#E8F5E9" },
+        { "name": "Forest 200", "slug": "forest-200", "color": "#C8E6C9" },
+        { "name": "Forest 300", "slug": "forest-300", "color": "#A5D6A7" },
+        { "name": "Forest 400", "slug": "forest-400", "color": "#81C784" },
+        { "name": "Forest 500", "slug": "forest-500", "color": "#66BB6A" },
+        { "name": "Forest 600", "slug": "forest-600", "color": "#43A047" },
+        { "name": "Forest 700", "slug": "forest-700", "color": "#388E3C" },
+        { "name": "Forest 800", "slug": "forest-800", "color": "#2E7D32" },
+        { "name": "Forest 900", "slug": "forest-900", "color": "#1B5E20" }
+      ]
+    }
+  }
+}

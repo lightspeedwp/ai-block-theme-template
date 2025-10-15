@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Figma Futurist Sans",
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        { "name": "Exo", "slug": "exo", "fontFamily": "Exo, sans-serif" },
+        {
+          "name": "Orbitron",
+          "slug": "orbitron",
+          "fontFamily": "Orbitron, sans-serif"
+        }
+      ]
+    }
+  }
+}

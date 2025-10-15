@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Figma Elegant Serif",
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "Playfair Display",
+          "slug": "playfair-display",
+          "fontFamily": "Playfair Display, serif"
+        },
+        {
+          "name": "Merriweather",
+          "slug": "merriweather",
+          "fontFamily": "Merriweather, serif"
+        }
+      ]
+    }
+  }
+}

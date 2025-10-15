@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Emerald",
+  "settings": {
+    "color": {
+      "palette": [
+        { "name": "Emerald 100", "slug": "emerald-100", "color": "#E6F9F0" },
+        { "name": "Emerald 200", "slug": "emerald-200", "color": "#B2F2D9" },
+        { "name": "Emerald 300", "slug": "emerald-300", "color": "#7DE3B8" },
+        { "name": "Emerald 400", "slug": "emerald-400", "color": "#43D9A3" },
+        { "name": "Emerald 500", "slug": "emerald-500", "color": "#17C964" },
+        { "name": "Emerald 600", "slug": "emerald-600", "color": "#12B76A" },
+        { "name": "Emerald 700", "slug": "emerald-700", "color": "#0E9C5F" },
+        { "name": "Emerald 800", "slug": "emerald-800", "color": "#0A7C4A" },
+        { "name": "Emerald 900", "slug": "emerald-900", "color": "#065F36" }
+      ]
+    }
+  }
+}

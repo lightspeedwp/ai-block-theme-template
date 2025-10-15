@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Vibrant",
+  "settings": {
+    "color": {
+      "palette": [
+        { "name": "Vibrant 100", "slug": "vibrant-100", "color": "#FFDEE9" },
+        { "name": "Vibrant 200", "slug": "vibrant-200", "color": "#B5FFFC" },
+        { "name": "Vibrant 300", "slug": "vibrant-300", "color": "#FFB3C6" },
+        { "name": "Vibrant 400", "slug": "vibrant-400", "color": "#FF61A6" },
+        { "name": "Vibrant 500", "slug": "vibrant-500", "color": "#FF6F61" },
+        { "name": "Vibrant 600", "slug": "vibrant-600", "color": "#FFB347" },
+        { "name": "Vibrant 700", "slug": "vibrant-700", "color": "#FFD700" },
+        { "name": "Vibrant 800", "slug": "vibrant-800", "color": "#BFFF00" },
+        { "name": "Vibrant 900", "slug": "vibrant-900", "color": "#00FFB3" }
+      ]
+    }
+  }
+}

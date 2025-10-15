@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Pastel",
+  "settings": {
+    "color": {
+      "palette": [
+        { "name": "Pastel 100", "slug": "pastel-100", "color": "#FDEFF2" },
+        { "name": "Pastel 200", "slug": "pastel-200", "color": "#F9D6E2" },
+        { "name": "Pastel 300", "slug": "pastel-300", "color": "#F7C1D1" },
+        { "name": "Pastel 400", "slug": "pastel-400", "color": "#F5A8C6" },
+        { "name": "Pastel 500", "slug": "pastel-500", "color": "#F28BAF" },
+        { "name": "Pastel 600", "slug": "pastel-600", "color": "#F06A97" },
+        { "name": "Pastel 700", "slug": "pastel-700", "color": "#ED4A7F" },
+        { "name": "Pastel 800", "slug": "pastel-800", "color": "#E92A67" },
+        { "name": "Pastel 900", "slug": "pastel-900", "color": "#E60A4F" }
+      ]
+    }
+  }
+}

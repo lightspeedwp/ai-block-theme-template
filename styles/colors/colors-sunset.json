@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Sunset",
+  "settings": {
+    "color": {
+      "palette": [
+        { "name": "Sunset 100", "slug": "sunset-100", "color": "#FFE5D9" },
+        { "name": "Sunset 200", "slug": "sunset-200", "color": "#FFB7B2" },
+        { "name": "Sunset 300", "slug": "sunset-300", "color": "#FF7F7F" },
+        { "name": "Sunset 400", "slug": "sunset-400", "color": "#FF6F61" },
+        { "name": "Sunset 500", "slug": "sunset-500", "color": "#FF4E50" },
+        { "name": "Sunset 600", "slug": "sunset-600", "color": "#FC913A" },
+        { "name": "Sunset 700", "slug": "sunset-700", "color": "#F9D423" },
+        { "name": "Sunset 800", "slug": "sunset-800", "color": "#EDE574" },
+        { "name": "Sunset 900", "slug": "sunset-900", "color": "#E1F5C4" }
+      ]
+    }
+  }
+}

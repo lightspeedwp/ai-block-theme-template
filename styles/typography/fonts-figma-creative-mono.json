@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Figma Creative Mono",
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "Fira Mono",
+          "slug": "fira-mono",
+          "fontFamily": "Fira Mono, monospace"
+        },
+        {
+          "name": "JetBrains Mono",
+          "slug": "jetbrains-mono",
+          "fontFamily": "JetBrains Mono, monospace"
+        }
+      ]
+    }
+  }
+}
