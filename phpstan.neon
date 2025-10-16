@@ -18,6 +18,8 @@ parameters:
     checkMissingIterableValueType: false
     checkGenericClassInNonGenericObjectType: false
     reportUnmatchedIgnoredErrors: false
+    # The following bootstrap file requires the Composer package 'johnbillion/wp-compat'.
+    # Ensure you have run 'composer install' and the package is present in your dependencies.
     bootstrapFiles:
         - vendor/johnbillion/wp-compat/compat.php
     
