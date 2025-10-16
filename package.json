@@ -49,6 +49,7 @@
     "@wordpress/stylelint-config": "^21.0.0",
     "eslint": "^8.0.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "jest": "30.2.0",
     "npm-package-json-lint": "^7.0.0",
     "prettier": "^3.0.0",
     "stylelint": "^14.16.0",
