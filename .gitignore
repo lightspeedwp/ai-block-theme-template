@@ -110,3 +110,9 @@ playwright/.cache/           # Playwright browser cache (any location)
 node_modules
 build/
 tmp/
+
+# WordPress Environment
+/.wp-env.json.local
+/.wp-env.override.json
+/wp-content/
+/wordpress/
