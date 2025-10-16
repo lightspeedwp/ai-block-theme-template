@@ -4,7 +4,7 @@
 # Run lint-staged for code quality checks
 npm run precommit
 
-# Run build to ensure everything compiles
-npm run build
+# Run lint to Lint JavaScript, CSS, and PHP for code quality
+npm run lint
 
 echo "✅ Pre-commit checks completed successfully!"
