@@ -32,15 +32,35 @@ Escalation / Hand-off
 Interactions
 ```
 
-## Initial Persona Set
+## Complete Agent Library
 
-- `block-theme-optimizer.agent.md`
-- `accessibility-auditor.agent.md`
-- `security-hardening-reviewer.agent.md`
-- `performance-profiler.agent.md`
-- `i18n-l10n-reviewer.agent.md`
+### JavaScript Automation Agents (Executable)
+- `bats-tests-runner-agent.js` - Test automation specialist for Bats testing coverage
+- `issue-type-agent.js` - Automatic issue type analysis and GitHub Projects integration
+- `label-standardization-agent.js` - Label standardization and migration automation
+- `labeling-agent.js` - Intelligent issue and PR labeling based on content analysis
+- `linting-workflow-agent.js` - Code quality enforcement across multiple languages
+- `release-agent.js` - Release management and version automation
+- `script-header-docs-agent.js` - Shell script documentation validation and quality
 
-(Planned / later) REST API contract validator, testing strategy advisor, design token curator (may merge with optimiser if scope stays small).
+### Markdown Specification Agents (Expert Guidance)
+- `accessibility-auditor.agents.md` - Comprehensive accessibility auditing and WCAG compliance
+- `block-patterns-planner.agents.md` - Block pattern strategy and library planning
+- `block-theme-optimizer.agents.md` - WordPress block theme performance optimization
+- `i18n-l10n-reviewer.agents.md` - Internationalization and localization review
+- `performance-profiler.agents.md` - Performance analysis and optimization profiling
+- `pr-reviewer.agents.md` - Pull request review automation and quality assessment
+- `qa-test-architect.agents.md` - Quality assurance strategy and testing architecture
+- `release-notes-manager.agents.md` - Release notes generation and management
+- `security-hardening-reviewer.agents.md` - Security hardening and vulnerability assessment
+- `woocommerce-specialist.agents.md` - WooCommerce development and e-commerce expertise
+- `wordpress-a11y-specialist.agents.md` - WordPress accessibility specialization
+- `wordpress-block-theme-architect.agents.md` - Block theme architecture and development strategy
+
+### Supporting Documentation
+- `AGENT.md` - This file: Agent development contract and guidelines
+- `README.md` - Comprehensive agent directory overview and usage patterns
+- `TEMPLATE.agents.md` - Standardized template for creating new agent specifications
 
 ## Tagging (Deferred)
 

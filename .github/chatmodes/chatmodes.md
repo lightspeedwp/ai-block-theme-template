@@ -2,6 +2,122 @@
 
 Scenario-based chat modes for different development contexts in LightSpeed WP automation workflows.
 
+## Chat Mode Library Overview
+
+This directory contains specialized chat modes for different WordPress development contexts and workflows. Each mode provides persistent conversational personas optimized for specific tasks and domains.
+
+### Available Chat Modes
+
+#### Core Development Modes
+
+**4.1-Beast Mode** (`4.1-Beast.chatmode.md`)
+- Advanced AI reasoning and problem-solving capabilities
+- Complex logic analysis and architectural decision making
+- Multi-step problem decomposition and solution design
+
+**Code Quality Guru** (`code-quality-guru.chatmode.md`)
+- Code quality assessment and improvement recommendations
+- Standards compliance review and enforcement
+- Refactoring strategies and best practices guidance
+
+**Debug Mode** (`debug.chatmode.md`)
+- Systematic debugging and troubleshooting assistance
+- Error analysis and root cause identification
+- Solution implementation and testing strategies
+
+**Critical Thinking Mode** (`critical-thinking.chatmode.md`)
+- Critical analysis of technical decisions and trade-offs
+- Risk assessment and mitigation strategies
+- Alternative solution evaluation and comparison
+
+#### WordPress Development Modes
+
+**LightSpeed Theme Expert** (`ls-theme-expert.chatmode.md`)
+- WordPress block theme development specialization
+- Theme.json configuration and optimization
+- FSE (Full Site Editing) implementation guidance
+- Performance optimization for WordPress themes
+
+**Pattern Wizard** (`pattern-wizard.chatmodes.md`)
+- Block pattern creation and optimization
+- Pattern library development and organization
+- Design system integration and consistency
+- Accessibility compliance in pattern design
+
+**WordPress A11y Assistant** (`a11y-assistant.chatmodes.md`)
+- Accessibility compliance and WCAG 2.2 AA standards
+- Inclusive design principles and implementation
+- Screen reader compatibility and testing
+- Keyboard navigation and focus management
+
+#### Project Management Modes
+
+**Implementation Plan Mode** (`implementation-plan.chatmode.md`)
+- Project breakdown and task organization
+- Implementation strategy development
+- Resource allocation and timeline planning
+- Milestone definition and tracking
+
+**Planner Mode** (`planner.chatmode.md`)
+- Strategic planning and architecture decisions
+- Requirements analysis and specification
+- Technology selection and integration planning
+- Risk assessment and contingency planning
+
+**Task Planner** (`task-planner.chatmode.md`)
+- Task decomposition and prioritization
+- Workflow optimization and efficiency improvement
+- Dependency management and scheduling
+- Progress tracking and reporting
+
+#### DevOps and Quality Assurance Modes
+
+**DevOps Helper** (`devops-helper.chatmode.md`)
+- CI/CD pipeline design and optimization
+- Infrastructure as code implementation
+- Deployment strategy and automation
+- Monitoring and observability setup
+
+**Test Coach** (`test-coach.chatmodes.md`)
+- Testing strategy development and implementation
+- Test case design and coverage analysis
+- Quality assurance processes and standards
+- Automated testing framework selection and setup
+
+**PR Copilot** (`pr-copilot.chatmodes.md`)
+- Pull request review and quality assessment
+- Code review best practices and standards
+- Merge conflict resolution and guidance
+- Branch management and Git workflow optimization
+
+**Release Copilot** (`release-copilot.chatmodes.md`)
+- Release planning and preparation
+- Version management and changelog generation
+- Deployment coordination and rollback procedures
+- Post-release monitoring and validation
+
+#### Specialized Development Modes
+
+**Prompt Builder** (`prompt-builder.chatmode.md`)
+- AI prompt engineering and optimization
+- Copilot instruction development
+- Template creation and standardization
+- Prompt effectiveness evaluation and improvement
+
+**Prompt Engineer** (`prompt-engineer.chatmode.md`)
+- Advanced prompt engineering techniques
+- Context optimization and parameter tuning
+- Multi-turn conversation design
+- Prompt testing and validation strategies
+
+### Legacy Mode (Maintained for Compatibility)
+
+**Plan Mode** (`plan.chatmode.md`)
+- General planning and strategy development
+- High-level architecture and design decisions
+- Resource planning and allocation
+- Timeline and milestone management
+
 ## Development Contexts
 
 ### Shell Script Development Mode

@@ -31,6 +31,107 @@ THIS FILE CONTAINS TEMPLATE DOCUMENTATION ONLY
 This file contains **TEMPLATE DOCUMENTATION** of prompt patterns for use with  
 GitHub Copilot Chat and CLI, tailored to LightSpeed WP automation workflows.
 
+## Available Prompt Library
+
+The `.github/prompts/` directory contains 70+ specialized prompts organized by category:
+
+### Architecture & Planning Prompts
+
+- `architecture-blueprint-generator.prompt.md` - Generate system architecture blueprints
+- `breakdown-epic-arch.prompt.md` - Break down epics from architectural perspective
+- `breakdown-epic-pm.prompt.md` - Break down epics for project management
+- `breakdown-feature-implementation.prompt.md` - Create feature implementation plans
+- `breakdown-feature-prd.prompt.md` - Generate product requirement documents
+- `breakdown-plan.prompt.md` - General project and task breakdown
+- `breakdown-test.prompt.md` - Create comprehensive testing strategies
+- `create-implementation-plan.prompt.md` - Generate detailed implementation plans
+- `folder-structure-blueprint-generator.prompt.md` - Design project folder structures
+- `update-implementation-plan.prompt.md` - Update and refine implementation plans
+
+### WordPress Development Prompts
+
+#### Theme & Block Development
+- `configure-theme-json.prompt.md` - Configure theme.json files with best practices
+- `create-block-pattern.prompt.md` - Create individual block patterns
+- `create-block-patterns.prompt.md` - Generate multiple related block patterns
+- `create-gutenberg-block.prompt.md` - Develop custom Gutenberg blocks
+- `generate-block.prompt.md` - Generate and scaffold new blocks
+- `ls-block-a11y-check.prompt.md` - Accessibility audit for blocks
+- `ls-block-release-agent.prompt.md` - Block release management automation
+- `ls-block-scaffold.prompt.md` - Scaffold new block development
+- `ls-theme-ci-agent.prompt.md` - CI/CD configuration for themes
+- `ls-theme-regression-plan.prompt.md` - Theme regression testing strategies
+- `ls-theme-scaffold.prompt.md` - Scaffold new WordPress themes
+- `pattern-generation.prompt.md` - Advanced pattern generation strategies
+- `pattern-scaffold.prompt.md` - Scaffold block pattern development
+- `refactor-theme-json.prompt.md` - Refactor and optimize theme.json
+- `refactor-to-bem.prompt.md` - Refactor CSS to BEM methodology
+- `template-scaffold.prompt.md` - Scaffold WordPress templates
+- `update-pattern-for-a11y.prompt.md` - Update patterns for accessibility
+
+### Testing & Quality Assurance Prompts
+
+#### Playwright Testing
+- `playwright-automation-fill-in-form.prompt.md` - Automate form filling and testing
+- `playwright-explore-website.prompt.md` - Website exploration and discovery testing
+- `playwright-generate-test.prompt.md` - Generate comprehensive Playwright tests
+- `write-playwright-tests.prompt.md` - Write specific Playwright test scenarios
+
+#### PHP Testing
+- `write-phpunit-tests.prompt.md` - Generate PHPUnit tests for WordPress
+
+### Documentation & Communication Prompts
+
+- `comment-code-generate-a-tutorial.prompt.md` - Generate code documentation and tutorials
+- `create-readme.prompt.md` - Create comprehensive README files
+- `generate-changelog.prompt.md` - Generate project changelogs
+- `generate-pr-description.prompt.md` - Create detailed pull request descriptions
+- `readme-blueprint-generator.prompt.md` - Generate README blueprints
+- `repo-story-time.prompt.md` - Create repository documentation narratives
+- `update-markdown-file-index.prompt.md` - Update markdown file indexes
+
+### Development Tools & Automation Prompts
+
+#### Copilot & AI Tools
+- `ai-prompt-engineering-safety-review.prompt.md` - Review AI prompts for safety
+- `copilot-instructions-blueprint-generator.prompt.md` - Generate Copilot instructions
+- `github-copilot-starter.prompt.md` - Initialize GitHub Copilot setups
+- `prompt-builder.prompt.md` - Build and engineer effective prompts
+
+#### Git & Version Control
+- `conventional-commit.prompt.md` - Generate conventional commit messages
+- `git-flow-branch-creator.prompt.md` - Create Git flow branches
+- `my-issues.prompts.md` - Manage and track GitHub issues
+- `my-pull-requests.prompt.md` - Manage pull request workflows
+
+#### Configuration & Setup
+- `editorconfig.prompt.md` - Generate EditorConfig files
+- `create-architectural-decision-record.prompt.md` - Document architectural decisions
+- `create-github-action-workflow-specification.prompt.md` - Create GitHub Actions workflows
+- `create-github-issue-feature-from-specification.prompt.md` - Generate issues from specs
+- `create-github-issues-feature-from-implementation-plan.prompt.md` - Create issues from plans
+- `create-github-issues-for-unmet-specification-requirements.prompt.md` - Track unmet requirements
+- `create-github-pull-request-from-specification.prompt.md` - Generate PRs from specifications
+- `create-specification.prompt.md` - Create technical specifications
+- `update-specification.prompt.md` - Update and maintain specifications
+
+### Code Quality & Maintenance Prompts
+
+- `fix-lint.prompt.md` - Fix linting issues and code quality problems
+- `review-and-refactor.prompt.md` - Code review and refactoring guidance
+- `review-performance.prompt.md` - Performance review and optimization
+- `prepub-checklist.prompt.md` - Pre-publication quality checklist
+
+### Utility & Management Prompts
+
+- `create-agentsmd.prompt.md` - Create and manage agent documentation
+- `create-llms.prompt.md` - Create language model configurations
+- `create-readme.prompt.md` - Generate project README files
+- `first-ask.prompt.md` - Initial project discovery and requirements
+- `gen-specs-as-issues.prompt.md` - Generate specifications as GitHub issues
+- `generate-custom-instructions-from-codebase.prompt.md` - Extract instructions from code
+- `update-llms.prompt.md` - Update language model configurations
+
 ## 📋 How to Use This Template Documentation
 
 ### ⚠️ IMPORTANT: Template patterns, NOT executable prompts

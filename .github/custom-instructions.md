@@ -275,6 +275,23 @@ Specialized AI agents for complex WordPress-specific workflows:
 - Automated accessibility and performance auditing
 - Smart theme.json configuration assistance
 
+## Copilot Asset Cross-References
+
+The complete Copilot asset ecosystem consists of interconnected documentation:
+
+### Main Reference Files
+- **[Custom Instructions](.github/custom-instructions.md)** - This file: Central Copilot configuration
+- **[Instructions Library](.github/instructions/)** - Contextual behavioral guidance (32 files)
+- **[Chat Modes](.github/chatmodes/chatmodes.md)** - Persistent conversational personas (18 modes)
+- **[Prompts Library](.github/prompts/prompts.md)** - Single-shot task templates (70+ prompts)
+- **[Agents Registry](../AGENTS.md)** - Specialized AI agents for WordPress workflows (23+ agents)
+- **[Agents Directory](.github/agents/AGENT.md)** - Agent development guidelines and contracts
+
+### Supporting Documentation
+- **[Development Handbook](../LIGHTSPEED_AUTOMATION_HANDBOOK.md)** - Comprehensive development processes
+- **[Contribution Guidelines](../CONTRIBUTING.md)** - How to contribute to the project
+- **[Code of Conduct](../CODE_OF_CONDUCT.md)** - Community interaction standards
+
 ## Extension Migration Policy
 
 **Plural forms are now canonical:**
