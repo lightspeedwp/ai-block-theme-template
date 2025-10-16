@@ -1,39 +1,70 @@
 ---
-name: Release PR
-about: Promote a release branch (product) or a tested batch from Staging to Live (client).
-title: "release: v"
-labels: ["status:needs-review"]
+
+name: "Release PR"  
+about: "Release new features or enhancements"  
+title: "release: {short summary}"  
+labels: ["status:needs-review", "area:release"]  
+
 ---
 
+# Release Pull Request
+
+> This repository enforces changelog, release, and label automation for all PRs and issues.  
+> See the organisation-wide [Automation Governance & Release Strategy](https://github.com/lightspeedwp/.github/blob/main/AUTOMATION_GOVERNANCE.md) for contributor rules.
+
+## Linked issues & merged PRs
+
 <!--
-Aligns with Product “Release PR” and Client “Release PR” checklists.
-Include version bump, changelog, smoke‑test matrix, UAT evidence (client).
+List all issues and PRs included in this release (e.g. closes #123, includes #456).
 -->
 
-## Scope
-This release includes the following merged PRs / issues:
-- #
+Includes:
 
-## Version & tagging
-- Target version/tag: vX.Y.Z
-- [ ] Version bumped where required
+- (PRs/Issues)
 
 ## Changelog
-Link to or paste the release‑notes section for vX.Y.Z.
 
-## UAT / QA evidence
-- UAT sign‑off (link): 
-- Smoke‑test matrix (key flows):
-  - [ ] Auth / checkout / settings
-  - [ ] …
+<!--
+Required for release automation.
+Format: Keep a Changelog.
+Categories: Added, Changed, Fixed, Removed.
+User-facing notes only. Internal-only PRs (rare) may use the `skip-changelog` label.
+Example:
+### Added
+- New VAT support for EU regions.
+### Fixed
+- Corrected shipping fee rounding. (Fixes #789)
+-->
 
-## Migration notes
-Data/SEO/config/cache/CDN steps.
+### Added
 
-## Monitoring & rollback
-What to watch post‑deploy and how to revert if needed.
+- [placeholder]
 
-## After merge
-- [ ] Tag vX.Y.Z on `main`
-- [ ] Publish release notes
-- [ ] Back‑merge `main → develop` (if using develop)
+### Changed
+
+- [placeholder]
+
+### Fixed
+
+- [placeholder]
+
+### Removed
+
+- [placeholder]
+
+<!--
+If no user-facing changelog entry is needed, apply the skip-changelog label to this PR.
+-->
+
+---
+
+
+### Checklist (Global DoD / PR)
+
+- [ ] All AC met and demonstrated
+- [ ] Tests added/updated (unit/E2E as appropriate)
+- [ ] A11y considerations addressed where relevant
+- [ ] Docs/readme/changelog updated (if user-facing)
+- [ ] Security/perf impact reviewed where relevant
+- [ ] Code/design reviews approved
+- [ ] CI green; linked issues closed; release notes prepared (if shipping)

@@ -1,24 +1,41 @@
 ---
 
-name: "Feature PR"  
-about: "New features or enhancements"  
-title: "feat: {short summary}"  
-labels: ["status:needs-review", "area:feature"]  
+name: "Docs-only PR"  
+about: "Documentation updates: READMEs, guides, contributor docs"  
+title: "docs: {short summary}"  
+labels: ["status:needs-review", "lang:md"]  
 
 ---
 
-# Feature Pull Request
+# Documentation Pull Request
 
 > This repository enforces changelog, release, and label automation for all PRs and issues.  
-> See the organisation-wide [Automation Governance & Release Strategy](https://github.com/lightspeedwp/.github/blob/main/AUTOMATION_GOVERNANCE.md) for contributor rules.
+> See the organisation-wide [Automation Governance & Release Strategy](https://github.com/lightspeedwp/.github/blob/main/AUTOMATION_GOVERNANCE.md) for required rules.
 
 ## Linked issues
 
 <!--
-List any related issues by number (e.g. closes #123, fixes #456, relates to #789).
+List any related issues by number (e.g. closes #123, relates to #789).
 -->
 
-Closes #
+Relates to #
+
+## What changed
+
+- <doc/guide name>
+
+## Audience & placement
+
+- Audience: <contributors/users/clients>
+- Location: <README/docs/wiki/site>
+
+## Preview / Screenshots
+
+(images or links)
+
+## Notes
+
+- Sources/references: (links)
 
 ## Changelog
 
@@ -26,12 +43,10 @@ Closes #
 Required for release automation.
 Format: Keep a Changelog.
 Categories: Added, Changed, Fixed, Removed.
-User-facing notes only. Internal-only PRs (rare) may use the `skip-changelog` label.
+User-facing notes only. Internal-only PRs (rare) may use the skip-changelog label.
 Example:
 ### Added
-- Express PayPal checkout for cart and order. (Closes #123, @author)
-### Fixed
-- Resolved checkout validation for NL postcodes. (Fixes #456)
+- Added setup guide for staging deployments. (Relates to #789)
 -->
 
 ### Added

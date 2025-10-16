@@ -1,0 +1,2 @@
+# See: https://www.shellcheck.net/wiki/SC
+# Enable all checks, disable specific noisy ones per project if needed.
