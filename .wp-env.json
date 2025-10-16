@@ -1,0 +1,36 @@
+{
+  "core": "WordPress/WordPress#6.4",
+  "phpVersion": "8.2",
+  "plugins": [],
+  "themes": [
+    "."
+  ],
+  "env": {
+    "development": {
+      "coreSource": {
+        "type": "git",
+        "url": "https://github.com/WordPress/WordPress.git",
+        "ref": "trunk"
+      }
+    },
+    "tests": {
+      "coreSource": {
+        "type": "git", 
+        "url": "https://github.com/WordPress/WordPress.git",
+        "ref": "trunk"
+      },
+      "config": {
+        "WP_DEBUG": true,
+        "WP_DEBUG_LOG": true,
+        "SCRIPT_DEBUG": true
+      }
+    }
+  },
+  "port": 8888,
+  "testsPort": 8889,
+  "config": {
+    "WP_DEBUG": true,
+    "WP_DEBUG_LOG": true,
+    "SCRIPT_DEBUG": true
+  }
+}

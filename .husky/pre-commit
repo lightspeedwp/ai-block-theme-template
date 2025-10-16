@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run lint-staged for code quality checks
+npm run precommit
+
+# Run lint to Lint JavaScript, CSS, and PHP for code quality
+npm run lint
+
+echo "✅ Pre-commit checks completed successfully!"

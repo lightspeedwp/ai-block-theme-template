@@ -118,12 +118,179 @@ This theme leverages the WordPress packages ecosystem:
 - **Specialized agents** for complex WordPress scenarios
 - **Automated workflows** for testing, deployment, and quality assurance
 
+#### Instructions Library (`.github/instructions/`)
+Contextual behavioral guidance that auto-applies based on file patterns and development context:
+
+- `accessibility.instructions.md` - Comprehensive WCAG 2.2 AA compliance guidelines
+- `a11y.instructions.md` - Accessibility guidelines for inclusive code generation  
+- `block-json.instructions.md` - Block.json essentials and best practices
+- `block-theme.instructions.md` - WordPress Block Theme development standards
+- `blocks.instructions.md` - Block development and registration guidelines
+- `ci-cd.instructions.md` - Continuous integration and deployment standards
+- `coding-standards.instructions.md` - WordPress coding standards for all languages
+- `collections.instructions.md` - Collections development and validation rules
+- `copilot-thought-logging.instructions.md` - Process tracking and logging guidelines
+- `create-or-update-copilot.instructions.md` - Copilot instruction creation standards
+- `docs.instructions.md` - Documentation expectations and structure
+- `gitops.instructions.md` - Git workflow and PR management standards
+- `html-template.instructions.md` - HTML template structure and semantic guidelines
+- `js.instructions.md` - JavaScript development with WordPress standards
+- `json.instructions.md` - JSON formatting and configuration standards
+- `markdown.instructions.md` - Markdown content rules and validation requirements
+- `pattern-development.instructions.md` - Block pattern development and registration
+- `patterns.instructions.md` - Block patterns authoring and content strategy
+- `performance.instructions.md` - Performance optimization for front-end and editor
+- `php-block.instructions.md` - PHP block and theme setup instructions
+- `php-wordpress.instructions.md` - Comprehensive PHP WordPress development guidelines
+- `php.instructions.md` - WordPress PHP coding standards and security
+- `playwright-tests.instructions.md` - Playwright test writing and organization
+- `playwright-typescript.instructions.md` - Playwright test generation with TypeScript
+- `reviews.instructions.md` - Code review expectations and quality standards
+- `security.instructions.md` - Security basics for WordPress development
+- `spec-driven-workflow-v1.instructions.md` - Specification-driven development workflow
+- `tagging-and-frontmatter-conventions.instructions.md` - Metadata standards for Copilot assets
+- `tasksync.instructions.md` - TaskSync v4 protocol for continuous task management
+- `testing.instructions.md` - Testing layer strategies and coverage targets
+- `theme-json.instructions.md` - Theme.json configuration guidelines and structure
+- `wordpress.instructions.md` - WordPress development standards and best practices
+
+#### Chat Modes Library (`.github/chatmodes/`)
+Persistent conversational personas for sustained development workflows:
+
+- `4.1-Beast.chatmode.md` - Advanced AI reasoning and problem-solving mode
+- `a11y-assistant.chatmodes.md` - Accessibility assistant for WCAG compliance
+- `chatmodes.md` - Main chat modes documentation and usage guide
+- `code-quality-guru.chatmode.md` - Code quality and standards expert
+- `critical-thinking.chatmode.md` - Critical analysis and decision-making mode
+- `debug.chatmode.md` - Debugging and troubleshooting specialist
+- `devops-helper.chatmode.md` - DevOps and deployment assistance
+- `implementation-plan.chatmode.md` - Implementation planning and project management
+- `ls-theme-expert.chatmode.md` - LightSpeed theme development specialist
+- `pattern-wizard.chatmodes.md` - Block pattern creation and optimization
+- `plan.chatmode.md` - Strategic planning and architecture mode
+- `planner.chatmode.md` - Project planning and task management
+- `pr-copilot.chatmodes.md` - Pull request review and management
+- `prompt-builder.chatmode.md` - Prompt engineering and optimization
+- `prompt-engineer.chatmode.md` - Advanced prompt creation and refinement
+- `release-copilot.chatmodes.md` - Release management and deployment
+- `task-planner.chatmode.md` - Task breakdown and workflow planning
+- `test-coach.chatmodes.md` - Testing strategy and implementation guidance
+
+#### Prompts Library (`.github/prompts/`)
+Single-shot reusable tasks and templates for consistent execution:
+
+**Architecture & Planning:**
+- `architecture-blueprint-generator.prompt.md` - System architecture design
+- `breakdown-epic-arch.prompt.md` - Epic architectural breakdown
+- `breakdown-epic-pm.prompt.md` - Epic project management breakdown
+- `breakdown-feature-implementation.prompt.md` - Feature implementation planning
+- `breakdown-feature-prd.prompt.md` - Feature product requirement document
+- `breakdown-plan.prompt.md` - General project breakdown
+- `breakdown-test.prompt.md` - Test strategy breakdown
+- `create-implementation-plan.prompt.md` - Implementation plan creation
+- `update-implementation-plan.prompt.md` - Implementation plan updates
+
+**WordPress Development:**
+- `configure-theme-json.prompt.md` - Theme.json configuration assistant
+- `create-block-pattern.prompt.md` - Single block pattern creation
+- `create-block-patterns.prompt.md` - Multiple block patterns creation
+- `create-gutenberg-block.prompt.md` - Gutenberg block development
+- `generate-block.prompt.md` - Block generation and scaffolding
+- `ls-block-a11y-check.prompt.md` - Block accessibility validation
+- `ls-block-release-agent.prompt.md` - Block release management
+- `ls-block-scaffold.prompt.md` - Block scaffolding and setup
+- `ls-theme-ci-agent.prompt.md` - Theme CI/CD configuration
+- `ls-theme-regression-plan.prompt.md` - Theme regression testing
+- `ls-theme-scaffold.prompt.md` - Theme scaffolding and setup
+- `pattern-generation.prompt.md` - Pattern generation strategies
+- `pattern-scaffold.prompt.md` - Pattern scaffolding
+- `refactor-theme-json.prompt.md` - Theme.json refactoring
+- `refactor-to-bem.prompt.md` - BEM methodology refactoring
+- `template-scaffold.prompt.md` - Template scaffolding
+- `update-pattern-for-a11y.prompt.md` - Pattern accessibility updates
+
+**Testing & Quality Assurance:**
+- `playwright-automation-fill-in-form.prompt.md` - Form automation testing
+- `playwright-explore-website.prompt.md` - Website exploration testing
+- `playwright-generate-test.prompt.md` - Playwright test generation
+- `write-phpunit-tests.prompt.md` - PHPUnit test creation
+- `write-playwright-tests.prompt.md` - Playwright test writing
+
+**Documentation & Communication:**
+- `comment-code-generate-a-tutorial.prompt.md` - Code documentation and tutorials
+- `create-readme.prompt.md` - README file creation
+- `folder-structure-blueprint-generator.prompt.md` - Project structure design
+- `generate-changelog.prompt.md` - Changelog generation
+- `generate-pr-description.prompt.md` - Pull request description creation
+- `readme-blueprint-generator.prompt.md` - README blueprint generation
+- `repo-story-time.prompt.md` - Repository storytelling and documentation
+
+**Development Tools & Automation:**
+- `ai-prompt-engineering-safety-review.prompt.md` - AI prompt safety review
+- `conventional-commit.prompt.md` - Conventional commit message generation
+- `copilot-instructions-blueprint-generator.prompt.md` - Copilot instruction creation
+- `create-github-action-workflow-specification.prompt.md` - GitHub Actions workflow specs
+- `editorconfig.prompt.md` - EditorConfig setup and configuration
+- `fix-lint.prompt.md` - Linting issue resolution
+- `git-flow-branch-creator.prompt.md` - Git flow branch management
+- `github-copilot-starter.prompt.md` - GitHub Copilot initialization
+- `my-issues.prompts.md` - Issue management and tracking
+- `my-pull-requests.prompt.md` - Pull request management
+- `prepub-checklist.prompt.md` - Pre-publication checklist
+- `prompt-builder.prompt.md` - Prompt engineering and creation
+- `review-and-refactor.prompt.md` - Code review and refactoring
+- `review-performance.prompt.md` - Performance review and optimization
+- `update-markdown-file-index.prompt.md` - Markdown file indexing
+
+#### Agents Library (`.github/agents/`)
+Specialized AI agents for complex WordPress-specific workflows:
+
+**JavaScript Agents:**
+- `bats-tests-runner-agent.js` - Test automation specialist for Bats testing
+- `issue-type-agent.js` - Automatic issue type analysis and assignment
+- `label-standardization-agent.js` - Label standardization and migration
+- `labeling-agent.js` - Intelligent issue and PR labeling
+- `linting-workflow-agent.js` - Code quality and linting enforcement
+- `release-agent.js` - Release management and automation
+- `script-header-docs-agent.js` - Shell script documentation validation
+
+**Markdown Agents:**
+- `accessibility-auditor.agents.md` - Comprehensive accessibility auditing
+- `block-patterns-planner.agents.md` - Block pattern strategy and planning
+- `block-theme-optimizer.agents.md` - Block theme performance optimization
+- `i18n-l10n-reviewer.agents.md` - Internationalization and localization review
+- `performance-profiler.agents.md` - Performance analysis and profiling
+- `pr-reviewer.agents.md` - Pull request review automation
+- `qa-test-architect.agents.md` - Quality assurance and testing strategy
+- `release-notes-manager.agents.md` - Release notes generation and management
+- `security-hardening-reviewer.agents.md` - Security hardening and vulnerability assessment
+- `woocommerce-specialist.agents.md` - WooCommerce development expertise
+- `wordpress-a11y-specialist.agents.md` - WordPress accessibility specialization
+- `wordpress-block-theme-architect.agents.md` - Block theme architecture design
+
 ### AI-Enhanced Development
 - GitHub Copilot integration with WordPress-specific context
 - AI-assisted block pattern creation and optimization
 - Intelligent code suggestions following WordPress standards
 - Automated accessibility and performance auditing
 - Smart theme.json configuration assistance
+
+## Copilot Asset Cross-References
+
+The complete Copilot asset ecosystem consists of interconnected documentation:
+
+### Main Reference Files
+- **[Custom Instructions](.github/custom-instructions.md)** - This file: Central Copilot configuration
+- **[Instructions Library](.github/instructions/)** - Contextual behavioral guidance (32 files)
+- **[Chat Modes](.github/chatmodes/chatmodes.md)** - Persistent conversational personas (18 modes)
+- **[Prompts Library](.github/prompts/prompts.md)** - Single-shot task templates (70+ prompts)
+- **[Agents Registry](../AGENTS.md)** - Specialized AI agents for WordPress workflows (23+ agents)
+- **[Agents Directory](.github/agents/AGENT.md)** - Agent development guidelines and contracts
+
+### Supporting Documentation
+- **[Development Handbook](../LIGHTSPEED_AUTOMATION_HANDBOOK.md)** - Comprehensive development processes
+- **[Contribution Guidelines](../CONTRIBUTING.md)** - How to contribute to the project
+- **[Code of Conduct](../CODE_OF_CONDUCT.md)** - Community interaction standards
 
 ## Extension Migration Policy
 
