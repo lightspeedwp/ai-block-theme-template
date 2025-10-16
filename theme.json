@@ -1,40 +1,544 @@
-{
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 3,
   "title": "AI Block Theme Template",
+  "description": "A modern accessible block theme for WordPress by LightSpeed with standardized design tokens.",
   "settings": {
     "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true,
     "layout": {
       "contentSize": "620px",
       "wideSize": "1200px"
     },
     "color": {
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotones": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
       "palette": [
-        { "slug": "base", "name": "Base", "color": "#ffffff" },
-        { "slug": "contrast", "name": "Contrast", "color": "#000000" },
-        { "slug": "primary", "name": "Primary", "color": "#007cba" }
+        {
+          "name": "Garnet Sunrise",
+          "slug": "garnet-sunrise",
+          "color": "#D3045D"
+        },
+        {
+          "name": "Royal Gemstone Dusk",
+          "slug": "royal-gemstone-dusk",
+          "color": "#D91B24"
+        },
+        {
+          "name": "Emerald Ruby Dawn",
+          "slug": "emerald-ruby-dawn",
+          "color": "#D41414"
+        },
+        {
+          "name": "Crimson Amethyst Nightfall",
+          "slug": "crimson-amethyst-nightfall",
+          "color": "#F3000E"
+        },
+        {
+          "name": "Amber Obsidian Autumn",
+          "slug": "amber-obsidian-autumn",
+          "color": "#FC0C04"
+        },
+        {
+          "name": "Sunset Topaz Skies",
+          "slug": "sunset-topaz-skies",
+          "color": "#CC2454"
+        },
+        {
+          "name": "Mermaid Garnet Symphony",
+          "slug": "mermaid-garnet-symphony",
+          "color": "#C90184"
+        },
+        {
+          "name": "Sapphire Coral Breeze",
+          "slug": "sapphire-coral-breeze",
+          "color": "#F61C24"
+        },
+        {
+          "name": "Emerald Lapis Twilight",
+          "slug": "emerald-lapis-twilight",
+          "color": "#0CDC2A"
+        },
+        {
+          "name": "Turquoise Amethyst Frost",
+          "slug": "turquoise-amethyst-frost",
+          "color": "#345C32"
+        }
       ]
     },
     "typography": {
+      "dropCap": false,
       "fluid": true,
+      "fontStyle": true,
+      "fontWeight": true,
+      "letterSpacing": true,
+      "lineHeight": true,
+      "textDecoration": true,
+      "textTransform": true,
+      "writingMode": false,
+      "fontFamilies": [
+        {
+          "fontFamily": "Roboto, Archivo Black, sans-serif",
+          "name": "Roboto & Archivo Black",
+          "slug": "roboto-archivo-black"
+        },
+        {
+          "fontFamily": "Source Sans 3, Cabin, sans-serif",
+          "name": "Source Sans 3 & Cabin",
+          "slug": "source-cabin"
+        },
+        {
+          "fontFamily": "Josefin Sans, Cardo, serif",
+          "name": "Josefin Sans & Cardo",
+          "slug": "josefin-cardo"
+        },
+        {
+          "fontFamily": "Lato, Abril Fatface, sans-serif",
+          "name": "Lato & Abril Fatface",
+          "slug": "lato-abril-fatface"
+        },
+        {
+          "fontFamily": "Open Sans, Bitter, sans-serif",
+          "name": "Open Sans & Bitter",
+          "slug": "open-bitter"
+        },
+        {
+          "fontFamily": "Raleway, Merriweather, serif",
+          "name": "Raleway & Merriweather",
+          "slug": "raleway-merriweather"
+        },
+        {
+          "fontFamily": "Montserrat, Source Sans 3, sans-serif",
+          "name": "Montserrat & Source Sans 3",
+          "slug": "montserrat-source-sans"
+        },
+        {
+          "fontFamily": "Nunito, Alegreya, sans-serif",
+          "name": "Nunito & Alegreya",
+          "slug": "nunito-alegreya"
+        },
+        {
+          "fontFamily": "Lora, Merriweather, serif",
+          "name": "Lora & Merriweather",
+          "slug": "lora-merriweather"
+        },
+        {
+          "fontFamily": "Ubuntu, Rokkitt, sans-serif",
+          "name": "Ubuntu & Rokkitt",
+          "slug": "ubuntu-rokkitt"
+        }
+      ],
       "fontSizes": [
-        { "name": "Small", "size": "0.875rem", "slug": "400" },
-        { "name": "Medium", "size": "1rem", "slug": "500" },
-        { "name": "Large", "size": "1.25rem", "slug": "600" }
+        {
+          "name": "100",
+          "size": "0.75rem",
+          "slug": "100",
+          "fluid": {
+            "min": "0.75rem",
+            "max": "0.875rem"
+          }
+        },
+        {
+          "name": "200",
+          "size": "0.875rem",
+          "slug": "200",
+          "fluid": {
+            "min": "0.875rem",
+            "max": "1rem"
+          }
+        },
+        {
+          "name": "300",
+          "size": "1rem",
+          "slug": "300",
+          "fluid": {
+            "min": "1rem",
+            "max": "1.125rem"
+          }
+        },
+        {
+          "name": "400",
+          "size": "1.125rem",
+          "slug": "400",
+          "fluid": {
+            "min": "1.125rem",
+            "max": "1.25rem"
+          }
+        },
+        {
+          "name": "500",
+          "size": "1.25rem",
+          "slug": "500",
+          "fluid": {
+            "min": "1.25rem",
+            "max": "1.5rem"
+          }
+        },
+        {
+          "name": "600",
+          "size": "1.5rem",
+          "slug": "600",
+          "fluid": {
+            "min": "1.5rem",
+            "max": "1.875rem"
+          }
+        },
+        {
+          "name": "700",
+          "size": "1.875rem",
+          "slug": "700",
+          "fluid": {
+            "min": "1.875rem",
+            "max": "2.25rem"
+          }
+        },
+        {
+          "name": "800",
+          "size": "2.25rem",
+          "slug": "800",
+          "fluid": {
+            "min": "2.25rem",
+            "max": "2.75rem"
+          }
+        },
+        {
+          "name": "900",
+          "size": "2.75rem",
+          "slug": "900",
+          "fluid": {
+            "min": "2.75rem",
+            "max": "3.5rem"
+          }
+        }
       ]
     },
     "spacing": {
+      "padding": true,
+      "margin": true,
+      "customSpacingSize": false,
+      "units": ["%", "px", "em", "rem", "vh", "vw"],
       "spacingSizes": [
-        { "name": "Small", "size": "1rem", "slug": "40" },
-        { "name": "Medium", "size": "1.5rem", "slug": "50" },
-        { "name": "Large", "size": "2rem", "slug": "60" }
+        {
+          "name": "10",
+          "size": "clamp(0.25rem, 1vw, 0.5rem)",
+          "slug": "10"
+        },
+        {
+          "name": "20",
+          "size": "clamp(0.5rem, 2vw, 0.75rem)",
+          "slug": "20"
+        },
+        {
+          "name": "30",
+          "size": "clamp(0.75rem, 3vw, 1rem)",
+          "slug": "30"
+        },
+        {
+          "name": "40",
+          "size": "clamp(1rem, 4vw, 1.5rem)",
+          "slug": "40"
+        },
+        {
+          "name": "50",
+          "size": "clamp(1.5rem, 5vw, 2rem)",
+          "slug": "50"
+        },
+        {
+          "name": "60",
+          "size": "clamp(2rem, 6vw, 2.5rem)",
+          "slug": "60"
+        },
+        {
+          "name": "70",
+          "size": "clamp(2.5rem, 7vw, 3rem)",
+          "slug": "70"
+        },
+        {
+          "name": "80",
+          "size": "clamp(3rem, 6vw, 4rem)",
+          "slug": "80"
+        },
+        {
+          "name": "90",
+          "size": "clamp(3.5rem, 7vw, 4.5rem)",
+          "slug": "90"
+        },
+        {
+          "name": "100",
+          "size": "clamp(4rem, 8vw, 5rem)",
+          "slug": "100"
+        }
       ]
+    },
+    "border": {
+      "radius": true,
+      "color": true,
+      "style": true,
+      "width": true
+    },
+    "custom": {
+      "spacing": {
+        "baseline": "1rem",
+        "gutter": "var(--wp--preset--spacing--50)"
+      },
+      "typography": {
+        "lineHeight": {
+          "tight": "1.1",
+          "normal": "1.5",
+          "loose": "1.8"
+        },
+        "legacy": {
+          "hero-vw": "var(--wp--preset--font-size--900)",
+          "banner-clamp": "var(--wp--preset--font-size--900)",
+          "small-px": "var(--wp--preset--font-size--200)",
+          "tiny-px": "var(--wp--preset--font-size--100)"
+        }
+      },
+      "effects": {
+        "shadow": {
+          "small": "0 1px 3px rgba(0, 0, 0, 0.12)",
+          "medium": "0 4px 6px rgba(0, 0, 0, 0.12)",
+          "large": "0 10px 25px rgba(0, 0, 0, 0.12)"
+        },
+        "borderRadius": {
+          "small": "0.25rem",
+          "medium": "0.5rem",
+          "large": "1rem"
+        }
+      }
     }
   },
   "styles": {
     "color": {
-      "background": "#ffffff",
-      "text": "#000000"
+      "background": "var(--wp--preset--color--base)",
+      "text": "var(--wp--preset--color--contrast)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--system)",
+      "fontSize": "var(--wp--preset--font-size--300)",
+      "lineHeight": "var(--wp--custom--typography--line-height--normal)"
+    },
+    "spacing": {
+      "padding": {
+        "top": "0",
+        "right": "var(--wp--preset--spacing--40)",
+        "bottom": "0",
+        "left": "var(--wp--preset--spacing--40)"
+      }
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--primary)"
+        },
+        ":hover": {
+          "color": {
+            "text": "var(--wp--preset--color--secondary)"
+          }
+        },
+        ":focus": {
+          "outline": {
+            "width": "2px",
+            "style": "solid",
+            "color": "var(--wp--preset--color--primary)",
+            "offset": "2px"
+  { "slug": "base", "name": "Base", "color": "#FFFFFF" },
+  { "slug": "contrast", "name": "Contrast", "color": "#1A1A1A" },
+  { "slug": "primary", "name": "Primary", "color": "#40A8D8" },
+  { "slug": "neutral-0", "name": "Neutral 0", "color": "#FFFFFF" },
+  { "slug": "neutral-100", "name": "Neutral 100", "color": "#F5F5F5" },
+  { "slug": "neutral-200", "name": "Neutral 200", "color": "#E9ECEF" },
+  { "slug": "neutral-300", "name": "Neutral 300", "color": "#CCCCCC" },
+  { "slug": "neutral-400", "name": "Neutral 400", "color": "#ADB5BD" },
+  { "slug": "neutral-500", "name": "Neutral 500", "color": "#888888" },
+  { "slug": "neutral-600", "name": "Neutral 600", "color": "#666666" },
+  { "slug": "neutral-700", "name": "Neutral 700", "color": "#495057" },
+  { "slug": "neutral-800", "name": "Neutral 800", "color": "#343A40" },
+  { "slug": "neutral-900", "name": "Neutral 900", "color": "#212529" },
+  { "slug": "accent-100", "name": "Accent 100", "color": "#D3045D" },
+  { "slug": "accent-200", "name": "Accent 200", "color": "#F47AB2" },
+  { "slug": "accent-300", "name": "Accent 300", "color": "#A162A1" },
+  { "slug": "accent-400", "name": "Accent 400", "color": "#0C8EF4" },
+  { "slug": "accent-500", "name": "Accent 500", "color": "#0C287B" },
+  { "slug": "accent-600", "name": "Accent 600", "color": "#FC0C04" },
+  { "slug": "accent-700", "name": "Accent 700", "color": "#F5BF0F" },
+  { "slug": "accent-800", "name": "Accent 800", "color": "#F2720C" },
+  { "slug": "accent-900", "name": "Accent 900", "color": "#150D0D" }
+        },
+        "spacing": {
+          "padding": {
+            "top": "var(--wp--preset--spacing--20)",
+            "right": "var(--wp--preset--spacing--40)",
+            "bottom": "var(--wp--preset--spacing--20)",
+            "left": "var(--wp--preset--spacing--40)"
+          }
+        },
+        "typography": {
+          "fontWeight": "600",
+          "fontSize": "var(--wp--preset--font-size--300)"
+        },
+        ":hover": {
+          "color": {
+            "background": "var(--wp--preset--color--secondary)"
+          }
+        },
+        ":focus": {
+          "outline": {
+            "width": "2px",
+            "style": "solid",
+            "color": "var(--wp--preset--color--contrast)",
+            "offset": "2px"
+          }
+        }
+      },
+      "heading": {
+        "typography": {
+          "fontWeight": "700",
+          "lineHeight": "var(--wp--custom--typography--line-height--tight)"
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--800)"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--700)"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--600)"
+        }
+      },
+      "h4": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--500)"
+        }
+      },
+      "h5": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--400)"
+        }
+      },
+      "h6": {
+        "typography": {
+      { "fontFamily": "Roboto, Archivo Black, sans-serif", "name": "Garnet Sunrise", "slug": "garnet-sunrise" },
+      { "fontFamily": "Open Sans, Bitter, sans-serif", "name": "Amber Obsidian", "slug": "amber-obsidian" },
+      { "fontFamily": "Montserrat, Source Sans 3, sans-serif", "name": "Sapphire Coral", "slug": "sapphire-coral" },
+      { "fontFamily": "Josefin Sans, Cardo, serif", "name": "Emerald Ruby", "slug": "emerald-ruby" },
+      { "fontFamily": "Lato, Abril Fatface, sans-serif", "name": "Crimson Amethyst", "slug": "crimson-amethyst" },
+      { "fontFamily": "Raleway, Merriweather, serif", "name": "Sunset Topaz", "slug": "sunset-topaz" },
+      { "fontFamily": "Nunito, Alegreya, sans-serif", "name": "Mermaid Garnet", "slug": "mermaid-garnet" },
+      { "fontFamily": "Lora, Merriweather, serif", "name": "Turquoise Amethyst", "slug": "turquoise-amethyst" },
+      { "fontFamily": "Ubuntu, Rokkitt, sans-serif", "name": "Sapphire Coral Alt", "slug": "sapphire-coral-alt" },
+      { "fontFamily": "Source Sans 3, Cabin, sans-serif", "name": "Amber Obsidian Alt", "slug": "amber-obsidian-alt" }
+      },
+      "core/post-title": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--700)"
+        }
+      },
+      "core/post-content": {
+        "typography": {
+          "lineHeight": "var(--wp--custom--typography--line-height--normal)"
+        }
+      },
+      "core/pullquote": {
+        "border": {
+          "color": "var(--wp--preset--color--primary)",
+          "style": "solid",
+          "width": "1px 0"
+        }
+      },
+      "core/quote": {
+        "border": {
+          "color": "var(--wp--preset--color--primary)",
+          "style": "solid",
+          "width": "0 0 0 1px"
+        },
+        "spacing": {
+          "padding": {
+            "left": "var(--wp--preset--spacing--40)"
+          }
+        }
+      },
+      "core/separator": {
+        "border": {
+          "color": "var(--wp--preset--color--neutral-300)",
+          "style": "solid",
+          "width": "0 0 1px 0"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--neutral-300)"
+        }
+      },
+      "core/group": {
+        "spacing": {
+          "padding": "var(--wp--preset--spacing--40)"
+        }
+      },
+      "core/columns": {
+        "spacing": {
+          "blockGap": "var(--wp--preset--spacing--50)"
+        }
+      }
     }
-  }
+  },
+  "templateParts": [
+    {
+        { "slug": "font-size-100", "name": "Tiny", "size": "0.75rem" },
+        { "slug": "font-size-200", "name": "Base", "size": "1rem" },
+        { "slug": "font-size-300", "name": "Small", "size": "1.25rem" },
+        { "slug": "font-size-400", "name": "Medium", "size": "1.5rem" },
+        { "slug": "font-size-500", "name": "Large", "size": "2rem" },
+        { "slug": "font-size-600", "name": "X-Large", "size": "2.5rem" },
+        { "slug": "font-size-700", "name": "Huge", "size": "3rem" },
+        { "slug": "font-size-800", "name": "Gigantic", "size": "4rem" },
+        { "slug": "font-size-900", "name": "Colossal", "size": "5rem" }
+      "styles": {
+        "color": { "background": "#C90184", "text": "#B8062A" },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--montserrat-source-sans)"
+        }
+      }
+    },
+    {
+      "name": "sapphire-coral-breeze",
+      "label": "Sapphire Coral Breeze",
+      "blockTypes": ["core/group", "core/cover", "core/columns"],
+      "styles": {
+        "color": { "background": "#F61C24", "text": "#41D2EF" },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--nunito-alegreya)"
+        }
+      }
+    },
+    {
+      "name": "emerald-lapis-twilight",
+      "label": "Emerald Lapis Twilight",
+      "blockTypes": ["core/group", "core/cover", "core/columns"],
+      "styles": {
+        "color": { "background": "#0CDC2A", "text": "#384166" },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--lora-merriweather)"
+        }
+      }
+    },
+    {
+      "name": "turquoise-amethyst-frost",
+      "label": "Turquoise Amethyst Frost",
+      "blockTypes": ["core/group", "core/cover", "core/columns"],
+      "styles": {
+        "color": { "background": "#345C32", "text": "#9CAC54" },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--ubuntu-rokkitt)"
+        }
+      }
+    }
+  ]
 }
