@@ -15,6 +15,16 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/lightspeedwp/ai-block-theme-template.git"
+    "devDependencies": {
+      "ajv": "^8.12.0",
+      "ajv-cli": "^5.0.0",
+      "prettier": "^3.0.0"
+    },
+    "scripts": {
+      "validate:theme-json": "npx ajv validate --spec=draft7 --all-errors -s https://schemas.wp.org/trunk/theme.json -d theme.json -d styles/**/*.json --errors=json > reports/theme-json/errors.json",
+      "format:theme-json": "npx prettier --write theme.json styles/**/*.json",
+      "summarise:theme-json": "node scripts/summarise-errors.js reports/theme-json/errors.json > reports/theme-json/report.md || true"
+    },
   },
   "bugs": {
     "url": "https://github.com/lightspeedwp/ai-block-theme-template/issues"
